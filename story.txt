@@ -1,12 +1,10 @@
 Adam wakes up in the morning.
 He brushes his teeth.
-He takes a bath.
-He has breakfast.
+He DOES NOT take a bath.
+He DOES NOT have breakfast.
 Then he checked Instagram.
-He goes to class.
-The lecturer was very boring.
-He was confused with git.
+He DOES NOT go to class.
+The lecturer noticed Adam is not in class.
+Adam was confused with git.
+
 He likes to fight with his sister for random things that are useless and boring.
-
-
-
