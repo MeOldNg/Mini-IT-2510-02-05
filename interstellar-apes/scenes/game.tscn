@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://b6eircw03sbso"]
+[gd_scene load_steps=3 format=3 uid="uid://b6eircw03sbso"]
 
 [ext_resource type="PackedScene" uid="uid://c3bxs6vkf66ig" path="res://scenes/player.tscn" id="1_uwrxv"]
+[ext_resource type="PackedScene" uid="uid://bnd2iqg56j8pv" path="res://scenes/enemy_golem.tscn" id="2_yqjtg"]
 
 [node name="Game" type="Node2D"]
 
@@ -10,3 +11,6 @@ position = Vector2(66, 37)
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(65, 41)
 zoom = Vector2(2, 2)
+
+[node name="enemy_golem" parent="." instance=ExtResource("2_yqjtg")]
+position = Vector2(221, 23)
