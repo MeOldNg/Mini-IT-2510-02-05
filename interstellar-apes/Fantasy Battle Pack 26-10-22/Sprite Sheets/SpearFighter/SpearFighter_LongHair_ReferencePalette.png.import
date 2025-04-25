@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b2hacyw3b6wst"
-path="res://.godot/imported/SpearFighter_LongHair_ReferencePalette.png-bf278ed4482d3494ab76c60e69604042.ctex"
+path="res://.godot/imported/SpearFighter_LongHair_ReferencePalette.png-9167cedac46b5cc8ed31deffccd91622.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Fantasy Battle Pack 26-10-22/Sprite Sheets/SpearFighter/SpearFighter_LongHair_ReferencePalette.png"
-dest_files=["res://.godot/imported/SpearFighter_LongHair_ReferencePalette.png-bf278ed4482d3494ab76c60e69604042.ctex"]
+source_file="res://interstellar-apes/Fantasy Battle Pack 26-10-22/Sprite Sheets/SpearFighter/SpearFighter_LongHair_ReferencePalette.png"
+dest_files=["res://.godot/imported/SpearFighter_LongHair_ReferencePalette.png-9167cedac46b5cc8ed31deffccd91622.ctex"]
 
 [params]
 

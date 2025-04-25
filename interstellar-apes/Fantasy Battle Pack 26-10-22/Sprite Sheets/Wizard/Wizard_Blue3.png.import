@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b8a8tayd7nog4"
-path="res://.godot/imported/Wizard_Blue3.png-ba44dd7cff2e05ff5a26f8179ad43505.ctex"
+path="res://.godot/imported/Wizard_Blue3.png-fbfb85bed74613069fc3152dd6af4ad8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Fantasy Battle Pack 26-10-22/Sprite Sheets/Wizard/Wizard_Blue3.png"
-dest_files=["res://.godot/imported/Wizard_Blue3.png-ba44dd7cff2e05ff5a26f8179ad43505.ctex"]
+source_file="res://interstellar-apes/Fantasy Battle Pack 26-10-22/Sprite Sheets/Wizard/Wizard_Blue3.png"
+dest_files=["res://.godot/imported/Wizard_Blue3.png-fbfb85bed74613069fc3152dd6af4ad8.ctex"]
 
 [params]
 

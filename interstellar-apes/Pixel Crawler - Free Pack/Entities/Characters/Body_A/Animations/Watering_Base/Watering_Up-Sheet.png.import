@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bnn7exg4sq6sy"
-path="res://.godot/imported/Watering_Up-Sheet.png-19bec5056f2403875d1446cd45bf4f5d.ctex"
+path="res://.godot/imported/Watering_Up-Sheet.png-71a5d4671fc77d7c3ab56ccfd9df5a5a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Pixel Crawler - Free Pack/Entities/Characters/Body_A/Animations/Watering_Base/Watering_Up-Sheet.png"
-dest_files=["res://.godot/imported/Watering_Up-Sheet.png-19bec5056f2403875d1446cd45bf4f5d.ctex"]
+source_file="res://interstellar-apes/Pixel Crawler - Free Pack/Entities/Characters/Body_A/Animations/Watering_Base/Watering_Up-Sheet.png"
+dest_files=["res://.godot/imported/Watering_Up-Sheet.png-71a5d4671fc77d7c3ab56ccfd9df5a5a.ctex"]
 
 [params]
 

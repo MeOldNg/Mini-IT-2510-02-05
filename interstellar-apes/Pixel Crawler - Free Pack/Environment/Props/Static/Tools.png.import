@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c1u7ngly5cnck"
-path="res://.godot/imported/Tools.png-5b58870a6cf6c3e41f0eb7ed075e70db.ctex"
+path="res://.godot/imported/Tools.png-b43dcc91f6232379e0c73e63f5004383.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Pixel Crawler - Free Pack/Environment/Props/Static/Tools.png"
-dest_files=["res://.godot/imported/Tools.png-5b58870a6cf6c3e41f0eb7ed075e70db.ctex"]
+source_file="res://interstellar-apes/Pixel Crawler - Free Pack/Environment/Props/Static/Tools.png"
+dest_files=["res://.godot/imported/Tools.png-b43dcc91f6232379e0c73e63f5004383.ctex"]
 
 [params]
 

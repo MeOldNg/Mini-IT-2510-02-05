@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://s1m8x0pvpxa5"
-path="res://.godot/imported/Esoteric.png-25a0cbce8c0a418d5f5d3eb5e8441e0d.ctex"
+path="res://.godot/imported/Esoteric.png-4e13d58514c30bdddc0222e4477b9541.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Pixel Crawler - Free Pack/Environment/Props/Static/Esoteric.png"
-dest_files=["res://.godot/imported/Esoteric.png-25a0cbce8c0a418d5f5d3eb5e8441e0d.ctex"]
+source_file="res://interstellar-apes/Pixel Crawler - Free Pack/Environment/Props/Static/Esoteric.png"
+dest_files=["res://.godot/imported/Esoteric.png-4e13d58514c30bdddc0222e4477b9541.ctex"]
 
 [params]
 
