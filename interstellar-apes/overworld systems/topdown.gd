@@ -12,9 +12,13 @@ var direction
 func _ready():
 	#starts the target at the current location
 	target_position = position
-	
-		
+
+
 func _physics_process(delta: float) -> void:
+	if Input.is_action_just_pressed("ui_accept") and $RayCast2D.is_colliding():
+		var collider = $RayCast2D.get_collider()
+		collider.on_interact()
+		
 	if not moving:
 		direction = Vector2.ZERO
 		if Input.is_action_pressed("ui_up"):
@@ -46,7 +50,7 @@ func move(direction: Vector2):
 		#Get custom data layer from target tile
 		var tile_data: TileData = tile_map.get_cell_tile_data(target_tile)
 	
-		if tile_data.get_custom_data("walkable") == false:
+		if tile_data.get_custom_data("walkable") == false and ray_cast_2d.is_colliding() == false:
 			print("fuck yeah")
 			return
 		else:
