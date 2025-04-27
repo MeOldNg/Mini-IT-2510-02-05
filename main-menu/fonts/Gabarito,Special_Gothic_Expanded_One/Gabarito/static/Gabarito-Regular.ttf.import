@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://bxwtl8jugdfpv"
-path="res://.godot/imported/Gabarito-ExtraBold.ttf-3047dde66ce2d890f9f5f1e92ba5339b.fontdata"
+uid="uid://ck5rsgskyjnyl"
+path="res://.godot/imported/Gabarito-Regular.ttf-f5d3c7bf1be3a8011844568ebd1c9640.fontdata"
 
 [deps]
 
-source_file="res://fonts/Gabarito,Special_Gothic_Expanded_One/Gabarito/static/Gabarito-ExtraBold.ttf"
-dest_files=["res://.godot/imported/Gabarito-ExtraBold.ttf-3047dde66ce2d890f9f5f1e92ba5339b.fontdata"]
+source_file="res://main-menu/fonts/Gabarito,Special_Gothic_Expanded_One/Gabarito/static/Gabarito-Regular.ttf"
+dest_files=["res://.godot/imported/Gabarito-Regular.ttf-f5d3c7bf1be3a8011844568ebd1c9640.fontdata"]
 
 [params]
 

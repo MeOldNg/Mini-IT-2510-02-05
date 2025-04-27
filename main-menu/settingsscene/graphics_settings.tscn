@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://ba0rkttvmfd72"]
 
-[ext_resource type="Theme" uid="uid://cqmt4obqoeysj" path="res://UI/panel_theme.tres" id="1_je45u"]
+[ext_resource type="Theme" uid="uid://cqmt4obqoeysj" path="res://main-menu/UI/panel_theme.tres" id="1_iv66o"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ikcl0"]
 bg_color = Color(0.657202, 0.524155, 0.455668, 0.941176)
@@ -36,7 +36,7 @@ offset_right = 577.5
 offset_bottom = 325.0
 grow_horizontal = 2
 grow_vertical = 2
-theme = ExtResource("1_je45u")
+theme = ExtResource("1_iv66o")
 theme_override_styles/panel = SubResource("StyleBoxFlat_ikcl0")
 metadata/_edit_use_anchors_ = true
 
