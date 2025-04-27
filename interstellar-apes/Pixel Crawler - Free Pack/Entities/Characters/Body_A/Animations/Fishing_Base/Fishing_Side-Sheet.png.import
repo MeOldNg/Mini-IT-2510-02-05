@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cty235wpkdf18"
-path="res://.godot/imported/Fishing_Side-Sheet.png-f358e0e7e9f1bee045efba0a5073b931.ctex"
+path="res://.godot/imported/Fishing_Side-Sheet.png-9117254a0e9ea9c2607da8ad0138104c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Pixel Crawler - Free Pack/Entities/Characters/Body_A/Animations/Fishing_Base/Fishing_Side-Sheet.png"
-dest_files=["res://.godot/imported/Fishing_Side-Sheet.png-f358e0e7e9f1bee045efba0a5073b931.ctex"]
+source_file="res://interstellar-apes/Pixel Crawler - Free Pack/Entities/Characters/Body_A/Animations/Fishing_Base/Fishing_Side-Sheet.png"
+dest_files=["res://.godot/imported/Fishing_Side-Sheet.png-9117254a0e9ea9c2607da8ad0138104c.ctex"]
 
 [params]
 

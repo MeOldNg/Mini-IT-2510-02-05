@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d4b7yg2ogjkrj"
-path="res://.godot/imported/Wall_Tiles.png-5a9bcebe21146a992dce028512d37680.ctex"
+path="res://.godot/imported/Wall_Tiles.png-ab04d3e58d5223603ae2106c429ba533.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Pixel Crawler - Free Pack/Environment/Tilesets/Wall_Tiles.png"
-dest_files=["res://.godot/imported/Wall_Tiles.png-5a9bcebe21146a992dce028512d37680.ctex"]
+source_file="res://interstellar-apes/Pixel Crawler - Free Pack/Environment/Tilesets/Wall_Tiles.png"
+dest_files=["res://.godot/imported/Wall_Tiles.png-ab04d3e58d5223603ae2106c429ba533.ctex"]
 
 [params]
 

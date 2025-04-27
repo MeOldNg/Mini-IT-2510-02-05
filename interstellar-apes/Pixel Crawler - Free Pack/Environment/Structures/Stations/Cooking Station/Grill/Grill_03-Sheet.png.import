@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://uu6xl7seawcj"
-path="res://.godot/imported/Grill_03-Sheet.png-68e2ac3102320925029119c10eaff3c9.ctex"
+path="res://.godot/imported/Grill_03-Sheet.png-08ef73b582c854d13a305ae183d6959c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Pixel Crawler - Free Pack/Environment/Structures/Stations/Cooking Station/Grill/Grill_03-Sheet.png"
-dest_files=["res://.godot/imported/Grill_03-Sheet.png-68e2ac3102320925029119c10eaff3c9.ctex"]
+source_file="res://interstellar-apes/Pixel Crawler - Free Pack/Environment/Structures/Stations/Cooking Station/Grill/Grill_03-Sheet.png"
+dest_files=["res://.godot/imported/Grill_03-Sheet.png-08ef73b582c854d13a305ae183d6959c.ctex"]
 
 [params]
 

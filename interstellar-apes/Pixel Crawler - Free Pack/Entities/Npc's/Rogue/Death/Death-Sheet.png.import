@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b0v1pwreogx3m"
-path="res://.godot/imported/Death-Sheet.png-e7f69708843cf36bf390cdf81e8ae45a.ctex"
+path="res://.godot/imported/Death-Sheet.png-d428800838aa90cc0dc93beec8b85e63.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Pixel Crawler - Free Pack/Entities/Npc's/Rogue/Death/Death-Sheet.png"
-dest_files=["res://.godot/imported/Death-Sheet.png-e7f69708843cf36bf390cdf81e8ae45a.ctex"]
+source_file="res://interstellar-apes/Pixel Crawler - Free Pack/Entities/Npc's/Rogue/Death/Death-Sheet.png"
+dest_files=["res://.godot/imported/Death-Sheet.png-d428800838aa90cc0dc93beec8b85e63.ctex"]
 
 [params]
 
