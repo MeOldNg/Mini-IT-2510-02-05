@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://i0qiaaocfyrb"
-path="res://.godot/imported/RangerFinderTile_Green_50%Opacity.png-dc9ba5b1117e3732209de06f87c9d63f.ctex"
+path="res://.godot/imported/RangerFinderTile_Green_50%Opacity.png-71452143998fcc6549770b034752f7d7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://interstellar-apes/Fantasy Battle Pack 26-10-22/UI Elements/RangerFinderTile_Green_50%Opacity.png"
-dest_files=["res://.godot/imported/RangerFinderTile_Green_50%Opacity.png-dc9ba5b1117e3732209de06f87c9d63f.ctex"]
+source_file="res://Fantasy Battle Pack 26-10-22/UI Elements/RangerFinderTile_Green_50%Opacity.png"
+dest_files=["res://.godot/imported/RangerFinderTile_Green_50%Opacity.png-71452143998fcc6549770b034752f7d7.ctex"]
 
 [params]
 

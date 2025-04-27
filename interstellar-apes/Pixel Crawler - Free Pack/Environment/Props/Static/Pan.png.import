@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b0hwq3ra88807"
-path="res://.godot/imported/Pan.png-798a99ddd6dfda162ec6e56296c288c9.ctex"
+path="res://.godot/imported/Pan.png-ebe44d71f2fe5919d4c6b96a7bfbd9d9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://interstellar-apes/Pixel Crawler - Free Pack/Environment/Props/Static/Pan.png"
-dest_files=["res://.godot/imported/Pan.png-798a99ddd6dfda162ec6e56296c288c9.ctex"]
+source_file="res://Pixel Crawler - Free Pack/Environment/Props/Static/Pan.png"
+dest_files=["res://.godot/imported/Pan.png-ebe44d71f2fe5919d4c6b96a7bfbd9d9.ctex"]
 
 [params]
 

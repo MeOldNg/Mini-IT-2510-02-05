@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://lqjg6rtsju0a"
-path="res://.godot/imported/Collect_Down-Sheet.png-f4875862431457a5f8b24470de7f64db.ctex"
+path="res://.godot/imported/Collect_Down-Sheet.png-bcf625b90aabe9a29ab6557a6d8b5c51.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://interstellar-apes/Pixel Crawler - Free Pack/Entities/Characters/Body_A/Animations/Collect_Base/Collect_Down-Sheet.png"
-dest_files=["res://.godot/imported/Collect_Down-Sheet.png-f4875862431457a5f8b24470de7f64db.ctex"]
+source_file="res://Pixel Crawler - Free Pack/Entities/Characters/Body_A/Animations/Collect_Base/Collect_Down-Sheet.png"
+dest_files=["res://.godot/imported/Collect_Down-Sheet.png-bcf625b90aabe9a29ab6557a6d8b5c51.ctex"]
 
 [params]
 

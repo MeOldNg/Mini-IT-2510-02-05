@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bo5bsae0q1ncs"
-path="res://.godot/imported/Iron_02-Sheet.png-ff09ee0596f3f7fdf257df0bed194d91.ctex"
+path="res://.godot/imported/Iron_02-Sheet.png-cd1cc2162379c99e73adf57934a0014b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://interstellar-apes/Pixel Crawler - Free Pack/Environment/Structures/Stations/Furnace/Iron_02-Sheet.png"
-dest_files=["res://.godot/imported/Iron_02-Sheet.png-ff09ee0596f3f7fdf257df0bed194d91.ctex"]
+source_file="res://Pixel Crawler - Free Pack/Environment/Structures/Stations/Furnace/Iron_02-Sheet.png"
+dest_files=["res://.godot/imported/Iron_02-Sheet.png-cd1cc2162379c99e73adf57934a0014b.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://drdeu3jghitaa"
-path="res://.godot/imported/Idle-Sheet.png-d12eec4fe721063c479ac06dd242d22f.ctex"
+path="res://.godot/imported/Idle-Sheet.png-db6a4369f7fd67cdb433a5fe8cf68299.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://interstellar-apes/Pixel Crawler - Free Pack/Entities/Mobs/Orc Crew/Orc - Warrior/Idle/Idle-Sheet.png"
-dest_files=["res://.godot/imported/Idle-Sheet.png-d12eec4fe721063c479ac06dd242d22f.ctex"]
+source_file="res://Pixel Crawler - Free Pack/Entities/Mobs/Orc Crew/Orc - Warrior/Idle/Idle-Sheet.png"
+dest_files=["res://.godot/imported/Idle-Sheet.png-db6a4369f7fd67cdb433a5fe8cf68299.ctex"]
 
 [params]
 

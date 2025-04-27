@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://piyj1206m3i7"
-path="res://.godot/imported/Death-Sheet.png-d84fe71a089740d52faa14ddea7bcc15.ctex"
+path="res://.godot/imported/Death-Sheet.png-ccdcac652c89048170a01680ead02ff7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://interstellar-apes/Pixel Crawler - Free Pack/Entities/Mobs/Skeleton Crew/Skeleton - Rogue/Death/Death-Sheet.png"
-dest_files=["res://.godot/imported/Death-Sheet.png-d84fe71a089740d52faa14ddea7bcc15.ctex"]
+source_file="res://Pixel Crawler - Free Pack/Entities/Mobs/Skeleton Crew/Skeleton - Rogue/Death/Death-Sheet.png"
+dest_files=["res://.godot/imported/Death-Sheet.png-ccdcac652c89048170a01680ead02ff7.ctex"]
 
 [params]
 

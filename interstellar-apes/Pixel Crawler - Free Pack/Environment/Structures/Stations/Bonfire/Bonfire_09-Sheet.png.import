@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b5lxvn6lisrmp"
-path="res://.godot/imported/Bonfire_09-Sheet.png-c248e004defd3e368b55b057bb772fa1.ctex"
+path="res://.godot/imported/Bonfire_09-Sheet.png-e9cd0a58068d8ae9b157a3d7813c28ee.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://interstellar-apes/Pixel Crawler - Free Pack/Environment/Structures/Stations/Bonfire/Bonfire_09-Sheet.png"
-dest_files=["res://.godot/imported/Bonfire_09-Sheet.png-c248e004defd3e368b55b057bb772fa1.ctex"]
+source_file="res://Pixel Crawler - Free Pack/Environment/Structures/Stations/Bonfire/Bonfire_09-Sheet.png"
+dest_files=["res://.godot/imported/Bonfire_09-Sheet.png-e9cd0a58068d8ae9b157a3d7813c28ee.ctex"]
 
 [params]
 

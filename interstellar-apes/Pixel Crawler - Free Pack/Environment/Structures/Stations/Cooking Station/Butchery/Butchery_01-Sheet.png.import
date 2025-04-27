@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d37paq55diq8j"
-path="res://.godot/imported/Butchery_01-Sheet.png-794574d54d99e609e3568bfc2a9febbe.ctex"
+path="res://.godot/imported/Butchery_01-Sheet.png-7aa2ef2ffba306c65ac2414f2a1e24d8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://interstellar-apes/Pixel Crawler - Free Pack/Environment/Structures/Stations/Cooking Station/Butchery/Butchery_01-Sheet.png"
-dest_files=["res://.godot/imported/Butchery_01-Sheet.png-794574d54d99e609e3568bfc2a9febbe.ctex"]
+source_file="res://Pixel Crawler - Free Pack/Environment/Structures/Stations/Cooking Station/Butchery/Butchery_01-Sheet.png"
+dest_files=["res://.godot/imported/Butchery_01-Sheet.png-7aa2ef2ffba306c65ac2414f2a1e24d8.ctex"]
 
 [params]
 

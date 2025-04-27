@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dw6py2j1f2h4g"
-path="res://.godot/imported/Pierce_Down-Sheet.png-bd7785afbd3286ecbf122bcac968ebb0.ctex"
+path="res://.godot/imported/Pierce_Down-Sheet.png-aecde69b5e57ab97cfe102291ba605c2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://interstellar-apes/Pixel Crawler - Free Pack/Entities/Characters/Body_A/Animations/Pierce_Base/Pierce_Down-Sheet.png"
-dest_files=["res://.godot/imported/Pierce_Down-Sheet.png-bd7785afbd3286ecbf122bcac968ebb0.ctex"]
+source_file="res://Pixel Crawler - Free Pack/Entities/Characters/Body_A/Animations/Pierce_Base/Pierce_Down-Sheet.png"
+dest_files=["res://.godot/imported/Pierce_Down-Sheet.png-aecde69b5e57ab97cfe102291ba605c2.ctex"]
 
 [params]
 

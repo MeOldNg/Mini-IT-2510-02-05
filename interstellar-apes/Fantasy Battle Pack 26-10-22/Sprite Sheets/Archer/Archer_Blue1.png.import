@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://2huk0afvavxd"
-path="res://.godot/imported/Archer_Blue1.png-6cb74ae676573fd3dc643ae6a0e5181f.ctex"
+path="res://.godot/imported/Archer_Blue1.png-81bd0758936bfbd1215a2766bdca0e6e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://interstellar-apes/Fantasy Battle Pack 26-10-22/Sprite Sheets/Archer/Archer_Blue1.png"
-dest_files=["res://.godot/imported/Archer_Blue1.png-6cb74ae676573fd3dc643ae6a0e5181f.ctex"]
+source_file="res://Fantasy Battle Pack 26-10-22/Sprite Sheets/Archer/Archer_Blue1.png"
+dest_files=["res://.godot/imported/Archer_Blue1.png-81bd0758936bfbd1215a2766bdca0e6e.ctex"]
 
 [params]
 

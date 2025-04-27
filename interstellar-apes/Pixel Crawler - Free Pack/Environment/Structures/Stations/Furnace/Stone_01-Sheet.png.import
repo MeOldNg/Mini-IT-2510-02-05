@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bp1u44vck4181"
-path="res://.godot/imported/Stone_01-Sheet.png-c282520d1c48de569ed482445b742a1a.ctex"
+path="res://.godot/imported/Stone_01-Sheet.png-cad98d00434f475bd6b14719824c6e1e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://interstellar-apes/Pixel Crawler - Free Pack/Environment/Structures/Stations/Furnace/Stone_01-Sheet.png"
-dest_files=["res://.godot/imported/Stone_01-Sheet.png-c282520d1c48de569ed482445b742a1a.ctex"]
+source_file="res://Pixel Crawler - Free Pack/Environment/Structures/Stations/Furnace/Stone_01-Sheet.png"
+dest_files=["res://.godot/imported/Stone_01-Sheet.png-cad98d00434f475bd6b14719824c6e1e.ctex"]
 
 [params]
 

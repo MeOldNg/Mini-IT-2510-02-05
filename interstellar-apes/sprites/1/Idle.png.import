@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://gppgderpiahe"
-path="res://.godot/imported/Idle.png-d0a2cfd24885fdd55ea237287ebc7586.ctex"
+path="res://.godot/imported/Idle.png-16c5d6f3c0ae7fa4b5571ee70fd1dc23.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://interstellar-apes/sprites/1/Idle.png"
-dest_files=["res://.godot/imported/Idle.png-d0a2cfd24885fdd55ea237287ebc7586.ctex"]
+source_file="res://sprites/1/Idle.png"
+dest_files=["res://.godot/imported/Idle.png-16c5d6f3c0ae7fa4b5571ee70fd1dc23.ctex"]
 
 [params]
 

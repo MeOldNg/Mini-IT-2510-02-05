@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://i6qh2mjgnjvv"
-path="res://.godot/imported/AxeFighter_ShortHair_Red1.png-39e2e084eb2c89b45d634357ff8ab085.ctex"
+path="res://.godot/imported/AxeFighter_ShortHair_Red1.png-447b4b5c07d1ae25f97b179617b07b63.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://interstellar-apes/Fantasy Battle Pack 26-10-22/Sprite Sheets/AxeFighter/AxeFighter_ShortHair_Red1.png"
-dest_files=["res://.godot/imported/AxeFighter_ShortHair_Red1.png-39e2e084eb2c89b45d634357ff8ab085.ctex"]
+source_file="res://Fantasy Battle Pack 26-10-22/Sprite Sheets/AxeFighter/AxeFighter_ShortHair_Red1.png"
+dest_files=["res://.godot/imported/AxeFighter_ShortHair_Red1.png-447b4b5c07d1ae25f97b179617b07b63.ctex"]
 
 [params]
 

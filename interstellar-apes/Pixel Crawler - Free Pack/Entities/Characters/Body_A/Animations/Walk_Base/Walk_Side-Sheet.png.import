@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cr4fpo86ry17t"
-path="res://.godot/imported/Walk_Side-Sheet.png-253cd94f0ebad3a02ed8ab36d6e5a51d.ctex"
+path="res://.godot/imported/Walk_Side-Sheet.png-a63e913be8896857f40f65dea56c65b5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://interstellar-apes/Pixel Crawler - Free Pack/Entities/Characters/Body_A/Animations/Walk_Base/Walk_Side-Sheet.png"
-dest_files=["res://.godot/imported/Walk_Side-Sheet.png-253cd94f0ebad3a02ed8ab36d6e5a51d.ctex"]
+source_file="res://Pixel Crawler - Free Pack/Entities/Characters/Body_A/Animations/Walk_Base/Walk_Side-Sheet.png"
+dest_files=["res://.godot/imported/Walk_Side-Sheet.png-a63e913be8896857f40f65dea56c65b5.ctex"]
 
 [params]
 

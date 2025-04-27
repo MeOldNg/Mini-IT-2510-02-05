@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b8ixjdeahvvy6"
-path="res://.godot/imported/SelectionCursor.png-28f6759abb7b8a4286c5c982e28b13e2.ctex"
+path="res://.godot/imported/SelectionCursor.png-1b001a243ca3e76d7e53322a7dff6223.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://interstellar-apes/Fantasy Battle Pack 26-10-22/UI Elements/SelectionCursor.png"
-dest_files=["res://.godot/imported/SelectionCursor.png-28f6759abb7b8a4286c5c982e28b13e2.ctex"]
+source_file="res://Fantasy Battle Pack 26-10-22/UI Elements/SelectionCursor.png"
+dest_files=["res://.godot/imported/SelectionCursor.png-1b001a243ca3e76d7e53322a7dff6223.ctex"]
 
 [params]
 

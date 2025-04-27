@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bwfbq7slwwqf0"
-path="res://.godot/imported/SwordFighter_ShortHair_Green2.png-e974d68ccb305c165f0d0e72ed38695f.ctex"
+path="res://.godot/imported/SwordFighter_ShortHair_Green2.png-5969fbb750914f77e8248a7125acb08c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://interstellar-apes/Fantasy Battle Pack 26-10-22/Sprite Sheets/SwordFighter/SwordFighter_ShortHair_Green2.png"
-dest_files=["res://.godot/imported/SwordFighter_ShortHair_Green2.png-e974d68ccb305c165f0d0e72ed38695f.ctex"]
+source_file="res://Fantasy Battle Pack 26-10-22/Sprite Sheets/SwordFighter/SwordFighter_ShortHair_Green2.png"
+dest_files=["res://.godot/imported/SwordFighter_ShortHair_Green2.png-5969fbb750914f77e8248a7125acb08c.ctex"]
 
 [params]
 

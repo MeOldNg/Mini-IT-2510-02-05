@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://1rkdwcpn2ce2"
-path="res://.godot/imported/Estructure.png-45b33a49127970e2bae3fcec5038c10c.ctex"
+path="res://.godot/imported/Estructure.png-17ab34613f19814c55af5574bf8d18b7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://interstellar-apes/Pixel Crawler - Free Pack/Environment/Structures/Stations/Cooking Station/Estructure.png"
-dest_files=["res://.godot/imported/Estructure.png-45b33a49127970e2bae3fcec5038c10c.ctex"]
+source_file="res://Pixel Crawler - Free Pack/Environment/Structures/Stations/Cooking Station/Estructure.png"
+dest_files=["res://.godot/imported/Estructure.png-17ab34613f19814c55af5574bf8d18b7.ctex"]
 
 [params]
 

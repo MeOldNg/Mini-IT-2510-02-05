@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b3yaaagp8w8pa"
-path="res://.godot/imported/Floors_Tiles.png-d1cdbdb40b565f813ea1eea2cffb74e5.ctex"
+path="res://.godot/imported/Floors_Tiles.png-e59c53ab8c05477956fb73fc95206b53.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://interstellar-apes/Pixel Crawler - Free Pack/Environment/Tilesets/Floors_Tiles.png"
-dest_files=["res://.godot/imported/Floors_Tiles.png-d1cdbdb40b565f813ea1eea2cffb74e5.ctex"]
+source_file="res://Pixel Crawler - Free Pack/Environment/Tilesets/Floors_Tiles.png"
+dest_files=["res://.godot/imported/Floors_Tiles.png-e59c53ab8c05477956fb73fc95206b53.ctex"]
 
 [params]
 

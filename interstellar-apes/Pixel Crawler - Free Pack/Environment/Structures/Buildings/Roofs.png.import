@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dloft3bd6wmvc"
-path="res://.godot/imported/Roofs.png-caa7261a6a7f5cae7eb2dc25b9a47474.ctex"
+path="res://.godot/imported/Roofs.png-d144072172edeb12cda93af0e543df22.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://interstellar-apes/Pixel Crawler - Free Pack/Environment/Structures/Buildings/Roofs.png"
-dest_files=["res://.godot/imported/Roofs.png-caa7261a6a7f5cae7eb2dc25b9a47474.ctex"]
+source_file="res://Pixel Crawler - Free Pack/Environment/Structures/Buildings/Roofs.png"
+dest_files=["res://.godot/imported/Roofs.png-d144072172edeb12cda93af0e543df22.ctex"]
 
 [params]
 

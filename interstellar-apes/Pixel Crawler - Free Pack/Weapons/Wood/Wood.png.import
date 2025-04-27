@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bd3od4ljimf5x"
-path="res://.godot/imported/Wood.png-f2b21d9b79a85da200117148036a3c74.ctex"
+path="res://.godot/imported/Wood.png-371868195732bab0a934d27ac1bde5b3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://interstellar-apes/Pixel Crawler - Free Pack/Weapons/Wood/Wood.png"
-dest_files=["res://.godot/imported/Wood.png-f2b21d9b79a85da200117148036a3c74.ctex"]
+source_file="res://Pixel Crawler - Free Pack/Weapons/Wood/Wood.png"
+dest_files=["res://.godot/imported/Wood.png-371868195732bab0a934d27ac1bde5b3.ctex"]
 
 [params]
 

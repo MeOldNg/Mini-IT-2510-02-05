@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cw88kwp10mmlr"
-path="res://.godot/imported/Cooker_01.png-1a007aba31feb53c1ce344fc2a287042.ctex"
+path="res://.godot/imported/Cooker_01.png-aa6b5d15cc7938914780693b948c41c8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://interstellar-apes/Pixel Crawler - Free Pack/Environment/Structures/Stations/Cooking Station/Cooker/Cooker_01.png"
-dest_files=["res://.godot/imported/Cooker_01.png-1a007aba31feb53c1ce344fc2a287042.ctex"]
+source_file="res://Pixel Crawler - Free Pack/Environment/Structures/Stations/Cooking Station/Cooker/Cooker_01.png"
+dest_files=["res://.godot/imported/Cooker_01.png-aa6b5d15cc7938914780693b948c41c8.ctex"]
 
 [params]
 

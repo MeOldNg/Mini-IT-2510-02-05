@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bac68rljbdqe0"
-path="res://.godot/imported/Hit_Up-Sheet.png-9a639b410c4b3753c29b1a3156e13a7d.ctex"
+path="res://.godot/imported/Hit_Up-Sheet.png-39e5040ed9dd7a09d08167bd85c4d9b0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://interstellar-apes/Pixel Crawler - Free Pack/Entities/Characters/Body_A/Animations/Hit_Base/Hit_Up-Sheet.png"
-dest_files=["res://.godot/imported/Hit_Up-Sheet.png-9a639b410c4b3753c29b1a3156e13a7d.ctex"]
+source_file="res://Pixel Crawler - Free Pack/Entities/Characters/Body_A/Animations/Hit_Base/Hit_Up-Sheet.png"
+dest_files=["res://.godot/imported/Hit_Up-Sheet.png-39e5040ed9dd7a09d08167bd85c4d9b0.ctex"]
 
 [params]
 

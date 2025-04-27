@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://rvgcemxtoarp"
-path="res://.godot/imported/Thief_ReferencePalette.png-ceee56453e0cf7ba70798d0cc938106a.ctex"
+path="res://.godot/imported/Thief_ReferencePalette.png-43660458672947be984d87c4dc2548c0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://interstellar-apes/Fantasy Battle Pack 26-10-22/Sprite Sheets/Thief/Thief_ReferencePalette.png"
-dest_files=["res://.godot/imported/Thief_ReferencePalette.png-ceee56453e0cf7ba70798d0cc938106a.ctex"]
+source_file="res://Fantasy Battle Pack 26-10-22/Sprite Sheets/Thief/Thief_ReferencePalette.png"
+dest_files=["res://.godot/imported/Thief_ReferencePalette.png-43660458672947be984d87c4dc2548c0.ctex"]
 
 [params]
 

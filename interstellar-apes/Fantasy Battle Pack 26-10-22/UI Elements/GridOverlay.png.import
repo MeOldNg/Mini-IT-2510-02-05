@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b3yhpecx4o1yy"
-path="res://.godot/imported/GridOverlay.png-bdeab3dd044a073020b9a0d84f19beb2.ctex"
+path="res://.godot/imported/GridOverlay.png-70ce4ddde31f3703bc9bf0425f2b562f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://interstellar-apes/Fantasy Battle Pack 26-10-22/UI Elements/GridOverlay.png"
-dest_files=["res://.godot/imported/GridOverlay.png-bdeab3dd044a073020b9a0d84f19beb2.ctex"]
+source_file="res://Fantasy Battle Pack 26-10-22/UI Elements/GridOverlay.png"
+dest_files=["res://.godot/imported/GridOverlay.png-70ce4ddde31f3703bc9bf0425f2b562f.ctex"]
 
 [params]
 

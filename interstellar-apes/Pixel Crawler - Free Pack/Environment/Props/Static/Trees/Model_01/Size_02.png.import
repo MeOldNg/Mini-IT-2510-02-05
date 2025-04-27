@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b604ucch0r04g"
-path="res://.godot/imported/Size_02.png-18687f763eb7d0fae97bdef4f9d86226.ctex"
+path="res://.godot/imported/Size_02.png-7f1e2f7818d3087ba9898c56ba138024.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://interstellar-apes/Pixel Crawler - Free Pack/Environment/Props/Static/Trees/Model_01/Size_02.png"
-dest_files=["res://.godot/imported/Size_02.png-18687f763eb7d0fae97bdef4f9d86226.ctex"]
+source_file="res://Pixel Crawler - Free Pack/Environment/Props/Static/Trees/Model_01/Size_02.png"
+dest_files=["res://.godot/imported/Size_02.png-7f1e2f7818d3087ba9898c56ba138024.ctex"]
 
 [params]
 
