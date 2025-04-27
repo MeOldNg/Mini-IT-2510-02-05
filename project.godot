@@ -10,18 +10,13 @@ config_version=5
 
 [application]
 
-config/name="interstellar apes main"
-run/main_scene="uid://b7lqt6j3slae1"
+
+config/name="Main-Menu"
+run/main_scene="uid://dkrewxtxg7v7j"
 config/features=PackedStringArray("4.4", "Forward Plus")
-config/icon="res://icon.svg"
+config/icon="res://main-menu/UI/icon.svg"
 
-[display]
+[dotnet]
 
-window/size/viewport_width=320
-window/size/viewport_height=180
-window/size/mode=2
-window/stretch/mode="canvas_items"
+project/assembly_name="Main-Menu"
 
-[rendering]
-
-textures/canvas_textures/default_texture_filter=0
