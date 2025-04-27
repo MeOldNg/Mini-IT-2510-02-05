@@ -263,6 +263,8 @@ texture = ExtResource("1_jc1gh")
 [sub_resource type="TileSet" id="TileSet_my7n2"]
 custom_data_layer_0/name = "walkable"
 custom_data_layer_0/type = 1
+custom_data_layer_1/name = "blocked"
+custom_data_layer_1/type = 1
 sources/4 = SubResource("TileSetAtlasSource_lrhn5")
 
 [node name="Game" type="Node2D"]
