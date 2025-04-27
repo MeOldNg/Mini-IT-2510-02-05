@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://8w6ynuf77hpy"
-path="res://.godot/imported/Idle_Side-Sheet.png-f6683cc518a724524b60c31d4bddd8e5.ctex"
+path="res://.godot/imported/Idle_Side-Sheet.png-4fff23f509a96cbf858d18109f36eadc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Pixel Crawler - Free Pack/Entities/Characters/Body_A/Animations/Idle_Base/Idle_Side-Sheet.png"
-dest_files=["res://.godot/imported/Idle_Side-Sheet.png-f6683cc518a724524b60c31d4bddd8e5.ctex"]
+source_file="res://interstellar-apes/Pixel Crawler - Free Pack/Entities/Characters/Body_A/Animations/Idle_Base/Idle_Side-Sheet.png"
+dest_files=["res://.godot/imported/Idle_Side-Sheet.png-4fff23f509a96cbf858d18109f36eadc.ctex"]
 
 [params]
 

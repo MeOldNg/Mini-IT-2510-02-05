@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cutu6p6hcu6ip"
-path="res://.godot/imported/Special.png-75435f28b24e7d1fb80ad530796ef1c1.ctex"
+path="res://.godot/imported/Special.png-cd30c3a0ea2a83825b1da90c6b9f3acb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/1/Special.png"
-dest_files=["res://.godot/imported/Special.png-75435f28b24e7d1fb80ad530796ef1c1.ctex"]
+source_file="res://interstellar-apes/sprites/1/Special.png"
+dest_files=["res://.godot/imported/Special.png-cd30c3a0ea2a83825b1da90c6b9f3acb.ctex"]
 
 [params]
 

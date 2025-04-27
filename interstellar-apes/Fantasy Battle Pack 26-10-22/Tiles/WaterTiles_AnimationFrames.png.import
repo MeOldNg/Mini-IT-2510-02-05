@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cyknktxq42211"
-path="res://.godot/imported/WaterTiles_AnimationFrames.png-a88c26054f13df182736a714844b88c2.ctex"
+path="res://.godot/imported/WaterTiles_AnimationFrames.png-5eb6c27eb3736251eb4e777daecce8d2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Fantasy Battle Pack 26-10-22/Tiles/WaterTiles_AnimationFrames.png"
-dest_files=["res://.godot/imported/WaterTiles_AnimationFrames.png-a88c26054f13df182736a714844b88c2.ctex"]
+source_file="res://interstellar-apes/Fantasy Battle Pack 26-10-22/Tiles/WaterTiles_AnimationFrames.png"
+dest_files=["res://.godot/imported/WaterTiles_AnimationFrames.png-5eb6c27eb3736251eb4e777daecce8d2.ctex"]
 
 [params]
 

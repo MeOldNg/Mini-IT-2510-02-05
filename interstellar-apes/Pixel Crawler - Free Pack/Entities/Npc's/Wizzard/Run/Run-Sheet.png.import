@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://pr3j2rihkn1i"
-path="res://.godot/imported/Run-Sheet.png-eaec0750d2ea080e78d216ee16825886.ctex"
+path="res://.godot/imported/Run-Sheet.png-8c861c5e3954ff02e1bcdbfc4cdfc9b2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Pixel Crawler - Free Pack/Entities/Npc's/Wizzard/Run/Run-Sheet.png"
-dest_files=["res://.godot/imported/Run-Sheet.png-eaec0750d2ea080e78d216ee16825886.ctex"]
+source_file="res://interstellar-apes/Pixel Crawler - Free Pack/Entities/Npc's/Wizzard/Run/Run-Sheet.png"
+dest_files=["res://.godot/imported/Run-Sheet.png-8c861c5e3954ff02e1bcdbfc4cdfc9b2.ctex"]
 
 [params]
 
