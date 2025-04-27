@@ -58,6 +58,7 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_x2hje")
 text = "Audio"
 
 [node name="graphics_button" type="Button" parent="."]
+layout_mode = 0
 offset_left = 29.0
 offset_top = 171.0
 offset_right = 221.0
@@ -67,6 +68,7 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_x2hje")
 text = "Graphics"
 
 [node name="ingame_button" type="Button" parent="."]
+layout_mode = 0
 offset_left = 30.0
 offset_top = 282.0
 offset_right = 222.0

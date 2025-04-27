@@ -1,9 +1,9 @@
 [gd_scene load_steps=10 format=3 uid="uid://dkrewxtxg7v7j"]
 
-[ext_resource type="Script" uid="uid://dh5pqpc2d0l8x" path="res://main_menu.gd" id="1_holw3"]
-[ext_resource type="Theme" uid="uid://cqmt4obqoeysj" path="res://UI/panel_theme.tres" id="1_mue8r"]
-[ext_resource type="FontFile" uid="uid://dsrweoq0cyfyo" path="res://fonts/Gabarito,Special_Gothic_Expanded_One/Gabarito/static/Gabarito-Bold.ttf" id="2_holw3"]
-[ext_resource type="FontFile" uid="uid://b8dv01pfbt4xf" path="res://fonts/Gabarito,Special_Gothic_Expanded_One/Special_Gothic_Expanded_One/SpecialGothicExpandedOne-Regular.ttf" id="4_holw3"]
+[ext_resource type="Script" uid="uid://dh5pqpc2d0l8x" path="res://gamescene/main_menu.gd" id="1_1u3ec"]
+[ext_resource type="Theme" uid="uid://cqmt4obqoeysj" path="res://UI/panel_theme.tres" id="2_wt1xb"]
+[ext_resource type="FontFile" uid="uid://dsrweoq0cyfyo" path="res://fonts/Gabarito,Special_Gothic_Expanded_One/Gabarito/static/Gabarito-Bold.ttf" id="3_msiha"]
+[ext_resource type="FontFile" uid="uid://b8dv01pfbt4xf" path="res://fonts/Gabarito,Special_Gothic_Expanded_One/Special_Gothic_Expanded_One/SpecialGothicExpandedOne-Regular.ttf" id="4_0txg0"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_ikcl0"]
 
@@ -32,7 +32,7 @@ offset_right = -1.0
 offset_bottom = -1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_holw3")
+script = ExtResource("1_1u3ec")
 
 [node name="Panel" type="Panel" parent="."]
 material = SubResource("ShaderMaterial_ikcl0")
@@ -42,7 +42,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme = ExtResource("1_mue8r")
+theme = ExtResource("2_wt1xb")
 theme_override_styles/panel = SubResource("StyleBoxFlat_ikcl0")
 
 [node name="play_game_button" type="Button" parent="."]
@@ -58,7 +58,7 @@ offset_right = 85.5
 offset_bottom = 25.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_fonts/font = ExtResource("2_holw3")
+theme_override_fonts/font = ExtResource("3_msiha")
 theme_override_font_sizes/font_size = 30
 theme_override_styles/normal = SubResource("StyleBoxFlat_ljn4s")
 text = "Start Game"
@@ -77,7 +77,7 @@ offset_right = 85.5
 offset_bottom = 25.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_fonts/font = ExtResource("2_holw3")
+theme_override_fonts/font = ExtResource("3_msiha")
 theme_override_font_sizes/font_size = 30
 theme_override_styles/normal = SubResource("StyleBoxFlat_ljn4s")
 text = "Settings"
@@ -96,7 +96,7 @@ offset_right = 135.5
 offset_bottom = 64.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_fonts/font = ExtResource("2_holw3")
+theme_override_fonts/font = ExtResource("3_msiha")
 theme_override_font_sizes/font_size = 30
 theme_override_styles/normal = SubResource("StyleBoxFlat_w8h0y")
 text = "Quit Game"
@@ -107,7 +107,7 @@ offset_left = 194.0
 offset_top = 57.0
 offset_right = 1060.0
 offset_bottom = 168.0
-theme_override_fonts/normal_font = ExtResource("4_holw3")
+theme_override_fonts/normal_font = ExtResource("4_0txg0")
 theme_override_font_sizes/normal_font_size = 80
 theme_override_styles/normal = SubResource("StyleBoxFlat_5x8rc")
 text = "Interstellar Apes"
