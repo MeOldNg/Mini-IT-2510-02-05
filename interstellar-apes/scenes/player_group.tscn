@@ -1,0 +1,44 @@
+[gd_scene load_steps=6 format=3 uid="uid://be3idrb4eywur"]
+
+[ext_resource type="PackedScene" uid="uid://den1oqurchpcc" path="res://scenes/Turn_based.tscn" id="1_4wjx3"]
+[ext_resource type="Texture2D" uid="uid://cisfcgtra0q74" path="res://sprites/NPC character/RoboticApe_npc-removebg-preview (1)flip.png" id="2_lwax1"]
+[ext_resource type="Texture2D" uid="uid://bwpvctq56mr4v" path="res://sprites/Enemy/golem.png" id="3_8wicv"]
+[ext_resource type="Texture2D" uid="uid://bnkqq50lp83wu" path="res://sprites/NPC character/monkey_npc-removebg-preview flip.png" id="4_tewta"]
+[ext_resource type="Texture2D" uid="uid://6yug1qpqo3i1" path="res://sprites/Astronaut Player/Astronaut Player/Astranut player facing right.png" id="5_y2uwh"]
+
+[node name="PlayerGroup" type="Node2D"]
+
+[node name="player_main" parent="." instance=ExtResource("1_4wjx3")]
+position = Vector2(209, 164)
+
+[node name="Sprite2D" parent="player_main" index="0"]
+position = Vector2(-7, 221)
+texture = ExtResource("2_lwax1")
+
+[node name="player_main2" parent="." instance=ExtResource("1_4wjx3")]
+position = Vector2(209, 164)
+
+[node name="Sprite2D" parent="player_main2" index="0"]
+position = Vector2(1.49998, -12)
+scale = Vector2(2.28125, 2.875)
+texture = ExtResource("3_8wicv")
+
+[node name="player_main3" parent="." instance=ExtResource("1_4wjx3")]
+position = Vector2(209, 164)
+
+[node name="Sprite2D" parent="player_main3" index="0"]
+position = Vector2(-7, 97)
+texture = ExtResource("4_tewta")
+
+[node name="player_main4" parent="." instance=ExtResource("1_4wjx3")]
+position = Vector2(209, 164)
+
+[node name="Sprite2D" parent="player_main4" index="0"]
+position = Vector2(-10, 324)
+scale = Vector2(2.12903, 1.92857)
+texture = ExtResource("5_y2uwh")
+
+[editable path="player_main"]
+[editable path="player_main2"]
+[editable path="player_main3"]
+[editable path="player_main4"]
