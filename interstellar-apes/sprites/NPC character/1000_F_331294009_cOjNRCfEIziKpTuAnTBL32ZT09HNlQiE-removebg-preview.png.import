@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cqbmbtfw6cqsq"
-path="res://.godot/imported/1000_F_331294009_cOjNRCfEIziKpTuAnTBL32ZT09HNlQiE-removebg-preview.png-a3eac074760115ce345edd386e139915.ctex"
+path="res://.godot/imported/1000_F_331294009_cOjNRCfEIziKpTuAnTBL32ZT09HNlQiE-removebg-preview.png-1bc9719db9e0bf1d9d19ae8d6da0c469.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/NPC character/1000_F_331294009_cOjNRCfEIziKpTuAnTBL32ZT09HNlQiE-removebg-preview.png"
-dest_files=["res://.godot/imported/1000_F_331294009_cOjNRCfEIziKpTuAnTBL32ZT09HNlQiE-removebg-preview.png-a3eac074760115ce345edd386e139915.ctex"]
+source_file="res://interstellar-apes/sprites/NPC character/1000_F_331294009_cOjNRCfEIziKpTuAnTBL32ZT09HNlQiE-removebg-preview.png"
+dest_files=["res://.godot/imported/1000_F_331294009_cOjNRCfEIziKpTuAnTBL32ZT09HNlQiE-removebg-preview.png-1bc9719db9e0bf1d9d19ae8d6da0c469.ctex"]
 
 [params]
 

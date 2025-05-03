@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://be3hmlsr6ruyd"
-path="res://.godot/imported/regular_flower.png-2451d351a1ad427ff83c4473d2d56031.ctex"
+path="res://.godot/imported/regular_flower.png-10f550d91a2ff8b79f4148ffe22ad1e2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/Plants/regular_flower.png"
-dest_files=["res://.godot/imported/regular_flower.png-2451d351a1ad427ff83c4473d2d56031.ctex"]
+source_file="res://interstellar-apes/sprites/Plants/regular_flower.png"
+dest_files=["res://.godot/imported/regular_flower.png-10f550d91a2ff8b79f4148ffe22ad1e2.ctex"]
 
 [params]
 

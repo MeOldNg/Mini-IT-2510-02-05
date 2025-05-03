@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cot5o5hwac18l"
-path="res://.godot/imported/Death-Sheet.png-b1a04c76f7e9371f666ecefa3ed6a3b3.ctex"
+path="res://.godot/imported/Death-Sheet.png-4dacd7b6c5b3fa8c870fa0a61b7c7722.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Pixel Crawler - Free Pack/Entities/Mobs/Orc Crew/Orc - Rogue/Death/Death-Sheet.png"
-dest_files=["res://.godot/imported/Death-Sheet.png-b1a04c76f7e9371f666ecefa3ed6a3b3.ctex"]
+source_file="res://interstellar-apes/Pixel Crawler - Free Pack/Entities/Mobs/Orc Crew/Orc - Rogue/Death/Death-Sheet.png"
+dest_files=["res://.godot/imported/Death-Sheet.png-4dacd7b6c5b3fa8c870fa0a61b7c7722.ctex"]
 
 [params]
 

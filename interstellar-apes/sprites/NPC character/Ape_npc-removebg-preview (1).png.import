@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c0ngotb18yf2m"
-path="res://.godot/imported/Ape_npc-removebg-preview (1).png-ecf4207ad853e8f12ab0a7354bb7b341.ctex"
+path="res://.godot/imported/Ape_npc-removebg-preview (1).png-51bbc7d64500d229c00f958365ff0c38.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/NPC character/Ape_npc-removebg-preview (1).png"
-dest_files=["res://.godot/imported/Ape_npc-removebg-preview (1).png-ecf4207ad853e8f12ab0a7354bb7b341.ctex"]
+source_file="res://interstellar-apes/sprites/NPC character/Ape_npc-removebg-preview (1).png"
+dest_files=["res://.godot/imported/Ape_npc-removebg-preview (1).png-51bbc7d64500d229c00f958365ff0c38.ctex"]
 
 [params]
 

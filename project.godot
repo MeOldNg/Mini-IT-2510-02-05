@@ -10,13 +10,28 @@ config_version=5
 
 [application]
 
-
 config/name="Main-Menu"
 run/main_scene="uid://dkrewxtxg7v7j"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://main-menu/UI/icon.svg"
 
+[display]
+
+window/size/viewport_width=320
+window/size/viewport_height=180
+window/size/mode=2
+
 [dotnet]
 
 project/assembly_name="Main-Menu"
 
+[layer_names]
+
+2d_physics/layer_1="interactables"
+2d_physics/layer_2="walls"
+2d_physics/layer_3="NPC"
+2d_physics/layer_4="player"
+
+[rendering]
+
+textures/canvas_textures/default_texture_filter=0

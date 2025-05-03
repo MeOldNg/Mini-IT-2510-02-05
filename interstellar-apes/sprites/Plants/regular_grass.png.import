@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d10e1ja5p52bg"
-path="res://.godot/imported/regular_grass.png-b24af927981adb09fb4d077e9cf547b4.ctex"
+path="res://.godot/imported/regular_grass.png-1d06742265c92bec32f644ed01db9bb1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/Plants/regular_grass.png"
-dest_files=["res://.godot/imported/regular_grass.png-b24af927981adb09fb4d077e9cf547b4.ctex"]
+source_file="res://interstellar-apes/sprites/Plants/regular_grass.png"
+dest_files=["res://.godot/imported/regular_grass.png-1d06742265c92bec32f644ed01db9bb1.ctex"]
 
 [params]
 

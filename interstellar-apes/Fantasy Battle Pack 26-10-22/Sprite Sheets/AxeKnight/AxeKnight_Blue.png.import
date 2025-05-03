@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bi5uusicp8jqw"
-path="res://.godot/imported/AxeKnight_Blue.png-edd358aaefd8a3230ff1a92d194cf843.ctex"
+path="res://.godot/imported/AxeKnight_Blue.png-6e843511a3d17af87c7eb14416bb8b5d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Fantasy Battle Pack 26-10-22/Sprite Sheets/AxeKnight/AxeKnight_Blue.png"
-dest_files=["res://.godot/imported/AxeKnight_Blue.png-edd358aaefd8a3230ff1a92d194cf843.ctex"]
+source_file="res://interstellar-apes/Fantasy Battle Pack 26-10-22/Sprite Sheets/AxeKnight/AxeKnight_Blue.png"
+dest_files=["res://.godot/imported/AxeKnight_Blue.png-6e843511a3d17af87c7eb14416bb8b5d.ctex"]
 
 [params]
 

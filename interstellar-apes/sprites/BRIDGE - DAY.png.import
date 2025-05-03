@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dk0pamrt47v7q"
-path="res://.godot/imported/BRIDGE - DAY.png-11fde4150eaa420e5ee4800848c110db.ctex"
+path="res://.godot/imported/BRIDGE - DAY.png-71977468bcbecde5ca276537f3b5e3a0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/BRIDGE - DAY.png"
-dest_files=["res://.godot/imported/BRIDGE - DAY.png-11fde4150eaa420e5ee4800848c110db.ctex"]
+source_file="res://interstellar-apes/sprites/BRIDGE - DAY.png"
+dest_files=["res://.godot/imported/BRIDGE - DAY.png-71977468bcbecde5ca276537f3b5e3a0.ctex"]
 
 [params]
 

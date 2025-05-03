@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dqr8t8oihwjxi"
-path="res://.godot/imported/TILESET_VILLAGE_TOP_DOWN-removebg-preview.png-00fedc7b262a2d39f9a70748e4017f86.ctex"
+path="res://.godot/imported/TILESET_VILLAGE_TOP_DOWN-removebg-preview.png-e36bb9d0de1c30a80c376564a3c5d877.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/TILESET_VILLAGE_TOP_DOWN-removebg-preview.png"
-dest_files=["res://.godot/imported/TILESET_VILLAGE_TOP_DOWN-removebg-preview.png-00fedc7b262a2d39f9a70748e4017f86.ctex"]
+source_file="res://interstellar-apes/sprites/TILESET_VILLAGE_TOP_DOWN-removebg-preview.png"
+dest_files=["res://.godot/imported/TILESET_VILLAGE_TOP_DOWN-removebg-preview.png-e36bb9d0de1c30a80c376564a3c5d877.ctex"]
 
 [params]
 

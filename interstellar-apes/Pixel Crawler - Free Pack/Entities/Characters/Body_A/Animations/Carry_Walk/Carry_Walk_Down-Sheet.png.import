@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bhnf0bgt5wwgn"
-path="res://.godot/imported/Carry_Walk_Down-Sheet.png-d27fbc842e05a85328735434df9ca9e1.ctex"
+path="res://.godot/imported/Carry_Walk_Down-Sheet.png-22c5090f383c95601cce48618d96e5e3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Pixel Crawler - Free Pack/Entities/Characters/Body_A/Animations/Carry_Walk/Carry_Walk_Down-Sheet.png"
-dest_files=["res://.godot/imported/Carry_Walk_Down-Sheet.png-d27fbc842e05a85328735434df9ca9e1.ctex"]
+source_file="res://interstellar-apes/Pixel Crawler - Free Pack/Entities/Characters/Body_A/Animations/Carry_Walk/Carry_Walk_Down-Sheet.png"
+dest_files=["res://.godot/imported/Carry_Walk_Down-Sheet.png-22c5090f383c95601cce48618d96e5e3.ctex"]
 
 [params]
 

@@ -207,24 +207,6 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="Animation" id="Animation_f06oh"]
-resource_name = "idle_up"
-length = 0.8
-loop_mode = 1
-step = 0.2
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("AnimatedSprite2D:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.2, 0.4, 0.6),
-"transitions": PackedFloat32Array(1, 1, 1, 1),
-"update": 0,
-"values": [0, 1, 2, 3]
-}
-
 [sub_resource type="Animation" id="Animation_bu512"]
 length = 0.001
 tracks/0/type = "value"
@@ -258,6 +240,24 @@ tracks/0/keys = {
 "values": [0, 1, 2]
 }
 
+[sub_resource type="Animation" id="Animation_f06oh"]
+resource_name = "idle_up"
+length = 0.8
+loop_mode = 1
+step = 0.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [0, 1, 2, 3]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_8sk7w"]
 _data = {
 &"RESET": SubResource("Animation_bu512"),
@@ -266,6 +266,8 @@ _data = {
 }
 
 [node name="overworld_player" type="CharacterBody2D"]
+collision_layer = 8
+collision_mask = 6
 script = ExtResource("1_bi1q3")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -278,7 +280,7 @@ hit_from_inside = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_rsov6")
-animation = &"idle_down"
+animation = &"walk_up"
 frame = 1
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://6yug1qpqo3i1"
-path="res://.godot/imported/Astranut player facing right.png-85c41a53f14a88634fa42cf1ced8a8fc.ctex"
+path="res://.godot/imported/Astranut player facing right.png-794659e712ee640c29f920ff4e6d4708.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/Astronaut Player/Astronaut Player/Astranut player facing right.png"
-dest_files=["res://.godot/imported/Astranut player facing right.png-85c41a53f14a88634fa42cf1ced8a8fc.ctex"]
+source_file="res://interstellar-apes/sprites/Astronaut Player/Astronaut Player/Astranut player facing right.png"
+dest_files=["res://.godot/imported/Astranut player facing right.png-794659e712ee640c29f920ff4e6d4708.ctex"]
 
 [params]
 

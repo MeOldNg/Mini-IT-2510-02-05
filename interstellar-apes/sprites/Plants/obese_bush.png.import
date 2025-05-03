@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dshnpogd1fbt1"
-path="res://.godot/imported/obese_bush.png-71208285dde8552f059f42bc10762006.ctex"
+path="res://.godot/imported/obese_bush.png-2fbc17aefb13952336661d22a7bbad88.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/Plants/obese_bush.png"
-dest_files=["res://.godot/imported/obese_bush.png-71208285dde8552f059f42bc10762006.ctex"]
+source_file="res://interstellar-apes/sprites/Plants/obese_bush.png"
+dest_files=["res://.godot/imported/obese_bush.png-2fbc17aefb13952336661d22a7bbad88.ctex"]
 
 [params]
 
