@@ -1,7 +1,16 @@
-[gd_scene load_steps=6 format=3 uid="uid://c4wjtvk7x7hle"]
+[gd_scene load_steps=6 format=3 uid="uid://dyyh4iw6p5yee"]
 
-[ext_resource type="Script" uid="uid://bmkkyg6qv0twq" path="res://main-menu/settingsscene/settings.gd" id="1_euu0m"]
 [ext_resource type="Theme" uid="uid://cqmt4obqoeysj" path="res://main-menu/UI/panel_theme.tres" id="1_y0vyk"]
+
+[sub_resource type="GDScript" id="GDScript_6evjr"]
+script/source = "extends Control
+
+func _on_audio_button_pressed() -> void:
+	get_tree().change_scene_to_file(\"res://main-menu/settingsscene/audio_settings.tscn\")
+
+func _on_back_button_pressed() -> void:
+	get_tree().change_scene_to_file(\"res://main-menu/mainmenuscene/main-menu.tscn\")
+"
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ikcl0"]
 bg_color = Color(0.657202, 0.524155, 0.455668, 0.941176)
@@ -23,7 +32,7 @@ offset_right = -1.0
 offset_bottom = -1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_euu0m")
+script = SubResource("GDScript_6evjr")
 
 [node name="Panel" type="Panel" parent="."]
 layout_mode = 1

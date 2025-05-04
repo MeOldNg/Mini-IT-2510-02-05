@@ -16,6 +16,10 @@ run/main_scene="uid://dkrewxtxg7v7j"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://main-menu/UI/icon.svg"
 
+[autoload]
+
+MainMenuBGM="*res://main-menu/mainmenuscene/main-menu-bgm.tscn"
+
 [dotnet]
 
 project/assembly_name="Main-Menu"
