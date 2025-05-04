@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://dv8xmyhfeckvh"]
 
-[ext_resource type="Script" uid="uid://by58sbrufhhh" path="res://topdown_2.gd" id="1_bi1q3"]
-[ext_resource type="Texture2D" uid="uid://bsp8mrt6c2pnf" path="res://Fantasy Battle Pack 26-10-22/Sprite Sheets/Thief/Thief_Blue1.png" id="1_edyna"]
+[ext_resource type="Script" uid="uid://by58sbrufhhh" path="res://interstellar-apes/Pixel Crawler - Free Pack/overworld systems/topdown_2.gd" id="1_bi1q3"]
+[ext_resource type="Texture2D" uid="uid://bsp8mrt6c2pnf" path="res://interstellar-apes/Object_pixel/interstellar-apes-normal/Fantasy Battle Pack 26-10-22/Sprite Sheets/Thief/Thief_Blue1.png" id="1_edyna"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_bi1q3"]
 atlas = ExtResource("1_edyna")

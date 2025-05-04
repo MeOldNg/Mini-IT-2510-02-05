@@ -1,0 +1,20 @@
+[gd_scene load_steps=5 format=3 uid="uid://dh0mv1mlq3iby"]
+
+[ext_resource type="Script" uid="uid://dfn1ywbmhlyte" path="res://interstellar-apes/Pixel Crawler - Free Pack/overworld systems/topdown.gd" id="1_87lbe"]
+[ext_resource type="Texture2D" uid="uid://bsp8mrt6c2pnf" path="res://interstellar-apes/Object_pixel/interstellar-apes-normal/Fantasy Battle Pack 26-10-22/Sprite Sheets/Thief/Thief_Blue1.png" id="2_87lbe"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_87lbe"]
+size = Vector2(32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wvhq2"]
+atlas = ExtResource("2_87lbe")
+region = Rect2(0, 192, 32, 32)
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+script = ExtResource("1_87lbe")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_87lbe")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = SubResource("AtlasTexture_wvhq2")
