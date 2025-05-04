@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://dv8xmyhfeckvh"]
+
+[ext_resource type="Script" uid="uid://by58sbrufhhh" path="res://topdown_2.gd" id="1_bi1q3"]
+[ext_resource type="Texture2D" uid="uid://bsp8mrt6c2pnf" path="res://Fantasy Battle Pack 26-10-22/Sprite Sheets/Thief/Thief_Blue1.png" id="1_edyna"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bi1q3"]
+atlas = ExtResource("1_edyna")
+region = Rect2(0, 160, 32, 32)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_i7mkm"]
+size = Vector2(16, 16)
+
+[node name="Topdown2" type="CharacterBody2D"]
+script = ExtResource("1_bi1q3")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = SubResource("AtlasTexture_bi1q3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_i7mkm")
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+z_index = 5
+target_position = Vector2(0, 16)
+hit_from_inside = true
+collide_with_areas = true
