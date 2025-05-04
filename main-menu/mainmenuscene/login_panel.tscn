@@ -1,0 +1,69 @@
+[gd_scene load_steps=2 format=3 uid="uid://bu66wgn32pr0b"]
+
+[ext_resource type="Script" uid="uid://bnjync7yrbtg1" path="res://main-menu/mainmenuscene/script/login_panel.gd" id="1_ro0e6"]
+
+[node name="LoginPanel" type="Panel"]
+offset_left = 51.0
+offset_top = 145.0
+offset_right = 535.0
+offset_bottom = 353.0
+script = ExtResource("1_ro0e6")
+
+[node name="usernametext" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 29.0
+offset_right = 188.0
+offset_bottom = 69.0
+text = "Username:"
+
+[node name="passwordtext" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 22.0
+offset_top = 79.0
+offset_right = 190.0
+offset_bottom = 119.0
+text = "Password:"
+
+[node name="UsernameEnter" type="TextEdit" parent="."]
+layout_mode = 0
+offset_left = 121.0
+offset_top = 23.0
+offset_right = 390.0
+offset_bottom = 62.0
+
+[node name="PasswordEnter" type="TextEdit" parent="."]
+layout_mode = 0
+offset_left = 121.0
+offset_top = 76.0
+offset_right = 389.0
+offset_bottom = 115.0
+
+[node name="return" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 170.0
+offset_right = 101.0
+offset_bottom = 206.0
+text = "Return"
+
+[node name="login" type="Button" parent="."]
+layout_mode = 0
+offset_left = 384.0
+offset_top = 170.0
+offset_right = 484.0
+offset_bottom = 206.0
+text = "Login"
+
+[node name="signin" type="Button" parent="."]
+layout_mode = 0
+offset_left = 384.0
+offset_top = 135.0
+offset_right = 484.0
+offset_bottom = 171.0
+text = "Signin
+"
+
+[connection signal="button_down" from="return" to="." method="_on_return_button_down"]
+[connection signal="button_down" from="login" to="." method="_on_login_button_down"]
+[connection signal="button_down" from="signin" to="." method="_on_signin_button_down"]
