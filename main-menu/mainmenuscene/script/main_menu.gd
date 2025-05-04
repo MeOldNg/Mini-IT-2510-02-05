@@ -1,7 +1,7 @@
 extends Control
 
 func _on_play_game_button_pressed():
-	get_tree().change_scene_to_file("res://main-menu/mainmenuscene/testing_game.tscn")
+	get_tree().change_scene_to_file("res://Object_pixel/interstellar-apes-normal/scenes/game.tscn")
 
 func _on_settings_button_pressed():
 	get_tree().change_scene_to_file("res://main-menu/settingsscene/audio_settings.tscn")

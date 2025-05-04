@@ -1,6 +1,6 @@
 [gd_scene load_steps=8 format=3 uid="uid://b2skup7s2fj5c"]
 
-[ext_resource type="Script" uid="uid://cse33spg8yjb5" path="res://main-menu/settingsscene/ingame_settings.gd" id="1_7x601"]
+[ext_resource type="Script" path="res://main-menu/settingsscene/ingame_settings.gd" id="1_7x601"]
 [ext_resource type="Theme" uid="uid://cqmt4obqoeysj" path="res://main-menu/UI/panel_theme.tres" id="2_ee7ve"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ikcl0"]
