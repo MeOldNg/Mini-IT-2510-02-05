@@ -11,7 +11,7 @@ func on_interact():
 	open = !open
 	if open == false:
 		sprite_2d.modulate = Color("red")
-		set_collision_layer_value(3, true)
+		self.set_collision_layer_value(1, true)
 		print("CLOSED")
 		print("Collision layer 1 is: %s" % get_collision_layer_value(1))
 		print("Collision layer 2 is: %s" % get_collision_layer_value(2))
@@ -20,7 +20,7 @@ func on_interact():
 	
 	if open == true:
 		sprite_2d.modulate = Color("green")
-		set_collision_layer_value(3, false)
+		self.set_collision_layer_value(1, false)
 		print("OPENED")
 		print("Collision layer 1 is: %s" % get_collision_layer_value(1))
 		print("Collision layer 2 is: %s" % get_collision_layer_value(2))

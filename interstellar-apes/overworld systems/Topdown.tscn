@@ -266,7 +266,6 @@ _data = {
 }
 
 [node name="overworld_player" type="CharacterBody2D"]
-collision_mask = 0
 script = ExtResource("1_bi1q3")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -275,7 +274,7 @@ shape = SubResource("RectangleShape2D_i7mkm")
 [node name="RayCast2D" type="RayCast2D" parent="."]
 z_index = 5
 target_position = Vector2(0, 16)
-collision_mask = 8
+collision_mask = 2
 hit_from_inside = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
