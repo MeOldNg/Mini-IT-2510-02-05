@@ -1,0 +1,23 @@
+[gd_scene load_steps=5 format=3 uid="uid://bvm0h4sstjker"]
+
+[ext_resource type="Script" uid="uid://c7spxl7i8ikqd" path="res://interstellar-apes/overworld systems/door.gd" id="1_r5yiw"]
+[ext_resource type="Texture2D" uid="uid://21bnkennaf2t" path="res://interstellar-apes/Fantasy Battle Pack 26-10-22/Tiles/FullTileset.png" id="1_rgxmm"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_r5yiw"]
+size = Vector2(16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jfpoh"]
+atlas = ExtResource("1_rgxmm")
+region = Rect2(176, 176, 16, 16)
+
+[node name="StaticBody2D" type="StaticBody2D"]
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("1_r5yiw")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_r5yiw")
+one_way_collision_margin = 0.0
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = SubResource("AtlasTexture_jfpoh")

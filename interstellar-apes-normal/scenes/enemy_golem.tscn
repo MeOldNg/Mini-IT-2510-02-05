@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://bnd2iqg56j8pv"]
+[gd_scene load_steps=4 format=3 uid="uid://beru6lv7sbd7o"]
 
 [ext_resource type="Script" uid="uid://61yqpi8gj60" path="res://scripts/enemy_golem.gd" id="1_n15nm"]
 [ext_resource type="Texture2D" uid="uid://bwpvctq56mr4v" path="res://sprites/Enemy/golem.png" id="2_0x6oc"]
