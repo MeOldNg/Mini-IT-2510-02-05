@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c82xydy4p7qkn"
-path="res://.godot/imported/safari_grass.png-b8139a84daa4e4bcfec32c830280fc19.ctex"
+path="res://.godot/imported/safari_grass.png-737c94703103625f48dfea3380348bf8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/Plants/safari_grass.png"
-dest_files=["res://.godot/imported/safari_grass.png-b8139a84daa4e4bcfec32c830280fc19.ctex"]
+source_file="res://interstellar-apes/sprites/Plants/safari_grass.png"
+dest_files=["res://.godot/imported/safari_grass.png-737c94703103625f48dfea3380348bf8.ctex"]
 
 [params]
 

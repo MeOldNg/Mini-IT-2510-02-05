@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cy2cwwolydn78"
-path="res://.godot/imported/normal_tree.png-48d16d4ab64149179fdee04ebc045ecf.ctex"
+path="res://.godot/imported/normal_tree.png-e0ed7f70b3879fd6896fe7619bbf075d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/Plants/normal_tree.png"
-dest_files=["res://.godot/imported/normal_tree.png-48d16d4ab64149179fdee04ebc045ecf.ctex"]
+source_file="res://interstellar-apes/sprites/Plants/normal_tree.png"
+dest_files=["res://.godot/imported/normal_tree.png-e0ed7f70b3879fd6896fe7619bbf075d.ctex"]
 
 [params]
 

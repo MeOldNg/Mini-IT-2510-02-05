@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b082xs1xpu6er"
-path="res://.godot/imported/tick_bush.png-e42692f48cd1e316066bc7c4a8f21ac4.ctex"
+path="res://.godot/imported/tick_bush.png-8ad42066af68d008d48f360324466945.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/Plants/tick_bush.png"
-dest_files=["res://.godot/imported/tick_bush.png-e42692f48cd1e316066bc7c4a8f21ac4.ctex"]
+source_file="res://interstellar-apes/sprites/Plants/tick_bush.png"
+dest_files=["res://.godot/imported/tick_bush.png-8ad42066af68d008d48f360324466945.ctex"]
 
 [params]
 

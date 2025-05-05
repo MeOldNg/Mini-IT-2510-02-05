@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dmsppjw52wlk4"
-path="res://.godot/imported/ball_bush.png-ff4a30f1e3f95255bcbfea82dfe8039d.ctex"
+path="res://.godot/imported/ball_bush.png-41a3145bdc5de302a70c8b5e19c1d35f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/Plants/ball_bush.png"
-dest_files=["res://.godot/imported/ball_bush.png-ff4a30f1e3f95255bcbfea82dfe8039d.ctex"]
+source_file="res://interstellar-apes/sprites/Plants/ball_bush.png"
+dest_files=["res://.godot/imported/ball_bush.png-41a3145bdc5de302a70c8b5e19c1d35f.ctex"]
 
 [params]
 
