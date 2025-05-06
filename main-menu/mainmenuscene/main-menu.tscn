@@ -1,9 +1,10 @@
-[gd_scene load_steps=10 format=3 uid="uid://dkrewxtxg7v7j"]
+[gd_scene load_steps=11 format=3 uid="uid://dkrewxtxg7v7j"]
 
-[ext_resource type="Script" uid="uid://dh5pqpc2d0l8x" path="res://main-menu/mainmenuscene/main_menu.gd" id="1_1u3ec"]
+[ext_resource type="Script" uid="uid://dh5pqpc2d0l8x" path="res://main-menu/mainmenuscene/script/main_menu.gd" id="1_1u3ec"]
 [ext_resource type="Theme" uid="uid://cqmt4obqoeysj" path="res://main-menu/UI/panel_theme.tres" id="2_wt1xb"]
-[ext_resource type="FontFile" uid="uid://dsrweoq0cyfyo" path="res://main-menu/fonts/Gabarito,Special_Gothic_Expanded_One/Gabarito/static/Gabarito-Bold.ttf" id="3_msiha"]
-[ext_resource type="FontFile" uid="uid://b8dv01pfbt4xf" path="res://main-menu/fonts/Gabarito,Special_Gothic_Expanded_One/Special_Gothic_Expanded_One/SpecialGothicExpandedOne-Regular.ttf" id="4_0txg0"]
+[ext_resource type="Texture2D" uid="uid://rt8qs3bs62m3" path="res://main-menu/UI/background.png" id="3_d8w1o"]
+[ext_resource type="FontFile" uid="uid://cq850sbmqa2uk" path="res://main-menu/fonts/Jersey_25/Jersey25-Regular.ttf" id="4_d8w1o"]
+[ext_resource type="FontFile" uid="uid://cs536msat0kkd" path="res://main-menu/fonts/Jersey_15/Jersey15-Regular.ttf" id="5_dvqgk"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_ikcl0"]
 
@@ -11,15 +12,17 @@
 bg_color = Color(0.910914, 0.920267, 0.952605, 0.941176)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ljn4s"]
-bg_color = Color(0.0728287, 0.649117, 0.888318, 1)
+bg_color = Color(0.770893, 0.801256, 0.983626, 1)
 corner_radius_bottom_right = 25
+corner_detail = 18
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_w8h0y"]
 bg_color = Color(0.776108, 0, 0.242115, 1)
 corner_radius_bottom_left = 25
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5x8rc"]
-bg_color = Color(0.87451, 0.882353, 0.913725, 1)
+bg_color = Color(0.318526, 0.634612, 0.84207, 1)
+draw_center = false
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -37,29 +40,39 @@ script = ExtResource("1_1u3ec")
 [node name="Panel" type="Panel" parent="."]
 material = SubResource("ShaderMaterial_ikcl0")
 layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
+anchors_preset = -1
+anchor_right = 1.00941
+anchor_bottom = 1.01093
+offset_top = 3.0
+offset_right = 0.159912
+offset_bottom = 2.91998
 grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("2_wt1xb")
 theme_override_styles/panel = SubResource("StyleBoxFlat_ikcl0")
+metadata/_edit_use_anchors_ = true
+
+[node name="Background" type="Sprite2D" parent="Panel"]
+position = Vector2(584.25, 331.75)
+scale = Vector2(0.608073, 0.613426)
+texture = ExtResource("3_d8w1o")
 
 [node name="play_game_button" type="Button" parent="."]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.749566
-anchor_top = 0.498457
-anchor_right = 0.812066
-anchor_bottom = 0.541667
-offset_left = -85.5
-offset_top = -25.0
-offset_right = 85.5
+anchor_left = 0.610262
+anchor_top = 0.650543
+anchor_right = 0.603318
+anchor_bottom = 0.651235
+offset_left = -34.022
+offset_top = -25.552
+offset_right = 196.978
 offset_bottom = 25.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_fonts/font = ExtResource("3_msiha")
-theme_override_font_sizes/font_size = 30
+theme_override_colors/font_color = Color(0.123506, 0.366944, 0.407805, 1)
+theme_override_fonts/font = ExtResource("4_d8w1o")
+theme_override_font_sizes/font_size = 50
 theme_override_styles/normal = SubResource("StyleBoxFlat_ljn4s")
 text = "Start Game"
 metadata/_edit_use_anchors_ = true
@@ -67,18 +80,19 @@ metadata/_edit_use_anchors_ = true
 [node name="settings_button" type="Button" parent="."]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.749566
-anchor_top = 0.640432
-anchor_right = 0.811198
-anchor_bottom = 0.694444
+anchor_left = 0.65408
+anchor_top = 0.746
+anchor_right = 0.692
+anchor_bottom = 0.746914
 offset_left = -85.5
-offset_top = -25.0
-offset_right = 85.5
+offset_top = -25.408
+offset_right = 93.816
 offset_bottom = 25.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_fonts/font = ExtResource("3_msiha")
-theme_override_font_sizes/font_size = 30
+theme_override_colors/font_color = Color(0.0641819, 0.381346, 0.381345, 1)
+theme_override_fonts/font = ExtResource("4_d8w1o")
+theme_override_font_sizes/font_size = 50
 theme_override_styles/normal = SubResource("StyleBoxFlat_ljn4s")
 text = "Settings"
 metadata/_edit_use_anchors_ = true
@@ -90,26 +104,40 @@ anchor_left = 0.766059
 anchor_top = 0.796296
 anchor_right = 0.766059
 anchor_bottom = 0.796296
-offset_left = -104.5
-offset_top = -27.0
-offset_right = 135.5
-offset_bottom = 64.0
+offset_left = -215.5
+offset_top = 5.00018
+offset_right = 8.50006
+offset_bottom = 59.0002
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_fonts/font = ExtResource("3_msiha")
-theme_override_font_sizes/font_size = 30
+theme_override_fonts/font = ExtResource("4_d8w1o")
+theme_override_font_sizes/font_size = 50
 theme_override_styles/normal = SubResource("StyleBoxFlat_w8h0y")
 text = "Quit Game"
 
+[node name="RichTextLabel2" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 313.0
+offset_top = 183.0
+offset_right = 1179.0
+offset_bottom = 327.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("5_dvqgk")
+theme_override_font_sizes/normal_font_size = 90
+theme_override_styles/normal = SubResource("StyleBoxFlat_5x8rc")
+bbcode_enabled = true
+text = "Interstellar Apes"
+
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
 layout_mode = 0
-offset_left = 194.0
-offset_top = 57.0
-offset_right = 1060.0
-offset_bottom = 168.0
-theme_override_fonts/normal_font = ExtResource("4_0txg0")
-theme_override_font_sizes/normal_font_size = 80
+offset_left = 309.0
+offset_top = 182.0
+offset_right = 1152.0
+offset_bottom = 306.0
+theme_override_fonts/normal_font = ExtResource("5_dvqgk")
+theme_override_font_sizes/normal_font_size = 90
 theme_override_styles/normal = SubResource("StyleBoxFlat_5x8rc")
+bbcode_enabled = true
 text = "Interstellar Apes"
 
 [connection signal="pressed" from="play_game_button" to="." method="_on_play_game_button_pressed"]

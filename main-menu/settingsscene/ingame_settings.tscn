@@ -1,18 +1,25 @@
-[gd_scene load_steps=7 format=3 uid="uid://djmd0it5k52ob"]
+[gd_scene load_steps=8 format=3 uid="uid://b2skup7s2fj5c"]
 
-[ext_resource type="Theme" uid="uid://cqmt4obqoeysj" path="res://main-menu/UI/panel_theme.tres" id="1_lemuw"]
-[ext_resource type="Script" uid="uid://dlxly0ly0n0gx" path="res://main-menu/settingsscene/script/audio_settings.gd" id="1_pivgr"]
+[ext_resource type="Script" path="res://main-menu/settingsscene/ingame_settings.gd" id="1_7x601"]
+[ext_resource type="Theme" uid="uid://cqmt4obqoeysj" path="res://main-menu/UI/panel_theme.tres" id="2_ee7ve"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ikcl0"]
-bg_color = Color(0.461219, 0.720285, 0.900154, 1)
+bg_color = Color(0.39662, 0.554753, 0.834714, 0.941176)
+
+[sub_resource type="GDScript" id="GDScript_ee7ve"]
+script/source = "extends Control
+
+
+"
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_x2hje"]
-bg_color = Color(0.462745, 0.721569, 0.898039, 1)
-
-[sub_resource type="Theme" id="Theme_kxxe0"]
+bg_color = Color(0.392157, 0.541176, 0.803922, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bndh4"]
-bg_color = Color(0.462745, 0.721569, 0.898039, 1)
+bg_color = Color(0.392157, 0.541176, 0.803922, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7x601"]
+bg_color = Color(0.392157, 0.541176, 0.803922, 1)
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -25,7 +32,7 @@ offset_right = -1.0
 offset_bottom = -1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_pivgr")
+script = ExtResource("1_7x601")
 
 [node name="Panel" type="Panel" parent="."]
 layout_mode = 1
@@ -40,8 +47,9 @@ offset_right = 577.5
 offset_bottom = 325.0
 grow_horizontal = 2
 grow_vertical = 2
-theme = ExtResource("1_lemuw")
+theme = ExtResource("2_ee7ve")
 theme_override_styles/panel = SubResource("StyleBoxFlat_ikcl0")
+script = SubResource("GDScript_ee7ve")
 metadata/_edit_use_anchors_ = true
 
 [node name="Line2D" type="Line2D" parent="."]
@@ -79,43 +87,6 @@ theme_override_font_sizes/font_size = 30
 theme_override_styles/normal = SubResource("StyleBoxFlat_x2hje")
 text = "Ingame"
 
-[node name="master_volume_slider" type="HSlider" parent="."]
-layout_mode = 0
-offset_left = 304.0
-offset_top = 110.0
-offset_right = 949.0
-offset_bottom = 126.0
-theme = SubResource("Theme_kxxe0")
-max_value = 1.5
-step = 0.001
-
-[node name="music_volume_slider" type="HSlider" parent="."]
-layout_mode = 0
-offset_left = 297.0
-offset_top = 227.0
-offset_right = 942.0
-offset_bottom = 243.0
-max_value = 1.5
-step = 0.001
-
-[node name="RichTextLabel" type="RichTextLabel" parent="."]
-layout_mode = 0
-offset_left = 300.0
-offset_top = 56.0
-offset_right = 584.0
-offset_bottom = 96.0
-theme_override_font_sizes/normal_font_size = 30
-text = "Master Volume"
-
-[node name="RichTextLabel2" type="RichTextLabel" parent="."]
-layout_mode = 0
-offset_left = 302.0
-offset_top = 176.0
-offset_right = 586.0
-offset_bottom = 216.0
-theme_override_font_sizes/normal_font_size = 30
-text = "Music Volume"
-
 [node name="back_button" type="Button" parent="."]
 layout_mode = 0
 offset_left = -20.0
@@ -126,8 +97,17 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_bndh4")
 text = "Back
 "
 
+[node name="CheckButton" type="CheckButton" parent="."]
+layout_mode = 0
+offset_left = 289.0
+offset_top = 75.0
+offset_right = 463.0
+offset_bottom = 158.0
+theme_override_font_sizes/font_size = 28
+theme_override_styles/normal = SubResource("StyleBoxFlat_7x601")
+text = "Fullscreen"
+
+[connection signal="pressed" from="audio_button" to="." method="_on_audio_button_pressed"]
 [connection signal="pressed" from="graphics_button" to="." method="_on_graphics_button_pressed"]
-[connection signal="pressed" from="ingame_button" to="." method="_on_ingame_button_pressed"]
-[connection signal="value_changed" from="master_volume_slider" to="." method="_on_master_volume_slider_value_changed"]
-[connection signal="value_changed" from="music_volume_slider" to="." method="_on_music_volume_slider_value_changed"]
 [connection signal="pressed" from="back_button" to="." method="_on_back_button_pressed"]
+[connection signal="toggled" from="CheckButton" to="." method="_on_check_button_toggled"]
