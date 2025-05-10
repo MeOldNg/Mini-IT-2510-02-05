@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://dpauqsjp1x1t0"]
+
+[ext_resource type="Texture2D" uid="uid://dln2qd86tg8v5" path="res://sprites/background battlescene1.png" id="1_kinr6"]
+[ext_resource type="PackedScene" uid="uid://bsd7cdmjk50kp" path="res://scenes/enemy_group.tscn" id="2_rca61"]
+[ext_resource type="PackedScene" uid="uid://be3idrb4eywur" path="res://scenes/player_group.tscn" id="3_rca61"]
+
+[node name="BattleScene" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = -3.0
+offset_top = -6.0
+offset_right = 1149.0
+offset_bottom = 649.0
+texture = ExtResource("1_kinr6")
+expand_mode = 1
+
+[node name="Enemy Group" parent="." instance=ExtResource("2_rca61")]
+position = Vector2(28, 79)
+
+[node name="PlayerGroup" parent="." instance=ExtResource("3_rca61")]
+position = Vector2(683, 59)

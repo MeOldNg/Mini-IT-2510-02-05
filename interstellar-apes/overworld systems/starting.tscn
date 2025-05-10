@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=4 uid="uid://b7lqt6j3slae1"]
+[gd_scene load_steps=7 format=4 uid="uid://b7lqt6j3slae1"]
 
 [ext_resource type="Texture2D" uid="uid://21bnkennaf2t" path="res://interstellar-apes/Fantasy Battle Pack 26-10-22/Tiles/FullTileset.png" id="1_jc1gh"]
-[ext_resource type="PackedScene" uid="uid://cfglxg5ajhgpg" path="res://interstellar-apes/overworld systems/topdown.tscn" id="2_056k6"]
+[ext_resource type="PackedScene" uid="uid://cfglxg5ajhgpg" path="res://interstellar-apes/overworld systems/Topdown.tscn" id="2_056k6"]
 [ext_resource type="PackedScene" uid="uid://btvbw1l2er5wu" path="res://interstellar-apes/overworld systems/interactable.tscn" id="3_056k6"]
+[ext_resource type="PackedScene" uid="uid://bvm0h4sstjker" path="res://interstellar-apes/overworld systems/door.tscn" id="4_scrwo"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lrhn5"]
 texture = ExtResource("1_jc1gh")
@@ -274,7 +275,13 @@ tile_map_data = PackedByteArray("AAAAAAAABAAMAAIAAAAAAAEABAAMAAIAAAAAAAIABAAMAAI
 tile_set = SubResource("TileSet_my7n2")
 
 [node name="Topdown2" parent="." instance=ExtResource("2_056k6")]
-position = Vector2(24, 24)
+position = Vector2(72, 24)
+
+[node name="Camera2D" type="Camera2D" parent="Topdown2"]
+zoom = Vector2(5, 5)
 
 [node name="interactable" parent="." instance=ExtResource("3_056k6")]
 position = Vector2(72, 72)
+
+[node name="door" parent="." instance=ExtResource("4_scrwo")]
+position = Vector2(88, 72)

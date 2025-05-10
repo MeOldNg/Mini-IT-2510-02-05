@@ -15,6 +15,12 @@ run/main_scene="uid://dkrewxtxg7v7j"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://main-menu/UI/icon.svg"
 
+[display]
+
+window/size/viewport_width=320
+window/size/viewport_height=180
+window/size/mode=2
+
 [dotnet]
 
 project/assembly_name="Main-Menu"

@@ -93,7 +93,7 @@ func move(direction: Vector2):
 			#print("walkies")
 			target_position += direction * grid_size
 			moving = true
-	print(ray_cast_2d.target_position)
+	#print(ray_cast_2d.target_position)
 
 #credits:
 #https://www.reddit.com/r/godot/comments/13qgcwc/hiw_to_make_grid_based_movement/
