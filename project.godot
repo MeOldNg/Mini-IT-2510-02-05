@@ -10,7 +10,6 @@ config_version=5
 
 [application]
 
-
 config/name="Main-Menu"
 run/main_scene="uid://dkrewxtxg7v7j"
 config/features=PackedStringArray("4.4", "Forward Plus")
@@ -19,4 +18,3 @@ config/icon="res://main-menu/UI/icon.svg"
 [dotnet]
 
 project/assembly_name="Main-Menu"
-
