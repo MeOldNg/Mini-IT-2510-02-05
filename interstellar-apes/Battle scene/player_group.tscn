@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://xwnewfddahlc"]
+
+[ext_resource type="PackedScene" uid="uid://dgqlf7gxcxbnm" path="res://interstellar-apes/Battle scene/enemy.tscn" id="1_esrs1"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_wutpg"]
+load_path = "res://.godot/imported/Ape_npc-removebg-preview.png-26d26e55203ea755b49fcc75532469e6.ctex"
+
+[node name="PlayerGroup" type="Node2D"]
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("1_esrs1")]
+
+[node name="Sprite2D" parent="CharacterBody2D" index="0"]
+texture = SubResource("CompressedTexture2D_wutpg")
+
+[editable path="CharacterBody2D"]
