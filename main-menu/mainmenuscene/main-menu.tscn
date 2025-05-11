@@ -53,17 +53,18 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_ikcl0")
 metadata/_edit_use_anchors_ = true
 
 [node name="Background" type="Sprite2D" parent="Panel"]
-position = Vector2(584.25, 331.75)
+position = Vector2(580, 326)
 scale = Vector2(0.608073, 0.613426)
 texture = ExtResource("3_d8w1o")
+metadata/_edit_lock_ = true
 
 [node name="play_game_button" type="Button" parent="."]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.610262
-anchor_top = 0.650543
-anchor_right = 0.603318
-anchor_bottom = 0.651235
+anchor_left = 0.607658
+anchor_top = 0.635111
+anchor_right = 0.607658
+anchor_bottom = 0.635803
 offset_left = -34.022
 offset_top = -25.552
 offset_right = 196.978
@@ -80,10 +81,10 @@ metadata/_edit_use_anchors_ = true
 [node name="settings_button" type="Button" parent="."]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.65408
-anchor_top = 0.746
-anchor_right = 0.692
-anchor_bottom = 0.746914
+anchor_left = 0.653212
+anchor_top = 0.721309
+anchor_right = 0.695472
+anchor_bottom = 0.723765
 offset_left = -85.5
 offset_top = -25.408
 offset_right = 93.816
@@ -104,10 +105,10 @@ anchor_left = 0.766059
 anchor_top = 0.796296
 anchor_right = 0.766059
 anchor_bottom = 0.796296
-offset_left = -215.5
-offset_top = 5.00018
-offset_right = 8.50006
-offset_bottom = 59.0002
+offset_left = -216.5
+offset_top = -15.9998
+offset_right = 11.5001
+offset_bottom = 38.0002
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_fonts/font = ExtResource("4_d8w1o")
