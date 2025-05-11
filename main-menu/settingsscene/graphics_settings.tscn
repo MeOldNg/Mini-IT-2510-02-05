@@ -83,6 +83,7 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_x2hje")
 text = "Ingame"
 
 [node name="back_button" type="Button" parent="."]
+layout_mode = 0
 offset_left = 1.0
 offset_top = 573.0
 offset_right = 150.0

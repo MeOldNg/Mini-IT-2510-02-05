@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://dhnrs5wd6d0l1"]
+[gd_scene load_steps=8 format=3 uid="uid://d0ao5ibrcqx3n"]
 
 [ext_resource type="Script" uid="uid://cse33spg8yjb5" path="res://main-menu/settingsscene/script/ingame_settings.gd" id="1_ee7ve"]
 [ext_resource type="Theme" uid="uid://cqmt4obqoeysj" path="res://main-menu/UI/panel_theme.tres" id="2_ee7ve"]
@@ -83,6 +83,7 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_x2hje")
 text = "Ingame"
 
 [node name="back_button" type="Button" parent="."]
+layout_mode = 0
 offset_left = 1.0
 offset_top = 573.0
 offset_right = 150.0
