@@ -1,10 +1,10 @@
 [gd_scene load_steps=6 format=3 uid="uid://be3idrb4eywur"]
 
-[ext_resource type="PackedScene" uid="uid://den1oqurchpcc" path="res://scenes/Turn_based.tscn" id="1_4wjx3"]
-[ext_resource type="Texture2D" uid="uid://cisfcgtra0q74" path="res://sprites/NPC character/RoboticApe_npc-removebg-preview (1)flip.png" id="2_lwax1"]
-[ext_resource type="Texture2D" uid="uid://bwpvctq56mr4v" path="res://sprites/Enemy/golem.png" id="3_8wicv"]
-[ext_resource type="Texture2D" uid="uid://bnkqq50lp83wu" path="res://sprites/NPC character/monkey_npc-removebg-preview flip.png" id="4_tewta"]
-[ext_resource type="Texture2D" uid="uid://6yug1qpqo3i1" path="res://sprites/Astronaut Player/Astronaut Player/Astranut player facing right.png" id="5_y2uwh"]
+[ext_resource type="PackedScene" uid="uid://den1oqurchpcc" path="res://interstellar-apes/scenes/Turn_based.tscn" id="1_4wjx3"]
+[ext_resource type="Texture2D" uid="uid://cisfcgtra0q74" path="res://interstellar-apes/sprites/NPC character/RoboticApe_npc-removebg-preview (1)flip.png" id="2_lwax1"]
+[ext_resource type="Texture2D" uid="uid://bwpvctq56mr4v" path="res://interstellar-apes/sprites/Enemy/golem.png" id="3_8wicv"]
+[ext_resource type="Texture2D" uid="uid://bnkqq50lp83wu" path="res://interstellar-apes/sprites/NPC character/monkey_npc-removebg-preview flip.png" id="4_tewta"]
+[ext_resource type="Texture2D" uid="uid://6yug1qpqo3i1" path="res://interstellar-apes/sprites/Astronaut Player/Astronaut Player/Astranut player facing right.png" id="5_y2uwh"]
 
 [node name="PlayerGroup" type="Node2D"]
 

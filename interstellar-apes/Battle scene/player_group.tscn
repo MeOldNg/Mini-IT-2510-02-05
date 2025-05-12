@@ -1,15 +1,40 @@
-[gd_scene load_steps=3 format=3 uid="uid://xwnewfddahlc"]
+[gd_scene load_steps=7 format=3 uid="uid://xwnewfddahlc"]
 
 [ext_resource type="PackedScene" uid="uid://dgqlf7gxcxbnm" path="res://interstellar-apes/Battle scene/enemy.tscn" id="1_esrs1"]
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_wutpg"]
-load_path = "res://.godot/imported/Ape_npc-removebg-preview.png-26d26e55203ea755b49fcc75532469e6.ctex"
+[ext_resource type="Script" uid="uid://cq5bayfxsxuh3" path="res://interstellar-apes/Battle scene/player_group.gd" id="1_i7ihr"]
+[ext_resource type="Texture2D" uid="uid://cisfcgtra0q74" path="res://interstellar-apes/sprites/NPC character/RoboticApe_npc-removebg-preview (1)flip.png" id="2_irglx"]
+[ext_resource type="Texture2D" uid="uid://bnkqq50lp83wu" path="res://interstellar-apes/sprites/NPC character/monkey_npc-removebg-preview flip.png" id="3_i7ihr"]
+[ext_resource type="Texture2D" uid="uid://6yug1qpqo3i1" path="res://interstellar-apes/sprites/Astronaut Player/Astronaut Player/Astranut player facing right.png" id="4_jln2s"]
+[ext_resource type="Texture2D" uid="uid://bwpvctq56mr4v" path="res://interstellar-apes/sprites/Enemy/golem.png" id="5_hikyl"]
 
 [node name="PlayerGroup" type="Node2D"]
+script = ExtResource("1_i7ihr")
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("1_esrs1")]
 
 [node name="Sprite2D" parent="CharacterBody2D" index="0"]
-texture = SubResource("CompressedTexture2D_wutpg")
+texture = ExtResource("2_irglx")
+
+[node name="CharacterBody2D2" parent="." instance=ExtResource("1_esrs1")]
+
+[node name="Sprite2D" parent="CharacterBody2D2" index="0"]
+texture = ExtResource("3_i7ihr")
+
+[node name="CharacterBody2D3" parent="." instance=ExtResource("1_esrs1")]
+
+[node name="Sprite2D" parent="CharacterBody2D3" index="0"]
+position = Vector2(0.5, 1.90735e-06)
+scale = Vector2(2.67742, 1.85714)
+texture = ExtResource("4_jln2s")
+
+[node name="CharacterBody2D4" parent="." instance=ExtResource("1_esrs1")]
+
+[node name="Sprite2D" parent="CharacterBody2D4" index="0"]
+position = Vector2(1.90735e-06, 0)
+scale = Vector2(2.3125, 2.4375)
+texture = ExtResource("5_hikyl")
 
 [editable path="CharacterBody2D"]
+[editable path="CharacterBody2D2"]
+[editable path="CharacterBody2D3"]
+[editable path="CharacterBody2D4"]
