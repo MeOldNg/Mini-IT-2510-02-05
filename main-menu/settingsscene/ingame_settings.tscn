@@ -1,9 +1,9 @@
-[gd_scene load_steps=8 format=3 uid="uid://crq5ui0teyahs"]
+[gd_scene load_steps=8 format=3 uid="uid://dhnrs5wd6d0l1"]
 
-[ext_resource type="Script" uid="uid://b2mka3a44xch7" path="res://main-menu/settingsscene/script/graphics_settings.gd" id="1_pr2p2"]
-[ext_resource type="Theme" uid="uid://cqmt4obqoeysj" path="res://main-menu/UI/panel_theme.tres" id="2_pr2p2"]
-[ext_resource type="FontFile" uid="uid://cq850sbmqa2uk" path="res://main-menu/fonts/Jersey_25/Jersey25-Regular.ttf" id="3_7q27p"]
-[ext_resource type="Texture2D" uid="uid://rt8qs3bs62m3" path="res://main-menu/UI/background.png" id="3_pr2p2"]
+[ext_resource type="Script" uid="uid://cse33spg8yjb5" path="res://main-menu/settingsscene/script/ingame_settings.gd" id="1_ee7ve"]
+[ext_resource type="Theme" uid="uid://cqmt4obqoeysj" path="res://main-menu/UI/panel_theme.tres" id="2_ee7ve"]
+[ext_resource type="FontFile" uid="uid://cq850sbmqa2uk" path="res://main-menu/fonts/Jersey_25/Jersey25-Regular.ttf" id="3_dpymv"]
+[ext_resource type="Texture2D" uid="uid://rt8qs3bs62m3" path="res://main-menu/UI/background.png" id="3_ee7ve"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ikcl0"]
 bg_color = Color(0.461219, 0.720285, 0.900154, 1)
@@ -11,7 +11,7 @@ bg_color = Color(0.461219, 0.720285, 0.900154, 1)
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_x2hje"]
 bg_color = Color(0.462745, 0.721569, 0.898039, 0)
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7q27p"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dpymv"]
 bg_color = Color(0.462745, 0.721569, 0.898039, 0)
 
 [node name="Control" type="Control"]
@@ -25,7 +25,7 @@ offset_right = -1.0
 offset_bottom = -1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_pr2p2")
+script = ExtResource("1_ee7ve")
 
 [node name="Panel" type="Panel" parent="."]
 layout_mode = 1
@@ -40,14 +40,14 @@ offset_right = 577.5
 offset_bottom = 325.0
 grow_horizontal = 2
 grow_vertical = 2
-theme = ExtResource("2_pr2p2")
+theme = ExtResource("2_ee7ve")
 theme_override_styles/panel = SubResource("StyleBoxFlat_ikcl0")
 metadata/_edit_use_anchors_ = true
 
 [node name="Background" type="Sprite2D" parent="Panel"]
 position = Vector2(579.5, 328.5)
 scale = Vector2(0.60625, 0.613889)
-texture = ExtResource("3_pr2p2")
+texture = ExtResource("3_ee7ve")
 
 [node name="audio_button" type="Button" parent="."]
 layout_mode = 0
@@ -55,7 +55,7 @@ offset_left = 290.0
 offset_top = 49.0
 offset_right = 482.0
 offset_bottom = 146.0
-theme_override_fonts/font = ExtResource("3_7q27p")
+theme_override_fonts/font = ExtResource("3_dpymv")
 theme_override_font_sizes/font_size = 60
 theme_override_styles/normal = SubResource("StyleBoxFlat_x2hje")
 text = "Audio"
@@ -66,7 +66,7 @@ offset_left = 480.0
 offset_top = 49.0
 offset_right = 698.0
 offset_bottom = 146.0
-theme_override_fonts/font = ExtResource("3_7q27p")
+theme_override_fonts/font = ExtResource("3_dpymv")
 theme_override_font_sizes/font_size = 60
 theme_override_styles/normal = SubResource("StyleBoxFlat_x2hje")
 text = "Graphics"
@@ -77,7 +77,7 @@ offset_left = 698.0
 offset_top = 49.0
 offset_right = 890.0
 offset_bottom = 146.0
-theme_override_fonts/font = ExtResource("3_7q27p")
+theme_override_fonts/font = ExtResource("3_dpymv")
 theme_override_font_sizes/font_size = 60
 theme_override_styles/normal = SubResource("StyleBoxFlat_x2hje")
 text = "Ingame"
@@ -87,13 +87,24 @@ offset_left = 1.0
 offset_top = 573.0
 offset_right = 150.0
 offset_bottom = 649.0
-theme_override_fonts/font = ExtResource("3_7q27p")
+theme_override_fonts/font = ExtResource("3_dpymv")
 theme_override_font_sizes/font_size = 50
-theme_override_styles/normal = SubResource("StyleBoxFlat_7q27p")
+theme_override_styles/normal = SubResource("StyleBoxFlat_dpymv")
 text = "Return
 "
+
+[node name="fullscreen_button" type="CheckButton" parent="."]
+layout_mode = 0
+offset_left = 326.0
+offset_top = 174.0
+offset_right = 571.0
+offset_bottom = 228.0
+theme_override_fonts/font = ExtResource("3_dpymv")
+theme_override_font_sizes/font_size = 45
+text = "Fullscreen"
 
 [connection signal="pressed" from="audio_button" to="." method="_on_audio_button_pressed"]
 [connection signal="pressed" from="graphics_button" to="." method="_on_graphics_button_pressed"]
 [connection signal="pressed" from="ingame_button" to="." method="_on_ingame_button_pressed"]
 [connection signal="pressed" from="back_button" to="." method="_on_back_button_pressed"]
+[connection signal="toggled" from="fullscreen_button" to="." method="_on_fullscreen_button_toggled"]
