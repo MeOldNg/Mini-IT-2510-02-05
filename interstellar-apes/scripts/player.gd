@@ -2,9 +2,10 @@ extends CharacterBody2D
 
 
 @export var SPEED := 300
-@export var acceleration :=10.0
+@export var acceleration :=15.0
 
 @onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
+@onready var interactable: RayCast2D = $interactable
 
 var animation_direction: String = "down"
 var animation_state: String = ""
@@ -30,8 +31,9 @@ func update_sprite() -> void:
 		animation_state > "Idle"
  
 func _physics_process(delta: float) -> void:
-	var direction := Input.get_vector("move_left", "move_right", "move_up", "move_down")
-	
+	var direction := Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
+	interactable.target_position = direction * 16
+	interactable.force_raycast_update()
 	update_sprite_direction(direction)
 	update_sprite()
 	
@@ -42,3 +44,14 @@ func _physics_process(delta: float) -> void:
 	velocity.y = move_toward(velocity.y, direction.y*SPEED, acceleration)
 	
 	move_and_collide(velocity*delta)
+	
+	if Input.is_action_just_pressed("ui_accept") and $RayCast2D.is_colliding():
+		var collider = $RayCast2D.get_collider()
+		collider.on_interact()
+	
+	
+	
+	
+	
+	
+	
