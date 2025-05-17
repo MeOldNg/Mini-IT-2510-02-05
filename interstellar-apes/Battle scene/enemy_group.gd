@@ -32,10 +32,10 @@ func _process(_delta) :
 		if Input.is_action_just_pressed("ui_accept"):
 			action_queue.push_back(index)
 			emit_signal("next_player")
-
-	if action_queue.size() == enemies.size() and not is_battling:
-		is_battling = true
-		_action(action_queue)
+			
+		if action_queue.size() == enemies.size() and not is_battling:
+			is_battling = true
+			_action(action_queue)
 		
 
 func _action(stack):
