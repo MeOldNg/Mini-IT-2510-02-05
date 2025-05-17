@@ -1,47 +1,54 @@
-[gd_scene load_steps=4 format=3 uid="uid://b1gyf3wu1xnxj"]
+[gd_scene load_steps=4 format=3 uid="uid://cokxjmtxc2f3j"]
 
-[ext_resource type="Texture2D" uid="uid://bydko4ir1efoo" path="res://interstellar-apes/sprites/background 1.png" id="1_uvblx"]
-[ext_resource type="PackedScene" uid="uid://chjotg0rcmh02" path="res://interstellar-apes/Battle scene/enemy_group.tscn" id="2_p23sr"]
-[ext_resource type="PackedScene" uid="uid://xwnewfddahlc" path="res://interstellar-apes/Battle scene/player_group.tscn" id="3_ta7t1"]
+[ext_resource type="Texture2D" uid="uid://bydko4ir1efoo" path="res://interstellar-apes/sprites/background 1.png" id="1_jpsik"]
+[ext_resource type="PackedScene" uid="uid://chjotg0rcmh02" path="res://interstellar-apes/Battle scene/enemy_group.tscn" id="2_wqcpm"]
+[ext_resource type="PackedScene" uid="uid://xwnewfddahlc" path="res://interstellar-apes/Battle scene/player_group.tscn" id="3_8c40g"]
 
-[node name="Battle Scene" type="Node2D"]
+[node name="Node2D" type="Node2D"]
+scale = Vector2(2, 2)
 
 [node name="TextureRect" type="TextureRect" parent="."]
-offset_right = 1955.0
-offset_bottom = 1024.0
-texture = ExtResource("1_uvblx")
+offset_right = 1253.0
+offset_bottom = 728.0
+texture = ExtResource("1_jpsik")
+expand_mode = 1
 
-[node name="EnemyGroup" parent="." instance=ExtResource("2_p23sr")]
-position = Vector2(590, 280)
+[node name="EnemyGroup" parent="." instance=ExtResource("2_wqcpm")]
+position = Vector2(219.5, 132.5)
 
-[node name="PlayerGroup" parent="." instance=ExtResource("3_ta7t1")]
-position = Vector2(1287, 284)
+[node name="PlayerGroup" parent="." instance=ExtResource("3_8c40g")]
+position = Vector2(751.5, 134)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="choice" type="VBoxContainer" parent="CanvasLayer"]
-custom_minimum_size = Vector2(1, 1)
-offset_left = 1524.0
-offset_top = 816.0
-offset_right = 1955.0
-offset_bottom = 1022.0
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -322.0
+offset_top = -158.0
+grow_horizontal = 0
+grow_vertical = 0
 
 [node name="Attack" type="Button" parent="CanvasLayer/choice"]
 layout_mode = 2
 text = "Attack"
-clip_text = true
-expand_icon = true
 
-[node name="Defend" type="Button" parent="CanvasLayer/choice"]
+[node name="Defence" type="Button" parent="CanvasLayer/choice"]
 layout_mode = 2
 disabled = true
-text = "Defend"
+text = "Defence"
 
 [node name="Abort" type="Button" parent="CanvasLayer/choice"]
 layout_mode = 2
 disabled = true
 text = "Abort"
-clip_text = true
+
+[node name="Camera2D" type="Camera2D" parent="."]
+anchor_mode = 0
+zoom = Vector2(0.5, 0.5)
 
 [connection signal="next_player" from="EnemyGroup" to="PlayerGroup" method="_on_enemy_group_next_player"]
 [connection signal="pressed" from="CanvasLayer/choice/Attack" to="EnemyGroup" method="_on_attack_pressed"]
