@@ -9,18 +9,30 @@ extends CharacterBody2D
 
 var animation_direction: String = "down"
 var animation_state: String = ""
-
+var is_holding_something = false
 
 func update_sprite_direction(input: Vector2) -> void:
 	match input:
 		Vector2.DOWN:
 			animation_direction = "move_down"
+			if not is_holding_something:
+				interactable.target_position = Vector2.DOWN * 20
+				interactable.force_raycast_update()
 		Vector2.UP:
 			animation_direction = "move_up"
+			if not is_holding_something:
+				interactable.target_position = Vector2.UP * 20
+				interactable.force_raycast_update()
 		Vector2.RIGHT:
 			animation_direction = "move_right"
+			if not is_holding_something:
+				interactable.target_position = Vector2.RIGHT * 20
+				interactable.force_raycast_update()
 		Vector2.LEFT:
 			animation_direction = "move_left"
+			if not is_holding_something:
+				interactable.target_position = Vector2.LEFT * 20
+				interactable.force_raycast_update()
  
  
 
@@ -31,9 +43,23 @@ func update_sprite() -> void:
 		animation_state > "Idle"
  
 func _physics_process(delta: float) -> void:
+	if $interactable.is_colliding():
+		var collider = $interactable.get_collider()
+		if collider.interact_type == "click":
+			if Input.is_action_just_pressed("ui_accept"):
+				collider.on_interact()
+		elif collider.interact_type == "hold":
+			if Input.is_action_just_pressed("ui_accept"):
+				is_holding_something =true
+				print("must be held")
+			elif Input.is_action_just_released("ui_accept"):
+				is_holding_something =false
+				print("I let go")
+		else:
+			print("somethings wrong")
+	
 	var direction := Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
-	interactable.target_position = direction * 16
-	interactable.force_raycast_update()
+
 	update_sprite_direction(direction)
 	update_sprite()
 	
@@ -45,10 +71,7 @@ func _physics_process(delta: float) -> void:
 	
 	move_and_collide(velocity*delta)
 	
-	if Input.is_action_just_pressed("ui_accept") and $RayCast2D.is_colliding():
-		var collider = $RayCast2D.get_collider()
-		collider.on_interact()
-	
+
 	
 	
 	
