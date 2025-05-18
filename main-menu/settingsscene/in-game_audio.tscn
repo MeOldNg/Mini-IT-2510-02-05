@@ -44,6 +44,7 @@ offset_bottom = 400.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_1kufw")
 
 [node name="master_volume_slider" type="HSlider" parent="."]
+layout_mode = 0
 offset_left = -64.0
 offset_top = 26.0
 offset_right = 417.0
@@ -70,6 +71,7 @@ theme_override_font_sizes/normal_font_size = 35
 text = "Master Volume"
 
 [node name="fullscreen_button" type="CheckButton" parent="."]
+layout_mode = 0
 offset_left = -65.0
 offset_top = 79.0
 offset_right = 169.0
