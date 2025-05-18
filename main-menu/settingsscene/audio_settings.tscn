@@ -1,9 +1,10 @@
-[gd_scene load_steps=9 format=3 uid="uid://djmd0it5k52ob"]
+[gd_scene load_steps=16 format=3 uid="uid://djmd0it5k52ob"]
 
 [ext_resource type="Theme" uid="uid://cqmt4obqoeysj" path="res://main-menu/UI/panel_theme.tres" id="1_lemuw"]
 [ext_resource type="Script" uid="uid://dca45jm1s24md" path="res://main-menu/settingsscene/script/audio_settings.gd" id="1_pivgr"]
 [ext_resource type="Texture2D" uid="uid://rt8qs3bs62m3" path="res://main-menu/UI/background.png" id="3_656l2"]
 [ext_resource type="FontFile" uid="uid://cq850sbmqa2uk" path="res://main-menu/fonts/Jersey_25/Jersey25-Regular.ttf" id="3_ixww1"]
+[ext_resource type="Texture2D" uid="uid://do3xdvho7wmrd" path="res://main-menu/UI/slider.png" id="5_laiqx"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ikcl0"]
 bg_color = Color(0.461219, 0.720285, 0.900154, 1)
@@ -12,6 +13,26 @@ bg_color = Color(0.461219, 0.720285, 0.900154, 1)
 bg_color = Color(0.462745, 0.721569, 0.898039, 0)
 
 [sub_resource type="Theme" id="Theme_kxxe0"]
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_3j7to"]
+color = Color(0.603922, 0.623529, 1, 1)
+thickness = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3j7to"]
+bg_color = Color(0.266667, 0.658824, 0.752941, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_laiqx"]
+bg_color = Color(0.266667, 0.658824, 0.752941, 1)
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_laiqx"]
+color = Color(0.6043, 0.623401, 1, 1)
+thickness = 6
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qdi1x"]
+bg_color = Color(0.266667, 0.658824, 0.752941, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6nv6t"]
+bg_color = Color(0.268365, 0.65898, 0.752433, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bndh4"]
 bg_color = Color(0.462745, 0.721569, 0.898039, 0)
@@ -90,9 +111,14 @@ text = "Ingame"
 layout_mode = 0
 offset_left = 288.0
 offset_top = 234.0
-offset_right = 768.0
-offset_bottom = 250.0
+offset_right = 761.0
+offset_bottom = 274.0
 theme = SubResource("Theme_kxxe0")
+theme_override_icons/grabber = ExtResource("5_laiqx")
+theme_override_icons/grabber_highlight = ExtResource("5_laiqx")
+theme_override_styles/slider = SubResource("StyleBoxLine_3j7to")
+theme_override_styles/grabber_area = SubResource("StyleBoxFlat_3j7to")
+theme_override_styles/grabber_area_highlight = SubResource("StyleBoxFlat_laiqx")
 max_value = 1.5
 step = 0.001
 
@@ -102,25 +128,32 @@ offset_left = 287.0
 offset_top = 334.0
 offset_right = 758.0
 offset_bottom = 350.0
+theme_override_icons/grabber = ExtResource("5_laiqx")
+theme_override_icons/grabber_highlight = ExtResource("5_laiqx")
+theme_override_styles/slider = SubResource("StyleBoxLine_laiqx")
+theme_override_styles/grabber_area = SubResource("StyleBoxFlat_qdi1x")
+theme_override_styles/grabber_area_highlight = SubResource("StyleBoxFlat_6nv6t")
 max_value = 1.5
 step = 0.001
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
 layout_mode = 0
 offset_left = 294.0
-offset_top = 181.0
+offset_top = 176.0
 offset_right = 578.0
 offset_bottom = 225.0
-theme_override_font_sizes/normal_font_size = 30
+theme_override_fonts/normal_font = ExtResource("3_ixww1")
+theme_override_font_sizes/normal_font_size = 45
 text = "Master Volume"
 
 [node name="RichTextLabel2" type="RichTextLabel" parent="."]
 layout_mode = 0
 offset_left = 290.0
-offset_top = 274.0
+offset_top = 280.0
 offset_right = 574.0
-offset_bottom = 320.0
-theme_override_font_sizes/normal_font_size = 30
+offset_bottom = 329.0
+theme_override_fonts/normal_font = ExtResource("3_ixww1")
+theme_override_font_sizes/normal_font_size = 45
 text = "Music Volume"
 
 [node name="back_button" type="Button" parent="."]

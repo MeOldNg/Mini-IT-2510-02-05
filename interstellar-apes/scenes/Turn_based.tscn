@@ -1,10 +1,7 @@
 [gd_scene load_steps=7 format=3 uid="uid://den1oqurchpcc"]
 
-[ext_resource type="Texture2D" uid="uid://c0ngotb18yf2m" path="res://sprites/NPC character/Ape_npc-removebg-preview (1).png" id="1_7ry8k"]
-[ext_resource type="Texture2D" uid="uid://bqw1iyxgq24w2" path="res://sprites/NPC character/istockphoto-1050713486-612x612-removebg-preview.png" id="2_j0i8r"]
-
-[sub_resource type="Animation" id="Animation_wbodq"]
-resource_name = "hurt"
+[ext_resource type="Texture2D" uid="uid://c0ngotb18yf2m" path="res://interstellar-apes/sprites/NPC character/Ape_npc-removebg-preview (1).png" id="1_7ry8k"]
+[ext_resource type="Texture2D" uid="uid://bqw1iyxgq24w2" path="res://interstellar-apes/sprites/NPC character/istockphoto-1050713486-612x612-removebg-preview.png" id="2_j0i8r"]
 
 [sub_resource type="Animation" id="Animation_pku4b"]
 length = 0.001
@@ -20,6 +17,9 @@ tracks/0/keys = {
 "update": 0,
 "values": [Color(1, 1, 1, 1)]
 }
+
+[sub_resource type="Animation" id="Animation_wbodq"]
+resource_name = "hurt"
 
 [sub_resource type="Animation" id="Animation_jyfih"]
 resource_name = "new_animation"
