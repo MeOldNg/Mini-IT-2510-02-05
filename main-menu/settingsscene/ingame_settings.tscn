@@ -16,7 +16,7 @@ bg_color = Color(0.462745, 0.721569, 0.898039, 0)
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dpymv"]
 bg_color = Color(0.462745, 0.721569, 0.898039, 0)
 
-[node name="Control" type="Control"]
+[node name="Control2" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -62,23 +62,12 @@ theme_override_font_sizes/font_size = 60
 theme_override_styles/normal = SubResource("StyleBoxFlat_x2hje")
 text = "Audio"
 
-[node name="graphics_button" type="Button" parent="."]
-layout_mode = 0
-offset_left = 480.0
-offset_top = 49.0
-offset_right = 698.0
-offset_bottom = 146.0
-theme_override_fonts/font = ExtResource("3_dpymv")
-theme_override_font_sizes/font_size = 60
-theme_override_styles/normal = SubResource("StyleBoxFlat_x2hje")
-text = "Graphics"
-
 [node name="ingame_button" type="Button" parent="."]
 layout_mode = 0
-offset_left = 698.0
-offset_top = 49.0
-offset_right = 890.0
-offset_bottom = 146.0
+offset_left = 561.0
+offset_top = 50.0
+offset_right = 753.0
+offset_bottom = 147.0
 theme_override_fonts/font = ExtResource("3_dpymv")
 theme_override_font_sizes/font_size = 60
 theme_override_styles/normal = SubResource("StyleBoxFlat_x2hje")
@@ -109,7 +98,6 @@ theme_override_icons/unchecked = ExtResource("6_70qhd")
 text = "Fullscreen"
 
 [connection signal="pressed" from="audio_button" to="." method="_on_audio_button_pressed"]
-[connection signal="pressed" from="graphics_button" to="." method="_on_graphics_button_pressed"]
 [connection signal="pressed" from="ingame_button" to="." method="_on_ingame_button_pressed"]
 [connection signal="pressed" from="back_button" to="." method="_on_back_button_pressed"]
 [connection signal="toggled" from="fullscreen_button" to="." method="_on_fullscreen_button_toggled"]
