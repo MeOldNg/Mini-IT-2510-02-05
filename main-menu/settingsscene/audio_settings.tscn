@@ -1,10 +1,39 @@
 [gd_scene load_steps=16 format=3 uid="uid://djmd0it5k52ob"]
 
 [ext_resource type="Theme" uid="uid://cqmt4obqoeysj" path="res://main-menu/UI/panel_theme.tres" id="1_lemuw"]
-[ext_resource type="Script" uid="uid://dca45jm1s24md" path="res://main-menu/settingsscene/script/audio_settings.gd" id="1_pivgr"]
 [ext_resource type="Texture2D" uid="uid://rt8qs3bs62m3" path="res://main-menu/UI/background.png" id="3_656l2"]
 [ext_resource type="FontFile" uid="uid://cq850sbmqa2uk" path="res://main-menu/fonts/Jersey_25/Jersey25-Regular.ttf" id="3_ixww1"]
 [ext_resource type="Texture2D" uid="uid://do3xdvho7wmrd" path="res://main-menu/UI/slider.png" id="5_laiqx"]
+
+[sub_resource type="GDScript" id="GDScript_ixww1"]
+script/source = "extends Control
+
+func _on_audio_button_pressed() -> void:
+	get_tree().change_scene_to_file(\"res://main-menu/settingsscene/audio_settings.tscn\")
+	
+func _on_graphics_button_pressed() -> void:
+	get_tree().change_scene_to_file(\"res://main-menu/settingsscene/graphics_settings.tscn\")
+
+func _on_ingame_button_pressed() -> void:
+	get_tree().change_scene_to_file(\"res://main-menu/settingsscene/ingame_settings.tscn\")
+	
+func _on_back_button_pressed() -> void:
+	get_tree().change_scene_to_file(\"res://main-menu/mainmenuscene/main-menu.tscn\")
+
+func _on_master_volume_slider_value_changed(value: float) -> void:
+	AudioServer.set_bus_volume_db(AudioServer.get_bus_index(\"Master\"),linear_to_db(value))
+
+func _on_music_volume_slider_value_changed(value: float) -> void:
+	AudioServer.set_bus_volume_db(AudioServer.get_bus_index(\"music\"),linear_to_db(value))
+
+func _on_mute_button_toggled(toggled_on: bool) -> void:
+	if toggled_on:
+		var bus_idx = AudioServer.get_bus_index(\"Master\")
+		AudioServer.set_bus_mute(bus_idx, true)
+	else:
+		var bus_idx = AudioServer.get_bus_index(\"Master\")
+		AudioServer.set_bus_mute(bus_idx, false)
+"
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ikcl0"]
 bg_color = Color(0.461219, 0.720285, 0.900154, 1)
@@ -37,7 +66,7 @@ bg_color = Color(0.268365, 0.65898, 0.752433, 1)
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bndh4"]
 bg_color = Color(0.462745, 0.721569, 0.898039, 0)
 
-[node name="Control" type="Control"]
+[node name="Control2" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -48,7 +77,7 @@ offset_right = -1.0
 offset_bottom = -1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_pivgr")
+script = SubResource("GDScript_ixww1")
 
 [node name="Panel" type="Panel" parent="."]
 layout_mode = 1
@@ -85,23 +114,12 @@ theme_override_font_sizes/font_size = 60
 theme_override_styles/normal = SubResource("StyleBoxFlat_x2hje")
 text = "Audio"
 
-[node name="graphics_button" type="Button" parent="."]
-layout_mode = 0
-offset_left = 480.0
-offset_top = 49.0
-offset_right = 698.0
-offset_bottom = 146.0
-theme_override_fonts/font = ExtResource("3_ixww1")
-theme_override_font_sizes/font_size = 60
-theme_override_styles/normal = SubResource("StyleBoxFlat_x2hje")
-text = "Graphics"
-
 [node name="ingame_button" type="Button" parent="."]
 layout_mode = 0
-offset_left = 698.0
-offset_top = 49.0
-offset_right = 890.0
-offset_bottom = 146.0
+offset_left = 563.0
+offset_top = 52.0
+offset_right = 755.0
+offset_bottom = 149.0
 theme_override_fonts/font = ExtResource("3_ixww1")
 theme_override_font_sizes/font_size = 60
 theme_override_styles/normal = SubResource("StyleBoxFlat_x2hje")
@@ -168,9 +186,28 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_bndh4")
 text = "Return
 "
 
+[node name="mute_button" type="CheckButton" parent="."]
+layout_mode = 0
+offset_left = 285.0
+offset_top = 388.0
+offset_right = 431.0
+offset_bottom = 439.0
+theme_override_fonts/font = ExtResource("3_ixww1")
+theme_override_font_sizes/font_size = 45
+
+[node name="mute" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 292.0
+offset_top = 388.0
+offset_right = 396.0
+offset_bottom = 437.0
+theme_override_fonts/normal_font = ExtResource("3_ixww1")
+theme_override_font_sizes/normal_font_size = 45
+text = "Mute"
+
 [connection signal="pressed" from="audio_button" to="." method="_on_audio_button_pressed"]
-[connection signal="pressed" from="graphics_button" to="." method="_on_graphics_button_pressed"]
 [connection signal="pressed" from="ingame_button" to="." method="_on_ingame_button_pressed"]
 [connection signal="value_changed" from="master_volume_slider" to="." method="_on_master_volume_slider_value_changed"]
 [connection signal="value_changed" from="music_volume_slider" to="." method="_on_music_volume_slider_value_changed"]
 [connection signal="pressed" from="back_button" to="." method="_on_back_button_pressed"]
+[connection signal="toggled" from="mute_button" to="." method="_on_mute_button_toggled"]
