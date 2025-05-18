@@ -37,7 +37,7 @@ bg_color = Color(0.268365, 0.65898, 0.752433, 1)
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bndh4"]
 bg_color = Color(0.462745, 0.721569, 0.898039, 0)
 
-[node name="Control" type="Control"]
+[node name="Control2" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
