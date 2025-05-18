@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://1x7d6t1v7jie"
-path="res://.godot/imported/RoboticApe_npc-removebg-preview (1).png-730064537afaba997d22bc0c82fa52e8.ctex"
+uid="uid://bvo2184pennsc"
+path="res://.godot/imported/Ape_npc-removebg-preview (1) - Copy.png-5ce4bd4d47a830bedfe8a36ff316cf6c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://interstellar-apes/sprites/NPC character/RoboticApe_npc-removebg-preview (1).png"
-dest_files=["res://.godot/imported/RoboticApe_npc-removebg-preview (1).png-730064537afaba997d22bc0c82fa52e8.ctex"]
+source_file="res://interstellar-apes/sprites/NPC character/Ape_npc-removebg-preview (1) - Copy.png"
+dest_files=["res://.godot/imported/Ape_npc-removebg-preview (1) - Copy.png-5ce4bd4d47a830bedfe8a36ff316cf6c.ctex"]
 
 [params]
 

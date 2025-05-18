@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 
 #royal attributes
-@export var speed = 200
+@export var speed =100
 @export var grid_size = 16
 var target_position = Vector2.ZERO
 var moving = false
