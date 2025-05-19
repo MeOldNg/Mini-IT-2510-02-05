@@ -82,4 +82,21 @@ theme_override_icons/checked = ExtResource("3_c5ayh")
 theme_override_icons/unchecked = ExtResource("4_sk1wy")
 text = "Fullscreen"
 
+[node name="return_button" type="Button" parent="."]
+layout_mode = 0
+offset_left = -135.0
+offset_top = 327.0
+offset_right = 56.0
+offset_bottom = 400.0
+theme_override_fonts/font = ExtResource("2_ahufu")
+theme_override_font_sizes/font_size = 35
+text = "Return"
+
+[node name="mute_button" type="CheckButton" parent="."]
+layout_mode = 0
+offset_right = 44.0
+offset_bottom = 24.0
+
 [connection signal="toggled" from="fullscreen_button" to="." method="_on_fullscreen_button_toggled"]
+[connection signal="pressed" from="return_button" to="." method="_on_button_pressed"]
+[connection signal="toggled" from="mute_button" to="." method="_on_mute_button_toggled"]

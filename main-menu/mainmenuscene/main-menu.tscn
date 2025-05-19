@@ -1,9 +1,10 @@
-[gd_scene load_steps=11 format=3 uid="uid://dkrewxtxg7v7j"]
+[gd_scene load_steps=12 format=3 uid="uid://dkrewxtxg7v7j"]
 
 [ext_resource type="Script" uid="uid://dh5pqpc2d0l8x" path="res://main-menu/mainmenuscene/script/main_menu.gd" id="1_1u3ec"]
 [ext_resource type="Theme" uid="uid://cqmt4obqoeysj" path="res://main-menu/UI/panel_theme.tres" id="2_wt1xb"]
 [ext_resource type="Texture2D" uid="uid://rt8qs3bs62m3" path="res://main-menu/UI/background.png" id="3_d8w1o"]
 [ext_resource type="FontFile" uid="uid://cq850sbmqa2uk" path="res://main-menu/fonts/Jersey_25/Jersey25-Regular.ttf" id="4_d8w1o"]
+[ext_resource type="Script" uid="uid://ct265o13l22aa" path="res://main-menu/mainmenuscene/script/mainmenubutton.gd" id="5_6x58i"]
 [ext_resource type="FontFile" uid="uid://cs536msat0kkd" path="res://main-menu/fonts/Jersey_15/Jersey15-Regular.ttf" id="5_dvqgk"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_ikcl0"]
@@ -76,6 +77,7 @@ theme_override_fonts/font = ExtResource("4_d8w1o")
 theme_override_font_sizes/font_size = 50
 theme_override_styles/normal = SubResource("StyleBoxFlat_ljn4s")
 text = "Start Game"
+script = ExtResource("5_6x58i")
 metadata/_edit_use_anchors_ = true
 
 [node name="settings_button" type="Button" parent="."]

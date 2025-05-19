@@ -71,12 +71,10 @@ func _physics_process(delta: float) -> void:
 	
 	move_and_collide(velocity*delta)
 	
-func resume():
-	get_tree().paused = false
+
 	
-func paused():
-	get_tree().paused = true
 	
-func Esc():
-	if Input.is_action_just_pressed("esc"):
-		get_tree().change_scene_to_file("res://main-menu/mainmenuscene/in-game_paused.tscn")
+	
+	
+	
+	
