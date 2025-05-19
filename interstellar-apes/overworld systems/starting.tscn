@@ -464,7 +464,9 @@ tile_map_data = PackedByteArray("AAAJAAIABAAMAAIAAAAIAAIABAAOAAMAAAAHAAIABAANAAI
 tile_set = SubResource("TileSet_my7n2")
 
 [node name="Door" parent="." instance=ExtResource("4_scrwo")]
-position = Vector2(88, -56)
+position = Vector2(152, -24)
+scale = Vector2(2, 2)
 
 [node name="Box" parent="." instance=ExtResource("4_23lrd")]
-position = Vector2(88, 8)
+position = Vector2(128, 16)
+scale = Vector2(2, 2)
