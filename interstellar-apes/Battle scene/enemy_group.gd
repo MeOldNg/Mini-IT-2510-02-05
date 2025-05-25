@@ -4,6 +4,7 @@ var enemies : Array = []
 var action_queue: Array = []
 var is_battling: bool = false
 var index: int = 0
+var turn: int = 1
 
 signal next_player
 @onready var choice = $"../CanvasLayer/choice"
@@ -14,7 +15,7 @@ func _ready():
 		enemies
 		enemies[i].position = Vector2(0, i*145)
 		
-		show_choice()
+		decision()
 		
 
 func _process(_delta) :
@@ -41,18 +42,26 @@ func _process(_delta) :
 func _action(stack):
 	for i in stack:
 		enemies[i].take_damage(1)
-		await get_tree().create_timer(1).timeout
+		await get_tree().create_timer(0.5).timeout
 	action_queue.clear()
 	is_battling = false
-	show_choice()
+	turn -=1
+	decision()
 
 func switch_focus(x,y):
 	enemies[x].focus()
 	enemies[y].unfocus()
 
-func show_choice():
-	choice.show()
-	choice.find_child("Attack").grab_focus()
+func decision():
+	if turn > 0:
+		show_choice()
+		$"../CanvasLayer/choice/Next Turn".disabled = true
+		$"../CanvasLayer/choice/Attack".disabled = false
+		$"../CanvasLayer/choice/Defend".disabled = false
+		$"../CanvasLayer/choice/Abort".disabled = false
+	else:
+		dont_show_choice()
+	
 	
 func _reset_focus():
 	index = 0 
@@ -64,7 +73,29 @@ func _start_choosing():
 	enemies[0].focus()
 	
 
+func show_choice():
+	choice.show()
+	choice.find_child("Attack").grab_focus()
+	choice.find_child("Defend").grab_focus()
+	choice.find_child("Abort").grab_focus()
+
+
+func dont_show_choice():
+	choice.show()
+	choice.find_child("Next Turn").grab_focus()
+	$"../CanvasLayer/choice/Attack".disabled = true
+	$"../CanvasLayer/choice/Defend".disabled = true
+	$"../CanvasLayer/choice/Abort".disabled = true
+	$"../CanvasLayer/choice/Next Turn".disabled = false
 
 func _on_attack_pressed() -> void:
 	choice.hide()
 	_start_choosing()
+
+
+func _on_next_turn_pressed() -> void:
+	pass # Replace with function body.
+	turn +=1
+	decision()
+	
+	

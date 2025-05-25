@@ -1,8 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://dgqlf7gxcxbnm"]
+[gd_scene load_steps=8 format=3 uid="uid://dgqlf7gxcxbnm"]
 
 [ext_resource type="Script" uid="uid://csmmnq3w453id" path="res://interstellar-apes/Battle scene/enemy.gd" id="1_0a1r7"]
 [ext_resource type="Texture2D" uid="uid://bkv37uxfp23wr" path="res://interstellar-apes/sprites/NPC design/Ape_npc-removebg-preview.png" id="1_xub65"]
 [ext_resource type="Texture2D" uid="uid://b1pv4hw5adp8o" path="res://interstellar-apes/sprites/istockphoto-2162959791-612x612-removebg-preview.png" id="2_6wuyd"]
+
+[sub_resource type="Theme" id="Theme_0a1r7"]
 
 [sub_resource type="Animation" id="Animation_m3n0p"]
 length = 0.001
@@ -38,8 +40,6 @@ tracks/0/keys = {
 _data = {
 &"RESET": SubResource("Animation_m3n0p"),
 &"hurt": SubResource("Animation_0a1r7")
-&"RESET": SubResource("Animation_m3n0p"),
-&"hurt": SubResource("Animation_0a1r7")
 }
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
@@ -56,16 +56,17 @@ position = Vector2(-100, 0)
 texture = ExtResource("2_6wuyd")
 
 [node name="ProgressBar" type="ProgressBar" parent="."]
+modulate = Color(0.86, 0.0989, 0.086, 1)
 offset_left = -36.0
 offset_top = -82.0
 offset_right = 14.0
 offset_bottom = -55.0
 scale = Vector2(1.5, 1.5)
+theme = SubResource("Theme_0a1r7")
 step = 0.0
 value = 100.0
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
-&"": SubResource("AnimationLibrary_f4dr3")
 &"": SubResource("AnimationLibrary_f4dr3")
 }
