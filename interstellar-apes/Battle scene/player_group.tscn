@@ -15,10 +15,16 @@ script = ExtResource("1_i7ihr")
 [node name="Sprite2D" parent="CharacterBody2D" index="0"]
 texture = ExtResource("2_irglx")
 
+[node name="ProgressBar" parent="CharacterBody2D" index="2"]
+modulate = Color(0.126268, 0.705987, 0.0762629, 1)
+
 [node name="CharacterBody2D2" parent="." instance=ExtResource("1_esrs1")]
 
 [node name="Sprite2D" parent="CharacterBody2D2" index="0"]
 texture = ExtResource("3_i7ihr")
+
+[node name="ProgressBar" parent="CharacterBody2D2" index="2"]
+modulate = Color(0.130758, 0.71, 0.0781, 1)
 
 [node name="CharacterBody2D3" parent="." instance=ExtResource("1_esrs1")]
 
@@ -27,12 +33,18 @@ position = Vector2(0.5, 1.90735e-06)
 scale = Vector2(2.67742, 1.85714)
 texture = ExtResource("4_jln2s")
 
+[node name="ProgressBar" parent="CharacterBody2D3" index="2"]
+modulate = Color(0.130758, 0.71, 0.0781, 1)
+
 [node name="CharacterBody2D4" parent="." instance=ExtResource("1_esrs1")]
 
 [node name="Sprite2D" parent="CharacterBody2D4" index="0"]
 position = Vector2(1.90735e-06, 0)
 scale = Vector2(2.3125, 2.4375)
 texture = ExtResource("5_hikyl")
+
+[node name="ProgressBar" parent="CharacterBody2D4" index="2"]
+modulate = Color(0.130758, 0.71, 0.0781, 1)
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D4"]
 
