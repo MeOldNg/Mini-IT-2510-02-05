@@ -1,7 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://cxbxljkhgnr5c"]
+[gd_scene load_steps=7 format=3 uid="uid://cxbxljkhgnr5c"]
 
 [ext_resource type="Script" uid="uid://bpfkxppsqftub" path="res://interstellar-apes/overworld systems/enemy.gd" id="1_vgf70"]
 [ext_resource type="Texture2D" uid="uid://bsp8mrt6c2pnf" path="res://interstellar-apes/Fantasy Battle Pack 26-10-22/Sprite Sheets/Thief/Thief_Blue1.png" id="2_ghia3"]
+[ext_resource type="Script" uid="uid://c1qntealhk3fd" path="res://interstellar-apes/overworld systems/enemyidle.gd" id="3_ghia3"]
+[ext_resource type="Script" uid="uid://dc5h2qssorwny" path="res://interstellar-apes/overworld systems/statemachine.gd" id="3_tqwlh"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0n4ae"]
 size = Vector2(16, 16)
@@ -27,11 +29,9 @@ texture = SubResource("AtlasTexture_tqwlh")
 simplify_path = true
 debug_enabled = true
 
-[node name="state machine" type="Node2D" parent="."]
+[node name="statemachine" type="Node" parent="." node_paths=PackedStringArray("initial_state")]
+script = ExtResource("3_tqwlh")
+initial_state = NodePath("enemyidle")
 
-[node name="enemypatrol" type="Node2D" parent="state machine"]
-
-[node name="Timer" type="Timer" parent="."]
-autostart = true
-
-[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[node name="enemyidle" type="Node" parent="statemachine"]
+script = ExtResource("3_ghia3")
