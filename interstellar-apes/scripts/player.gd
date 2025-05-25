@@ -39,7 +39,7 @@ var is_holding_something = false
 		#animation_state > "Idle"
 
  
-func _physics_process(delta: float) -> void:
+func _physics_process(_delta: float) -> void:
 	if $interactable.is_colliding(): # these are interactable codes
 		var collider = $interactable.get_collider()
 		if collider.interact_type == "click":
@@ -87,7 +87,7 @@ func _physics_process(delta: float) -> void:
 		velocity = Vector2.ZERO
 	velocity = input_vector * SPEED
 	move_and_slide()
-	var direction := Input.get_vector("move_left", "move_right", "move_up", "move_down")
+	var _direction = Input.get_vector("move_left", "move_right", "move_up", "move_down")
 	
 	if velocity != Vector2.ZERO:
 		animation_state = "move"

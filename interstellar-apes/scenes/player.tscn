@@ -299,9 +299,10 @@ animations = [{
 "speed": 10.0
 }]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_2dvfe"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_t5uvr"]
+size = Vector2(20, 26)
 
-[node name="CharacterBody2D" type="CharacterBody2D"]
+[node name="Player" type="CharacterBody2D" groups=["player"]]
 collision_mask = 10
 motion_mode = 1
 script = ExtResource("1_qhqgy")
@@ -312,8 +313,8 @@ sprite_frames = SubResource("SpriteFrames_cs1tg")
 animation = &"moveleft"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 15)
-shape = SubResource("CapsuleShape2D_2dvfe")
+position = Vector2(0, 3)
+shape = SubResource("RectangleShape2D_t5uvr")
 
 [node name="interactable" type="RayCast2D" parent="."]
 position = Vector2(0, 16)
