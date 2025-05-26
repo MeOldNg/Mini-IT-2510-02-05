@@ -41,3 +41,8 @@ func get_next_position():
 
 func change_target(received_target):
 	target = received_target
+
+
+func _on_sights_body_shape_entered(body_rid: RID, body: Node2D, body_shape_index: int, local_shape_index: int) -> void:
+	target = body
+	state = states.chase

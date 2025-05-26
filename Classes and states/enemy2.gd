@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 enum states {patrol, alert, chase}
 
-var speed = 150
+var speed = 100
 var state: states = states.patrol
 @export var group_name : String
 @export var target : Node = null
@@ -23,7 +23,7 @@ func _physics_process(delta: float) -> void:
 	elif position.x - target.position.x < 1:
 		vector.x += 1
 		rotation_degrees = 270
-	elif position.x - target.position.x > 1:
+	elif position.x - target.position.x > -1:
 		vector.x -= 1
 		rotation_degrees = 90
 	velocity = vector * speed
@@ -51,3 +51,8 @@ func get_next_position():
 	current_position = temp_posititions.pop_front()
 	change_target(current_position)
 	print (current_position.position)
+
+
+func _on_sights_body_shape_entered(body_rid: RID, body: Node2D, body_shape_index: int, local_shape_index: int) -> void:
+	target = body
+	state = states.chase
