@@ -1,9 +1,7 @@
-[gd_scene load_steps=7 format=3 uid="uid://cxbxljkhgnr5c"]
+[gd_scene load_steps=5 format=3 uid="uid://cxbxljkhgnr5c"]
 
 [ext_resource type="Script" uid="uid://bpfkxppsqftub" path="res://interstellar-apes/overworld systems/enemy.gd" id="1_vgf70"]
 [ext_resource type="Texture2D" uid="uid://bsp8mrt6c2pnf" path="res://interstellar-apes/Fantasy Battle Pack 26-10-22/Sprite Sheets/Thief/Thief_Blue1.png" id="2_ghia3"]
-[ext_resource type="Script" uid="uid://c1qntealhk3fd" path="res://interstellar-apes/overworld systems/enemyidle.gd" id="3_ghia3"]
-[ext_resource type="Script" uid="uid://dc5h2qssorwny" path="res://interstellar-apes/overworld systems/statemachine.gd" id="3_tqwlh"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0n4ae"]
 size = Vector2(16, 16)
@@ -18,6 +16,7 @@ collision_mask = 3
 motion_mode = 1
 wall_min_slide_angle = 0.0
 script = ExtResource("1_vgf70")
+group_name = "enemy1"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_0n4ae")
@@ -26,12 +25,6 @@ shape = SubResource("RectangleShape2D_0n4ae")
 texture = SubResource("AtlasTexture_tqwlh")
 
 [node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
+path_postprocessing = 1
 simplify_path = true
 debug_enabled = true
-
-[node name="statemachine" type="Node" parent="." node_paths=PackedStringArray("initial_state")]
-script = ExtResource("3_tqwlh")
-initial_state = NodePath("enemyidle")
-
-[node name="enemyidle" type="Node" parent="statemachine"]
-script = ExtResource("3_ghia3")
