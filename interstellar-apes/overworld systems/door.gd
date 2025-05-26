@@ -15,4 +15,3 @@ func on_interact():
 	
 	
 	print("interacted")
-	

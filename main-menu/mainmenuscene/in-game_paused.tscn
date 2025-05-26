@@ -13,31 +13,30 @@ bg_color = Color(0.6, 0.6, 0.6, 0)
 
 [node name="Control" type="Control"]
 layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
+anchor_right = 0.806
+anchor_bottom = 0.866
 offset_left = 312.0
 offset_top = 127.0
-offset_right = -261.0
-offset_bottom = -137.0
+offset_right = -37.5121
+offset_bottom = -50.168
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_w2xev")
 
 [node name="Panel" type="Panel" parent="."]
 layout_mode = 0
-offset_left = -79.0
-offset_top = -20.0
-offset_right = 613.0
-offset_bottom = 434.0
+offset_left = -312.0
+offset_top = -126.0
+offset_right = 245.0
+offset_bottom = 208.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_1kufw")
 
 [node name="continue_button" type="Button" parent="."]
 layout_mode = 0
-offset_left = 153.0
-offset_top = 43.0
-offset_right = 371.0
-offset_bottom = 101.0
+offset_left = -147.0
+offset_top = -117.0
+offset_right = 36.0
+offset_bottom = -71.0
 theme_override_fonts/font = ExtResource("2_v50yl")
 theme_override_font_sizes/font_size = 45
 theme_override_styles/normal = ExtResource("3_wcd56")
@@ -46,10 +45,10 @@ script = ExtResource("4_v50yl")
 
 [node name="settings_button" type="Button" parent="."]
 layout_mode = 0
-offset_left = 154.0
-offset_top = 109.0
-offset_right = 369.0
-offset_bottom = 169.0
+offset_left = -147.0
+offset_top = -64.0
+offset_right = 39.0
+offset_bottom = -18.0
 theme_override_fonts/font = ExtResource("2_v50yl")
 theme_override_font_sizes/font_size = 45
 theme_override_styles/normal = ExtResource("3_wcd56")
@@ -57,10 +56,10 @@ text = "SETTINGS"
 
 [node name="character_button" type="Button" parent="."]
 layout_mode = 0
-offset_left = 153.0
-offset_top = 176.0
-offset_right = 366.0
-offset_bottom = 234.0
+offset_left = -165.0
+offset_top = -12.0
+offset_right = 49.0
+offset_bottom = 34.0
 theme_override_fonts/font = ExtResource("2_v50yl")
 theme_override_font_sizes/font_size = 45
 theme_override_styles/normal = ExtResource("3_wcd56")
@@ -68,10 +67,10 @@ text = "CHARACTER"
 
 [node name="main_menu_button" type="Button" parent="."]
 layout_mode = 0
-offset_left = 153.0
-offset_top = 241.0
-offset_right = 366.0
-offset_bottom = 299.0
+offset_left = -163.0
+offset_top = 42.0
+offset_right = 58.0
+offset_bottom = 88.0
 theme_override_fonts/font = ExtResource("2_v50yl")
 theme_override_font_sizes/font_size = 45
 theme_override_styles/normal = ExtResource("3_wcd56")
@@ -79,10 +78,10 @@ text = "MAIN MENU"
 
 [node name="quit_button" type="Button" parent="."]
 layout_mode = 0
-offset_left = 154.0
-offset_top = 307.0
-offset_right = 366.0
-offset_bottom = 367.0
+offset_left = -155.0
+offset_top = 104.0
+offset_right = 54.0
+offset_bottom = 151.0
 scale = Vector2(0.994024, 1.01717)
 theme_override_fonts/font = ExtResource("2_v50yl")
 theme_override_font_sizes/font_size = 45

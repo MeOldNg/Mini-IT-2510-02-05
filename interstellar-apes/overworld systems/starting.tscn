@@ -3,7 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://c3bxs6vkf66ig" path="res://interstellar-apes/scenes/player.tscn" id="1_23lrd"]
 [ext_resource type="Texture2D" uid="uid://21bnkennaf2t" path="res://interstellar-apes/Fantasy Battle Pack 26-10-22/Tiles/FullTileset.png" id="1_jc1gh"]
 [ext_resource type="PackedScene" uid="uid://dud5fhsqf24gm" path="res://interstellar-apes/overworld systems/box.tscn" id="4_23lrd"]
-[ext_resource type="PackedScene" uid="uid://buhd451mfee04" path="res://interstellar-apes/overworld systems/door.tscn" id="4_scrwo"]
+[ext_resource type="PackedScene" uid="uid://bvm0h4sstjker" path="res://interstellar-apes/overworld systems/door.tscn" id="4_scrwo"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lrhn5"]
 texture = ExtResource("1_jc1gh")
