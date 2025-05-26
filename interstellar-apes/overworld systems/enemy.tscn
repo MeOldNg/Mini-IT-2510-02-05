@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://cxbxljkhgnr5c"]
+[gd_scene load_steps=6 format=3 uid="uid://cxbxljkhgnr5c"]
 
 [ext_resource type="Script" uid="uid://bpfkxppsqftub" path="res://interstellar-apes/overworld systems/enemy.gd" id="1_vgf70"]
 [ext_resource type="Texture2D" uid="uid://bsp8mrt6c2pnf" path="res://interstellar-apes/Fantasy Battle Pack 26-10-22/Sprite Sheets/Thief/Thief_Blue1.png" id="2_ghia3"]
@@ -9,6 +9,9 @@ size = Vector2(16, 16)
 [sub_resource type="AtlasTexture" id="AtlasTexture_tqwlh"]
 atlas = ExtResource("2_ghia3")
 region = Rect2(8, 168, 16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vgf70"]
+size = Vector2(64, 56)
 
 [node name="Enemy" type="CharacterBody2D"]
 collision_layer = 16
@@ -28,3 +31,9 @@ texture = SubResource("AtlasTexture_tqwlh")
 path_postprocessing = 1
 simplify_path = true
 debug_enabled = true
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0, 36)
+shape = SubResource("RectangleShape2D_vgf70")

@@ -16,12 +16,16 @@ func _physics_process(delta: float) -> void:
 	var vector = Vector2.ZERO
 	if position.y - target.position.y < -1:
 		vector.y += 1
+		rotation_degrees = 0
 	elif position.y - target.position.y > 1:
 		vector.y -= 1
+		rotation_degrees = 180
 	elif position.x - target.position.x < 1:
 		vector.x += 1
+		rotation_degrees = 270
 	elif position.x - target.position.x > 1:
 		vector.x -= 1
+		rotation_degrees = 90
 	velocity = vector * speed
 	move_and_slide()
 	if state == states.patrol:
