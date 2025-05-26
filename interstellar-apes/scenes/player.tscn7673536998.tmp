@@ -155,7 +155,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_dqkch")
 }],
 "loop": true,
-"name": &"Idledown",
+"name": &"Idle_down",
 "speed": 6.0
 }, {
 "frames": [{
@@ -163,7 +163,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_cs1tg")
 }],
 "loop": true,
-"name": &"Idleleft",
+"name": &"Idle_left",
 "speed": 5.0
 }, {
 "frames": [{
@@ -171,7 +171,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_2dvfe")
 }],
 "loop": true,
-"name": &"Idleright",
+"name": &"Idle_right",
 "speed": 5.0
 }, {
 "frames": [{
@@ -179,7 +179,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_giy8y")
 }],
 "loop": true,
-"name": &"Idleup",
+"name": &"Idle_up",
 "speed": 5.0
 }, {
 "frames": [{
@@ -208,7 +208,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_oprun")
 }],
 "loop": true,
-"name": &"movedown",
+"name": &"move_down",
 "speed": 10.0
 }, {
 "frames": [{
@@ -237,7 +237,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_4ni07")
 }],
 "loop": true,
-"name": &"moveleft",
+"name": &"move_left",
 "speed": 10.0
 }, {
 "frames": [{
@@ -266,7 +266,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_wnwbv")
 }],
 "loop": true,
-"name": &"moveright",
+"name": &"move_right",
 "speed": 10.0
 }, {
 "frames": [{
@@ -295,14 +295,13 @@ animations = [{
 "texture": SubResource("AtlasTexture_j2b1d")
 }],
 "loop": true,
-"name": &"moveup",
+"name": &"move_up",
 "speed": 10.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_t5uvr"]
-size = Vector2(20, 26)
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_2dvfe"]
 
-[node name="Player" type="CharacterBody2D" groups=["player"]]
+[node name="CharacterBody2D" type="CharacterBody2D"]
 collision_mask = 10
 motion_mode = 1
 script = ExtResource("1_qhqgy")
@@ -310,11 +309,11 @@ script = ExtResource("1_qhqgy")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, 5)
 sprite_frames = SubResource("SpriteFrames_cs1tg")
-animation = &"moveleft"
+animation = &"Idle_right"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 3)
-shape = SubResource("RectangleShape2D_t5uvr")
+position = Vector2(0, 15)
+shape = SubResource("CapsuleShape2D_2dvfe")
 
 [node name="interactable" type="RayCast2D" parent="."]
 position = Vector2(0, 16)
