@@ -28,6 +28,8 @@ texture = SubResource("AtlasTexture_tqwlh")
 
 [node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
 debug_enabled = true
+debug_use_custom = true
+debug_path_custom_color = Color(0.900685, 0, 0.269152, 1)
 
 [node name="sights" type="Area2D" parent="."]
 collision_layer = 0
