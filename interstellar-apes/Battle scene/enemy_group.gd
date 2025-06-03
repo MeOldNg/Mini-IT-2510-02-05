@@ -6,6 +6,7 @@ var is_battling: bool = false
 var index: int = 0
 var turn: int = 1
 
+signal textbox_closed
 signal next_player
 @onready var choice = $"../CanvasLayer/choice"
 
@@ -38,6 +39,11 @@ func _process(_delta) :
 			is_battling = true
 			_action(action_queue)
 		
+
+func _textbox_appeared():
+	if (Input.is_action_just_pressed("ui_accept") or Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT)):
+			$TextBox.hide()
+			emit_signal("textbox_closed") 
 
 func _action(stack):
 	for i in stack:
@@ -89,13 +95,20 @@ func dont_show_choice():
 	$"../CanvasLayer/choice/Next Turn".disabled = false
 
 func _on_attack_pressed() -> void:
+	display_text("Player attack with powerful forces!!!")
+	emit_signal("textbox_closed")
 	choice.hide()
 	_start_choosing()
 
 
 func _on_next_turn_pressed() -> void:
-	pass # Replace with function body.
+	display_text("Enenmy start to take turn.")
+	display_text("Bang!!!")
+	emit_signal("textbox_closed")
 	turn +=1
 	decision()
 	
 	
+func display_text(text):
+	$"../TextBox".show()
+	$"../TextBox/Label".text = text

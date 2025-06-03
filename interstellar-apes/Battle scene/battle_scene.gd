@@ -4,9 +4,11 @@ signal textbox_closed
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	$TextBox.hide()
+	$CanvasLayer/choice.hide()
 	
-	display_text("monkey receive damages")
+	display_text("level one begins!!!")
 	await self.textbox_closed
+	$CanvasLayer/choice.show()
 
 
 
@@ -19,3 +21,8 @@ func _input(event):
 func display_text(text):
 	$TextBox.show()
 	$TextBox/Label.text = text
+
+func _on_abort_pressed() -> void:
+	display_text("The player escape the battle....")
+	await self.textbox_closed
+	get_tree().quit()
