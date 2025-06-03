@@ -1,11 +1,156 @@
-[gd_scene load_steps=7 format=3 uid="uid://xwnewfddahlc"]
+[gd_scene load_steps=28 format=3 uid="uid://xwnewfddahlc"]
 
 [ext_resource type="PackedScene" uid="uid://dgqlf7gxcxbnm" path="res://interstellar-apes/Battle scene/enemy.tscn" id="1_esrs1"]
 [ext_resource type="Script" uid="uid://cq5bayfxsxuh3" path="res://interstellar-apes/Battle scene/player_group.gd" id="1_i7ihr"]
 [ext_resource type="Texture2D" uid="uid://cisfcgtra0q74" path="res://interstellar-apes/sprites/NPC character/RoboticApe_npc-removebg-preview (1)flip.png" id="2_irglx"]
 [ext_resource type="Texture2D" uid="uid://bnkqq50lp83wu" path="res://interstellar-apes/sprites/NPC character/monkey_npc-removebg-preview flip.png" id="3_i7ihr"]
+[ext_resource type="Texture2D" uid="uid://bewj85l2prhof" path="res://interstellar-apes/sprites/potions/PotEffects.png" id="4_hikyl"]
 [ext_resource type="Texture2D" uid="uid://6yug1qpqo3i1" path="res://interstellar-apes/sprites/Astronaut Player/Astronaut Player/Astranut player facing right.png" id="4_jln2s"]
 [ext_resource type="Texture2D" uid="uid://bwpvctq56mr4v" path="res://interstellar-apes/sprites/Enemy/golem.png" id="5_hikyl"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hmavy"]
+atlas = ExtResource("4_hikyl")
+region = Rect2(0, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5vcf0"]
+atlas = ExtResource("4_hikyl")
+region = Rect2(16, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dsf4q"]
+atlas = ExtResource("4_hikyl")
+region = Rect2(256, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vlx0x"]
+atlas = ExtResource("4_hikyl")
+region = Rect2(272, 0, 16, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_4t684"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hmavy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5vcf0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dsf4q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vlx0x")
+}],
+"loop": true,
+"name": &"default",
+"speed": 3.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r1o8u"]
+atlas = ExtResource("4_hikyl")
+region = Rect2(32, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0f347"]
+atlas = ExtResource("4_hikyl")
+region = Rect2(48, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t58cd"]
+atlas = ExtResource("4_hikyl")
+region = Rect2(256, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jxw4t"]
+atlas = ExtResource("4_hikyl")
+region = Rect2(272, 0, 16, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_1kbr7"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r1o8u")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0f347")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t58cd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jxw4t")
+}],
+"loop": true,
+"name": &"default",
+"speed": 3.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rvvr5"]
+atlas = ExtResource("4_hikyl")
+region = Rect2(64, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dob41"]
+atlas = ExtResource("4_hikyl")
+region = Rect2(80, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ehghl"]
+atlas = ExtResource("4_hikyl")
+region = Rect2(256, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1tpou"]
+atlas = ExtResource("4_hikyl")
+region = Rect2(272, 0, 16, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_0d351"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rvvr5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dob41")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ehghl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1tpou")
+}],
+"loop": true,
+"name": &"default",
+"speed": 3.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_48nty"]
+atlas = ExtResource("4_hikyl")
+region = Rect2(160, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qs8g8"]
+atlas = ExtResource("4_hikyl")
+region = Rect2(176, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tv0tr"]
+atlas = ExtResource("4_hikyl")
+region = Rect2(256, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_66eyu"]
+atlas = ExtResource("4_hikyl")
+region = Rect2(272, 0, 16, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_d38fh"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_48nty")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qs8g8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tv0tr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_66eyu")
+}],
+"loop": true,
+"name": &"default",
+"speed": 3.0
+}]
 
 [node name="PlayerGroup" type="Node2D"]
 script = ExtResource("1_i7ihr")
@@ -18,6 +163,13 @@ texture = ExtResource("2_irglx")
 [node name="ProgressBar" parent="CharacterBody2D" index="2"]
 modulate = Color(0.126268, 0.705987, 0.0762629, 1)
 
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D"]
+visible = false
+position = Vector2(68, -1)
+scale = Vector2(3.1875, 2.5)
+sprite_frames = SubResource("SpriteFrames_4t684")
+frame_progress = 0.623101
+
 [node name="CharacterBody2D2" parent="." instance=ExtResource("1_esrs1")]
 
 [node name="Sprite2D" parent="CharacterBody2D2" index="0"]
@@ -25,6 +177,13 @@ texture = ExtResource("3_i7ihr")
 
 [node name="ProgressBar" parent="CharacterBody2D2" index="2"]
 modulate = Color(0.130758, 0.71, 0.0781, 1)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D2"]
+visible = false
+position = Vector2(66, -1)
+scale = Vector2(3.5625, 2.28125)
+sprite_frames = SubResource("SpriteFrames_1kbr7")
+frame_progress = 0.687996
 
 [node name="CharacterBody2D3" parent="." instance=ExtResource("1_esrs1")]
 
@@ -35,6 +194,13 @@ texture = ExtResource("4_jln2s")
 
 [node name="ProgressBar" parent="CharacterBody2D3" index="2"]
 modulate = Color(0.130758, 0.71, 0.0781, 1)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D3"]
+visible = false
+position = Vector2(67.125, -4)
+scale = Vector2(3.64062, 2.125)
+sprite_frames = SubResource("SpriteFrames_0d351")
+frame_progress = 0.0456366
 
 [node name="CharacterBody2D4" parent="." instance=ExtResource("1_esrs1")]
 
@@ -47,6 +213,11 @@ texture = ExtResource("5_hikyl")
 modulate = Color(0.130758, 0.71, 0.0781, 1)
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D4"]
+visible = false
+position = Vector2(69, -4)
+scale = Vector2(3.5, 2.125)
+sprite_frames = SubResource("SpriteFrames_d38fh")
+frame_progress = 0.810398
 
 [editable path="CharacterBody2D"]
 [editable path="CharacterBody2D2"]
