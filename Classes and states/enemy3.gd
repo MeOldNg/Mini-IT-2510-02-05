@@ -9,17 +9,9 @@ const speed = 100
 func _physics_process(delta: float) -> void:
 	var vector = Vector2.ZERO
 	var dir = to_local(nav_agent.get_next_path_position()).normalized()
-	var direction = atan2(dir.y, dir.x)
-	print(rad_to_deg(direction))
-	if round(direction) == -2:
-		vector.y -= 1 #up
-	if round(direction) == 2:
-		vector.y += 1 #down
-	if round(direction) == 0:
-		vector.x += 1 # left
-	if round(direction) == 3:
-		vector.x -= 1 #right
-
+	
+	vector = Vector2.RIGHT.rotated(round(dir.angle() / TAU * 4) * TAU / 4).snapped(Vector2.ONE)
+	velocity = vector * speed
 	#if rad_to_deg(direction) 
 	
 	#velocity = dir * speed
@@ -33,3 +25,5 @@ func makepath() -> void:
 
 func _on_timer_timeout() -> void:
 	makepath()
+
+# https://www.reddit.com/r/godot/comments/t206my/how_to_get_a_direction_from_a_vector2d/
