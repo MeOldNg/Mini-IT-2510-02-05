@@ -1,0 +1,46 @@
+[gd_scene load_steps=6 format=3 uid="uid://cxbxljkhgnr5c"]
+
+[ext_resource type="Script" uid="uid://dtmlgn0rs4v4w" path="res://Classes and states/enemy3.gd" id="1_vgf70"]
+[ext_resource type="Texture2D" uid="uid://bsp8mrt6c2pnf" path="res://interstellar-apes/Fantasy Battle Pack 26-10-22/Sprite Sheets/Thief/Thief_Blue1.png" id="2_ghia3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0n4ae"]
+size = Vector2(16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tqwlh"]
+atlas = ExtResource("2_ghia3")
+region = Rect2(8, 168, 16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vgf70"]
+size = Vector2(64, 56)
+
+[node name="Enemy" type="CharacterBody2D"]
+collision_layer = 16
+collision_mask = 3
+motion_mode = 1
+wall_min_slide_angle = 0.0
+script = ExtResource("1_vgf70")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_0n4ae")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = SubResource("AtlasTexture_tqwlh")
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
+debug_enabled = true
+debug_use_custom = true
+debug_path_custom_color = Color(0.900685, 0, 0.269152, 1)
+
+[node name="sights" type="Area2D" parent="."]
+collision_layer = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="sights"]
+position = Vector2(0, 36)
+shape = SubResource("RectangleShape2D_vgf70")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.5
+autostart = true
+
+[connection signal="body_shape_entered" from="sights" to="." method="_on_sights_body_shape_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
