@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://cxbxljkhgnr5c"]
 
 [ext_resource type="Script" uid="uid://b6iqmvfqaeieq" path="res://Classes and states/enemy_astar.gd" id="1_vgf70"]
-[ext_resource type="Texture2D" uid="uid://bsp8mrt6c2pnf" path="res://interstellar-apes/Fantasy Battle Pack 26-10-22/Sprite Sheets/Thief/Thief_Blue1.png" id="2_ghia3"]
+[ext_resource type="Texture2D" uid="uid://bsp8mrt6c2pnf" path="res://interstellar-apes/overworld_assets/Fantasy Battle Pack 26-10-22/Sprite Sheets/Thief/Thief_Blue1.png" id="2_ghia3"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0n4ae"]
 size = Vector2(16, 16)

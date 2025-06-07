@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=4 uid="uid://b7lqt6j3slae1"]
 
 [ext_resource type="PackedScene" uid="uid://c3bxs6vkf66ig" path="res://interstellar-apes/scenes/player.tscn" id="1_23lrd"]
-[ext_resource type="Texture2D" uid="uid://21bnkennaf2t" path="res://interstellar-apes/Fantasy Battle Pack 26-10-22/Tiles/FullTileset.png" id="1_jc1gh"]
+[ext_resource type="Texture2D" uid="uid://21bnkennaf2t" path="res://interstellar-apes/overworld_assets/Fantasy Battle Pack 26-10-22/Tiles/FullTileset.png" id="1_jc1gh"]
 [ext_resource type="Script" uid="uid://btfsnifcpj5o8" path="res://interstellar-apes/overworld systems/astar.gd" id="3_scrwo"]
 [ext_resource type="PackedScene" uid="uid://cxbxljkhgnr5c" path="res://interstellar-apes/overworld systems/enemy.tscn" id="5_23lrd"]
 

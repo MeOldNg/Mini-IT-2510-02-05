@@ -95,19 +95,4 @@ func _physics_process(_delta: float) -> void:
 		animation_state = "Idle"
 	
 	
-	#update_sprite_direction(direction)
-	#update_sprite()		
 	animated_sprite_2d.play(animation_state+animation_direction)
-	#
-	#velocity.x = move_toward(velocity.x, direction.x*SPEED, acceleration)
-	#velocity.y = move_toward(velocity.y, direction.y*SPEED, acceleration)
-	#
-	#move_and_collide(velocity*delta)
-	
-
-	
-	
-	
-	
-	
-	
