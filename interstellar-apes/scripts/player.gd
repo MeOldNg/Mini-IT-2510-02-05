@@ -10,35 +10,9 @@ var animation_direction: String = "down"
 var animation_state: String = "Idle"
 var is_holding_something = false
 
-#func update_sprite_direction(input: Vector2) -> void:
-	#match input:
-		#Vector2.DOWN:
-			#animation_direction = "move_down"
-			#if not is_holding_something:
-				#interactable.target_position = Vector2.DOWN * 20
-				#interactable.force_raycast_update()
-		#Vector2.UP:
-			#animation_direction = "move_up"
-			#if not is_holding_something:
-				#interactable.target_position = Vector2.UP * 20
-				#interactable.force_raycast_update()
-		#Vector2.RIGHT:
-			#animation_direction = "move_right"
-			#if not is_holding_something:
-				#interactable.target_position = Vector2.RIGHT * 20
-				#interactable.force_raycast_update()
-		#Vector2.LEFT:
-			#animation_direction = "move_left"
-
- 
- 
-#func update_sprite() -> void:
-	#if velocity != Vector2.ZERO:
-		#animation_state > "move"
-	#else:
-		#animation_state > "Idle"
-
- 
+func reparented():
+	print("new parent is", get_parent())
+	
 func _physics_process(_delta: float) -> void:
 	#print("position: ", position)
 	#print("global: ", global_position)

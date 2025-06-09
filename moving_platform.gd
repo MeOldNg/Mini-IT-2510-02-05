@@ -1,6 +1,7 @@
 extends PathFollow2D
 @onready var timer: Timer = $Timer
 @onready var area_2d: Area2D = $Area2D
+@onready var remote_transform_2d: RemoteTransform2D = $RemoteTransform2D
 
 var direction = 1
 func _physics_process(delta: float) -> void:
@@ -10,14 +11,14 @@ func _physics_process(delta: float) -> void:
 			timer.start(5)
 
 func _on_area_2d_body_entered(body: Node2D) -> void:
-	if body.is_in_group("player"):
-		if body.get_parent() != self:
-			body.reparent(self)
-			print("reparented")
+	if body.is_in_group("player") and body.get_parent() != self:
+		body.call_deferred("reparent", self, true)
+		print("reparented")
 
 func _on_area_2d_body_exited(body: Node2D) -> void:
-	body.reparent(get_tree().root)
-	print("unparented")
+	if body.is_in_group("player") and body.get_parent() != get_tree().root:
+		body.call_deferred("reparent", get_tree().root, true)
+		print("unparented")
 
 func _on_timer_timeout() -> void:
 	print("direction changed")
