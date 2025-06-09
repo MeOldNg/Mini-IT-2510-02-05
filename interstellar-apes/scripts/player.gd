@@ -40,6 +40,8 @@ var is_holding_something = false
 
  
 func _physics_process(_delta: float) -> void:
+	#print("position: ", position)
+	#print("global: ", global_position)
 	if $interactable.is_colliding(): # these are interactable codes
 		var collider = $interactable.get_collider()
 		if collider.interact_type == "click":

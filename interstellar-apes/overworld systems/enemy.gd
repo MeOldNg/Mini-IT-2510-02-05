@@ -2,10 +2,10 @@ extends CharacterBody2D
 class_name enemy
 const speed = 100
 
+enum states {patrol, alert, chase}
 @export var group_name : String
 var target 
-
-
+var state: states = states.patrol
 var positions : Array #positions for wandering
 var temp_posititions : Array #temporary var to store positions
 var current_position : Marker2D #current position

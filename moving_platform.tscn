@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=4 uid="uid://dcvj4xd7uklrv"]
+[gd_scene load_steps=8 format=4 uid="uid://dytynhmxjd6oy"]
 
 [ext_resource type="Script" uid="uid://b0sa01l48xcmk" path="res://moving_platform.gd" id="1_q06lf"]
 [ext_resource type="Texture2D" uid="uid://cwxffgo65cm6c" path="res://interstellar-apes/overworld_assets/basic_tileset_and_assets_standard/terrain_tiles_v2.png" id="2_f8lbu"]
@@ -1058,21 +1058,24 @@ size = Vector2(192, 192)
 [node name="Path2D" type="Path2D"]
 
 [node name="PathFollow2D" type="PathFollow2D" parent="."]
-position = Vector2(-0.00286865, -0.216583)
+loop = false
 script = ExtResource("1_q06lf")
-
-[node name="Timer" type="Timer" parent="PathFollow2D"]
-wait_time = 5.0
 
 [node name="TileMapLayer" type="TileMapLayer" parent="PathFollow2D"]
 tile_map_data = PackedByteArray("AAD/////AQAFAAEAAAD+//7/AQAFAAEAAAAAAP//AQAFAAEAAAAAAAAAAQAFAAEAAAD//wAAAQAFAAEAAAD+////AQAFAAEAAAD9////AQAEAAEAAAD///7/AQAFAAEAAAD///3/AQAFAAAAAAABAP//AQAFAAEAAAACAP//AQAGAAEAAAAAAAEAAQAFAAEAAAAAAAIAAQAFAAIAAAABAAEAAQAFAAEAAAABAAIAAQAFAAIAAAACAAIAAQAGAAIAAAACAAEAAQAGAAEAAAACAAAAAQAGAAEAAAABAAAAAQAFAAEAAAD//wIAAQAFAAIAAAD+/wIAAQAFAAIAAAD9/wIAAQAEAAIAAAD9/wEAAQAEAAEAAAD9/wAAAQAEAAEAAAD9//7/AQAEAAEAAAD9//3/AQAEAAAAAAD+//3/AQAFAAAAAAD+/wAAAQAFAAEAAAD+/wEAAQAFAAEAAAD//wEAAQAFAAEAAAAAAP7/AQAFAAEAAAABAP3/AQAFAAAAAAACAP3/AQAGAAAAAAACAP7/AQAGAAEAAAABAP7/AQAFAAEAAAAAAP3/AQAFAAAAAAA=")
 tile_set = SubResource("TileSet_1fxty")
 
 [node name="Area2D" type="Area2D" parent="PathFollow2D"]
+collision_layer = 32
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PathFollow2D/Area2D"]
 position = Vector2(0.00286865, 0.216583)
 shape = SubResource("RectangleShape2D_f8lbu")
 
-[connection signal="timeout" from="PathFollow2D/Timer" to="." method="_on_timer_timeout"]
+[node name="Timer" type="Timer" parent="PathFollow2D"]
+wait_time = 5.0
+one_shot = true
+
 [connection signal="body_entered" from="PathFollow2D/Area2D" to="PathFollow2D" method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="PathFollow2D/Area2D" to="PathFollow2D" method="_on_area_2d_body_exited"]
+[connection signal="timeout" from="PathFollow2D/Timer" to="PathFollow2D" method="_on_timer_timeout"]
