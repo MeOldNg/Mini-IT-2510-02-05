@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://dkrewxtxg7v7j"]
+[gd_scene load_steps=13 format=3 uid="uid://dkrewxtxg7v7j"]
 
 [ext_resource type="Script" uid="uid://dh5pqpc2d0l8x" path="res://main-menu/mainmenuscene/script/main_menu.gd" id="1_1u3ec"]
 [ext_resource type="Theme" uid="uid://cqmt4obqoeysj" path="res://main-menu/UI/panel_theme.tres" id="2_wt1xb"]
@@ -24,6 +24,9 @@ corner_radius_bottom_left = 25
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5x8rc"]
 bg_color = Color(0.318526, 0.634612, 0.84207, 1)
 draw_center = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dvqgk"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -142,6 +145,14 @@ theme_override_font_sizes/normal_font_size = 90
 theme_override_styles/normal = SubResource("StyleBoxFlat_5x8rc")
 bbcode_enabled = true
 text = "Interstellar Apes"
+
+[node name="easteregg" type="Button" parent="."]
+layout_mode = 0
+offset_left = 167.0
+offset_top = 100.0
+offset_right = 193.0
+offset_bottom = 126.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_dvqgk")
 
 [connection signal="pressed" from="play_game_button" to="." method="_on_play_game_button_pressed"]
 [connection signal="pressed" from="settings_button" to="." method="_on_settings_button_pressed"]

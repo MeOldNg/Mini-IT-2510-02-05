@@ -1,10 +1,9 @@
-[gd_scene load_steps=44 format=3 uid="uid://c3bxs6vkf66ig"]
+[gd_scene load_steps=43 format=3 uid="uid://c3bxs6vkf66ig"]
 
 [ext_resource type="Texture2D" uid="uid://0tmj1yakyepd" path="res://interstellar-apes/sprites/Astronaut Player/Astronaut Player/Astronaut Player.png" id="1_g2els"]
 [ext_resource type="Script" uid="uid://ueb0a4s7ymdc" path="res://interstellar-apes/scripts/player.gd" id="1_qhqgy"]
 [ext_resource type="Texture2D" uid="uid://blk6mu5q7hgyp" path="res://interstellar-apes/sprites/Astronaut Player/Astronaut Player/Astronaut Player_facing_right.png" id="2_qhqgy"]
 [ext_resource type="PackedScene" uid="uid://bprr5ke3jk16j" path="res://inventory/inv_ui.tscn" id="4_fdsfy"]
-[ext_resource type="PackedScene" uid="uid://c3icjkm4126wy" path="res://main-menu/mainmenuscene/in-game_paused.tscn" id="5_skjqe"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_dqkch"]
 atlas = ExtResource("1_g2els")
@@ -328,10 +327,3 @@ offset_left = -52.0
 offset_top = -61.0
 offset_right = 52.0
 offset_bottom = -13.0
-
-[node name="Control" parent="." instance=ExtResource("5_skjqe")]
-anchor_right = 0.0
-offset_left = 172.0
-offset_top = 33.0
-offset_right = 172.0
-offset_bottom = 33.0

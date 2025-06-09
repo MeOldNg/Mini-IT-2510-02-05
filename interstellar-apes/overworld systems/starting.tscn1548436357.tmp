@@ -465,6 +465,8 @@ agent_radius = 7.0
 [node name="Player" parent="." instance=ExtResource("1_23lrd")]
 z_index = 10
 position = Vector2(408, -64)
+SPEED = 150
+acceleration = 15.0
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 zoom = Vector2(3, 3)
@@ -493,3 +495,5 @@ position = Vector2(456, 112)
 [node name="NavigationRegion2D" type="NavigationRegion2D" parent="."]
 visible = false
 navigation_polygon = SubResource("NavigationPolygon_scrwo")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
