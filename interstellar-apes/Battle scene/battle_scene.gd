@@ -1,5 +1,7 @@
 extends Node2D
 
+@onready var defend_effect = $CharacterBody2D/AnimatedSprite2D
+
 signal textbox_closed
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:

@@ -63,7 +63,6 @@ func decision():
 		show_choice()
 		$"../CanvasLayer/choice/Next Turn".disabled = true
 		$"../CanvasLayer/choice/Attack".disabled = false
-		$"../CanvasLayer/choice/Defend".disabled = false
 		$"../CanvasLayer/choice/Abort".disabled = false
 	else:
 		dont_show_choice()
@@ -82,7 +81,6 @@ func _start_choosing():
 func show_choice():
 	choice.show()
 	choice.find_child("Attack").grab_focus()
-	choice.find_child("Defend").grab_focus()
 	choice.find_child("Abort").grab_focus()
 
 
@@ -90,7 +88,6 @@ func dont_show_choice():
 	choice.show()
 	choice.find_child("Next Turn").grab_focus()
 	$"../CanvasLayer/choice/Attack".disabled = true
-	$"../CanvasLayer/choice/Defend".disabled = true
 	$"../CanvasLayer/choice/Abort".disabled = true
 	$"../CanvasLayer/choice/Next Turn".disabled = false
 
