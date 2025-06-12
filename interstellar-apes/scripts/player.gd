@@ -1,7 +1,8 @@
 extends CharacterBody2D
 
 
-@export var SPEED := 150
+const default_speed = 150
+@export var speed := 150
 @export var acceleration :=15.0
 @onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
 @onready var interactable: RayCast2D = $interactable
@@ -14,8 +15,6 @@ func reparented():
 	print("new parent is", get_parent())
 	
 func _physics_process(_delta: float) -> void:
-	#print("position: ", position)
-	#print("global: ", global_position)
 	if $interactable.is_colliding(): # these are interactable codes
 		var collider = $interactable.get_collider()
 		if collider.interact_type == "click":
@@ -39,29 +38,31 @@ func _physics_process(_delta: float) -> void:
 		animation_direction = "up"
 		input_vector.y = -1
 		if not is_holding_something:
-			interactable.target_position = Vector2.UP * 20
+			interactable.target_position = Vector2.UP * 32
 			interactable.force_raycast_update()
 	elif Input.is_action_pressed("move_down"):
 		animation_direction = "down"
 		input_vector.y = 1
 		if not is_holding_something:
-			interactable.target_position = Vector2.DOWN * 20
+			interactable.target_position = Vector2.DOWN * 32
 			interactable.force_raycast_update()
 	elif Input.is_action_pressed("move_left"):
 		input_vector.x = -1
-		animation_direction = "left"
+		animation_direction = "side"
+		$AnimatedSprite2D.flip_h = true
 		if not is_holding_something:
-			interactable.target_position = Vector2.LEFT * 20
+			interactable.target_position = Vector2.LEFT * 24
 			interactable.force_raycast_update()
 	elif Input.is_action_pressed("move_right"):
-		animation_direction = "right"
+		animation_direction = "side"
+		$AnimatedSprite2D.flip_h = false
 		input_vector.x = 1
 		if not is_holding_something:
-			interactable.target_position = Vector2.RIGHT * 20
+			interactable.target_position = Vector2.RIGHT * 24
 			interactable.force_raycast_update()
 	else:
 		velocity = Vector2.ZERO
-	velocity = input_vector * SPEED
+	velocity = input_vector * speed
 	move_and_slide()
 	var _direction = Input.get_vector("move_left", "move_right", "move_up", "move_down")
 	
@@ -69,6 +70,20 @@ func _physics_process(_delta: float) -> void:
 		animation_state = "move"
 	else:
 		animation_state = "Idle"
-	
-	
 	animated_sprite_2d.play(animation_state+animation_direction)
+
+func heating(temp):
+	if temp == "hot":
+		speed = 150
+		print("im in heatzone")
+	if temp == "cold":
+		speed = 75
+		print("im in coldzone")
+
+
+
+
+
+
+#height = 32
+#width = 19
