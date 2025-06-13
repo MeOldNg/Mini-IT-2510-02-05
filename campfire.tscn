@@ -52,7 +52,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_b5him"]
-size = Vector2(128, 128)
+size = Vector2(384, 384)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_oufq8"]
 size = Vector2(48, 48)
@@ -71,7 +71,6 @@ animation = &"lit"
 collision_layer = 64
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="heat"]
-position = Vector2(0, -8)
 shape = SubResource("RectangleShape2D_b5him")
 
 [node name="interact" type="CollisionShape2D" parent="."]

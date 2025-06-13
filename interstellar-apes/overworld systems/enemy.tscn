@@ -1,43 +1,88 @@
-[gd_scene load_steps=6 format=3 uid="uid://cxbxljkhgnr5c"]
+[gd_scene load_steps=13 format=3 uid="uid://3teiiuf5aadf"]
 
-[ext_resource type="Script" path="res://Classes and states/enemy_astar.gd" id="1_vgf70"]
-[ext_resource type="Texture2D" uid="uid://bsp8mrt6c2pnf" path="res://interstellar-apes/overworld_assets/Fantasy Battle Pack 26-10-22/Sprite Sheets/Thief/Thief_Blue1.png" id="2_ghia3"]
+[ext_resource type="Script" uid="uid://mgennrmermca" path="res://Classes and states/enemytrue.gd" id="1_ghia3"]
+[ext_resource type="Texture2D" uid="uid://c2rlqnrtfk1x" path="res://interstellar-apes/overworld_assets/Fantasy Battle Pack 26-10-22/Sprite Sheets/Wizard/Wizard_Blue1.png" id="1_tf3mg"]
+[ext_resource type="Texture2D" uid="uid://bleiqgwuqb7mp" path="res://interstellar-apes/overworld_assets/RPG_Exclamation_Mark_Animation.png" id="3_ghia3"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_0n4ae"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_vgf70"]
+atlas = ExtResource("1_tf3mg")
+region = Rect2(8, 8, 16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tf3mg"]
 size = Vector2(16, 16)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_tqwlh"]
-atlas = ExtResource("2_ghia3")
-region = Rect2(8, 168, 16, 16)
-
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vgf70"]
-size = Vector2(64, 56)
+size = Vector2(64, 48)
 
-[node name="Enemy" type="CharacterBody2D"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_tqwlh"]
+atlas = ExtResource("3_ghia3")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0n4ae"]
+atlas = ExtResource("3_ghia3")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_grpoe"]
+atlas = ExtResource("3_ghia3")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pe6s0"]
+atlas = ExtResource("3_ghia3")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_d26mr"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tqwlh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0n4ae")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_grpoe")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pe6s0")
+}],
+"loop": false,
+"name": &"alerted",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ghia3"]
+size = Vector2(22, 22)
+
+[node name="enemy" type="CharacterBody2D"]
 collision_layer = 16
-collision_mask = 3
+collision_mask = 7
 motion_mode = 1
-wall_min_slide_angle = 0.0
-script = ExtResource("1_vgf70")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("RectangleShape2D_0n4ae")
+script = ExtResource("1_ghia3")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = SubResource("AtlasTexture_tqwlh")
+texture = SubResource("AtlasTexture_vgf70")
 
-[node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
-debug_enabled = true
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_tf3mg")
 
 [node name="sights" type="Area2D" parent="."]
 collision_layer = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="sights"]
-position = Vector2(0, 36)
+position = Vector2(0, 32)
 shape = SubResource("RectangleShape2D_vgf70")
 
-[node name="Timer" type="Timer" parent="."]
-autostart = true
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -16)
+scale = Vector2(0.5, 0.5)
+sprite_frames = SubResource("SpriteFrames_d26mr")
+animation = &"alerted"
 
-[connection signal="body_shape_entered" from="sights" to="." method="_on_sights_body_shape_entered"]
-[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[node name="crasher" type="Area2D" parent="."]
+collision_layer = 16
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="crasher"]
+shape = SubResource("RectangleShape2D_ghia3")
+
+[connection signal="body_entered" from="sights" to="." method="_on_sights_body_entered"]
+[connection signal="body_entered" from="crasher" to="." method="_on_crasher_body_entered"]
