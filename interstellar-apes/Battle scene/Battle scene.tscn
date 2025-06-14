@@ -1,8 +1,8 @@
-[gd_scene load_steps=12 format=3 uid="uid://cokxjmtxc2f3j"]
+[gd_scene load_steps=12 format=3 uid="uid://dcyg04a3onean"]
 
-[ext_resource type="Texture2D" uid="uid://bydko4ir1efoo" path="res://interstellar-apes/sprites/background 1.png" id="1_jpsik"]
-[ext_resource type="Script" path="res://interstellar-apes/Battle scene/battle_scene.gd" id="1_y4smo"]
+[ext_resource type="Script" uid="uid://cynhgb1uncsj3" path="res://interstellar-apes/Battle scene/battle_scene.gd" id="1_y4smo"]
 [ext_resource type="PackedScene" uid="uid://chjotg0rcmh02" path="res://interstellar-apes/Battle scene/enemy_group.tscn" id="2_wqcpm"]
+[ext_resource type="Texture2D" uid="uid://bnivx0dt8aucy" path="res://interstellar-apes/sprites/background mess up cities.png" id="2_y4smo"]
 [ext_resource type="PackedScene" uid="uid://xwnewfddahlc" path="res://interstellar-apes/Battle scene/player_group.tscn" id="3_8c40g"]
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_8c40g"]
@@ -35,7 +35,7 @@ script = ExtResource("1_y4smo")
 [node name="TextureRect" type="TextureRect" parent="."]
 offset_right = 1253.0
 offset_bottom = 728.0
-texture = ExtResource("1_jpsik")
+texture = ExtResource("2_y4smo")
 expand_mode = 1
 
 [node name="EnemyGroup" parent="." instance=ExtResource("2_wqcpm")]
@@ -81,19 +81,6 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_8c40g")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_y4smo")
 theme_override_styles/normal = SubResource("StyleBoxFlat_6t5x8")
 text = "Attack"
-
-[node name="Defend" type="Button" parent="CanvasLayer/choice"]
-material = SubResource("CanvasItemMaterial_8c40g")
-layout_mode = 2
-theme = SubResource("Theme_y4smo")
-theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
-theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
-theme_override_styles/hover = SubResource("StyleBoxFlat_8c40g")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_y4smo")
-theme_override_styles/normal = SubResource("StyleBoxFlat_6t5x8")
-text = "Defend
-"
 
 [node name="Abort" type="Button" parent="CanvasLayer/choice"]
 material = SubResource("CanvasItemMaterial_8c40g")

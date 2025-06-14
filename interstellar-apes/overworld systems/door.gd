@@ -12,6 +12,4 @@ func on_interact():
 	if not open:
 		set_collision_layer_value(2, true)
 		sprite.modulate = Color("red")
-	
-	
 	print("interacted")
