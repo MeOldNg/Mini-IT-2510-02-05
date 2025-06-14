@@ -1,0 +1,42 @@
+[gd_scene load_steps=4 format=3 uid="uid://c414wnqhd404q"]
+
+[ext_resource type="Script" uid="uid://btgu1uq6ox7uj" path="res://main-menu/mainmenuscene/firstintro.gd" id="1_vs4ne"]
+[ext_resource type="FontFile" uid="uid://cq850sbmqa2uk" path="res://main-menu/fonts/Jersey_25/Jersey25-Regular.ttf" id="2_cn1ik"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ij4bp"]
+bg_color = Color(0, 0, 0, 1)
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_vs4ne")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 0
+offset_right = 1158.0
+offset_bottom = 654.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_ij4bp")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 87.0
+offset_top = 87.0
+offset_right = 1107.0
+offset_bottom = 584.0
+theme_override_fonts/normal_font = ExtResource("2_cn1ik")
+theme_override_font_sizes/normal_font_size = 70
+text = "Many years into future, humans are no longer in in control of Earth.  The evolved apes that were previously test subjects but are now the dominant species, replaced them. "
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 830.0
+offset_top = 575.0
+offset_right = 1146.0
+offset_bottom = 649.0
+theme_override_fonts/normal_font = ExtResource("2_cn1ik")
+theme_override_font_sizes/normal_font_size = 35
+text = "Press Enter to Continue"
