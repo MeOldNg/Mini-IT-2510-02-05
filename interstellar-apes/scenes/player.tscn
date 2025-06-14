@@ -1,7 +1,8 @@
-[gd_scene load_steps=32 format=3 uid="uid://c3bxs6vkf66ig"]
+[gd_scene load_steps=33 format=3 uid="uid://c3bxs6vkf66ig"]
 
 [ext_resource type="Script" uid="uid://ueb0a4s7ymdc" path="res://interstellar-apes/scripts/player.gd" id="1_qhqgy"]
 [ext_resource type="Texture2D" uid="uid://dleywe251joe5" path="res://interstellar-apes/sprites/Astronaut Player/Astronaut Player/untitled.png" id="2_kynur"]
+[ext_resource type="PackedScene" uid="uid://c3icjkm4126wy" path="res://main-menu/mainmenuscene/in-game_paused.tscn" id="5_skjqe"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_t5uvr"]
 atlas = ExtResource("2_kynur")
@@ -247,3 +248,9 @@ shape = SubResource("RectangleShape2D_t5uvr")
 [node name="interactable" type="RayCast2D" parent="."]
 position = Vector2(0, 6)
 collision_mask = 4
+
+[node name="Control" parent="." instance=ExtResource("5_skjqe")]
+offset_left = 167.0
+offset_top = 42.0
+offset_right = 167.0
+offset_bottom = 42.0

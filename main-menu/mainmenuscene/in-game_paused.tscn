@@ -33,44 +33,22 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_1kufw")
 
 [node name="continue_button" type="Button" parent="."]
 layout_mode = 0
-offset_left = -231.0
-offset_top = -122.0
-offset_right = -117.0
-offset_bottom = -100.0
+offset_left = -229.0
+offset_top = -111.0
+offset_right = -115.0
+offset_bottom = -89.0
 theme_override_fonts/font = ExtResource("2_v50yl")
 theme_override_font_sizes/font_size = 20
 theme_override_styles/normal = ExtResource("3_wcd56")
 text = "CONTINUE"
 script = ExtResource("4_v50yl")
 
-[node name="settings_button" type="Button" parent="."]
-layout_mode = 0
-offset_left = -231.0
-offset_top = -94.0
-offset_right = -119.0
-offset_bottom = -69.0
-theme_override_fonts/font = ExtResource("2_v50yl")
-theme_override_font_sizes/font_size = 20
-theme_override_styles/normal = ExtResource("3_wcd56")
-text = "SETTINGS"
-
-[node name="character_button" type="Button" parent="."]
-layout_mode = 0
-offset_left = -230.0
-offset_top = -64.0
-offset_right = -120.0
-offset_bottom = -39.0
-theme_override_fonts/font = ExtResource("2_v50yl")
-theme_override_font_sizes/font_size = 20
-theme_override_styles/normal = ExtResource("3_wcd56")
-text = "CHARACTER"
-
 [node name="main_menu_button" type="Button" parent="."]
 layout_mode = 0
-offset_left = -234.0
-offset_top = -33.0
-offset_right = -111.0
-offset_bottom = -7.0
+offset_left = -233.0
+offset_top = -66.0
+offset_right = -110.0
+offset_bottom = -40.0
 theme_override_fonts/font = ExtResource("2_v50yl")
 theme_override_font_sizes/font_size = 20
 theme_override_styles/normal = ExtResource("3_wcd56")
@@ -78,10 +56,10 @@ text = "MAIN MENU"
 
 [node name="quit_button" type="Button" parent="."]
 layout_mode = 0
-offset_left = -230.0
-offset_top = 1.00002
-offset_right = -112.0
-offset_bottom = 28.0
+offset_left = -229.0
+offset_top = -18.0
+offset_right = -111.0
+offset_bottom = 8.99999
 scale = Vector2(0.994024, 1.01717)
 theme_override_fonts/font = ExtResource("2_v50yl")
 theme_override_font_sizes/font_size = 20
@@ -100,7 +78,5 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_wcd56")
 text = "SAVE"
 
 [connection signal="pressed" from="continue_button" to="." method="_on_continue_button_pressed"]
-[connection signal="pressed" from="settings_button" to="." method="_on_settings_button_pressed"]
-[connection signal="pressed" from="character_button" to="." method="_on_character_button_pressed"]
 [connection signal="pressed" from="main_menu_button" to="." method="_on_main_menu_button_pressed"]
 [connection signal="pressed" from="quit_button" to="." method="_on_quit_button_pressed"]

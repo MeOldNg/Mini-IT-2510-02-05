@@ -1,0 +1,45 @@
+[gd_scene load_steps=4 format=3 uid="uid://ctf2ftroxfx1m"]
+
+[ext_resource type="FontFile" uid="uid://cq850sbmqa2uk" path="res://main-menu/fonts/Jersey_25/Jersey25-Regular.ttf" id="1_pvaws"]
+[ext_resource type="Script" uid="uid://ba2prs4u1p01d" path="res://main-menu/mainmenuscene/script/ending.gd" id="1_v2ai8"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_v2ai8"]
+bg_color = Color(0, 0, 0, 1)
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_v2ai8")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 0
+offset_right = 1155.0
+offset_bottom = 654.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_v2ai8")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 312.0
+offset_top = 106.0
+offset_right = 905.0
+offset_bottom = 177.0
+theme_override_fonts/normal_font = ExtResource("1_pvaws")
+theme_override_font_sizes/normal_font_size = 60
+text = "THE GAME CONTINUES..."
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 34.0
+offset_top = 452.0
+offset_right = 342.0
+offset_bottom = 597.0
+theme_override_fonts/normal_font = ExtResource("1_pvaws")
+theme_override_font_sizes/normal_font_size = 25
+text = "Credit:
+IMRAN HARIS BIN MOHD AZLI
+ZUL FADHLI BIN ZAIMAN
+NG JUN WEI"

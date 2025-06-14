@@ -33,4 +33,5 @@ func take_damage(value):
 		dead = true
 		emit_signal("died")
 	
-	
+func is_dead():
+	return dead	
