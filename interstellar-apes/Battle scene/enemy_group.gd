@@ -28,7 +28,7 @@ func _process(_delta) :
 			if(not enemy.is_dead()):
 				enemies_count += 1
 	if enemies_count == 0:
-		get_tree().change_scene_to_file("res://interstellar-apes/overworld systems/level_1_true.tscn")
+		get_tree().change_scene_to_file("res://main-menu/mainmenuscene/youwon.tscn")
 	if not choice.visible:
 		if Input.is_action_just_pressed("ui_up"):
 			if index > 0:

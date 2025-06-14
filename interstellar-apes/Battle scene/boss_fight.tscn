@@ -1,0 +1,131 @@
+[gd_scene load_steps=12 format=3 uid="uid://bkscs2ctrlanv"]
+
+[ext_resource type="Script" uid="uid://dun0vxyl2c6mn" path="res://interstellar-apes/Battle scene/boss_fight.gd" id="1_mpq7q"]
+[ext_resource type="Texture2D" uid="uid://bnivx0dt8aucy" path="res://interstellar-apes/sprites/background mess up cities.png" id="2_yh1ah"]
+[ext_resource type="PackedScene" uid="uid://xwnewfddahlc" path="res://interstellar-apes/Battle scene/player_group.tscn" id="4_56vsm"]
+[ext_resource type="PackedScene" uid="uid://beru6lv7sbd7o" path="res://interstellar-apes/scenes/enemy_golem.tscn" id="4_mpq7q"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_8c40g"]
+
+[sub_resource type="Theme" id="Theme_y4smo"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8c40g"]
+bg_color = Color(1, 1, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_y4smo"]
+bg_color = Color(1, 1, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6t5x8"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="Theme" id="Theme_8c40g"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ccl2c"]
+bg_color = Color(0.00184107, 0.00184107, 0.00184107, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(1, 1, 1, 1)
+
+[node name="Node2D" type="Node2D"]
+scale = Vector2(2, 2)
+script = ExtResource("1_mpq7q")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 1253.0
+offset_bottom = 728.0
+texture = ExtResource("2_yh1ah")
+expand_mode = 1
+
+[node name="enemy_golem" parent="." instance=ExtResource("4_mpq7q")]
+position = Vector2(248.5, 319)
+
+[node name="PlayerGroup" parent="." instance=ExtResource("4_56vsm")]
+position = Vector2(751.5, 134)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="choice" type="VBoxContainer" parent="CanvasLayer"]
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -322.0
+offset_top = -158.0
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="Next Turn" type="Button" parent="CanvasLayer/choice"]
+material = SubResource("CanvasItemMaterial_8c40g")
+layout_mode = 2
+theme = SubResource("Theme_y4smo")
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_styles/hover = SubResource("StyleBoxFlat_8c40g")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_y4smo")
+theme_override_styles/normal = SubResource("StyleBoxFlat_6t5x8")
+text = "Next Turn
+"
+
+[node name="Attack" type="Button" parent="CanvasLayer/choice"]
+material = SubResource("CanvasItemMaterial_8c40g")
+layout_mode = 2
+theme = SubResource("Theme_y4smo")
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_styles/hover = SubResource("StyleBoxFlat_8c40g")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_y4smo")
+theme_override_styles/normal = SubResource("StyleBoxFlat_6t5x8")
+text = "Attack"
+
+[node name="Abort" type="Button" parent="CanvasLayer/choice"]
+material = SubResource("CanvasItemMaterial_8c40g")
+layout_mode = 2
+theme = SubResource("Theme_y4smo")
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_styles/hover = SubResource("StyleBoxFlat_8c40g")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_y4smo")
+theme_override_styles/normal = SubResource("StyleBoxFlat_6t5x8")
+text = "Abort
+"
+
+[node name="Camera2D" type="Camera2D" parent="."]
+anchor_mode = 0
+zoom = Vector2(0.5, 0.5)
+
+[node name="TextBox" type="Panel" parent="."]
+offset_right = 579.0
+offset_bottom = 46.0
+theme = SubResource("Theme_8c40g")
+theme_override_styles/panel = SubResource("StyleBoxFlat_ccl2c")
+
+[node name="Label" type="Label" parent="TextBox"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -11.5
+offset_right = 196.0
+offset_bottom = 11.5
+grow_vertical = 2
+text = "monkey receive damages"
+
+[node name="Label2" type="Label" parent="TextBox"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -40.0
+offset_bottom = 23.0
+grow_horizontal = 0
+scale = Vector2(2, 2)
+text = ">"
+
+[connection signal="pressed" from="CanvasLayer/choice/Next Turn" to="PlayerGroup" method="_on_next_turn_pressed"]
+[connection signal="pressed" from="CanvasLayer/choice/Abort" to="." method="_on_abort_pressed"]
