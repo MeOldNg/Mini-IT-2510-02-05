@@ -27,4 +27,4 @@ func display_text(text):
 func _on_abort_pressed() -> void:
 	display_text("The player escape the battle....")
 	await self.textbox_closed
-	get_tree().quit()
+	get_tree().change_scene_to_file("res://interstellar-apes/overworld systems/level_1_true.tscn")
