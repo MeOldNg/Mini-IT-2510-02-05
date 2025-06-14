@@ -1,14 +1,16 @@
 extends Node2D
 
-var enemies = 4
+var enemies_count = 4
 var action_queue: Array = []
 var is_battling: bool = false
 var index: int = 0
 var turn: int = 1
 
+
 signal textbox_closed
 signal next_player
 @onready var choice = $"../CanvasLayer/choice"
+var enemies
 
 func _ready():
 	enemies = get_children()
@@ -20,6 +22,8 @@ func _ready():
 		
 
 func _process(_delta) :
+	if enemies_count <= 0:
+		get_tree().change_scene_to_file("res://interstellar-apes/overworld systems/level_1_true.tscn")
 	if not choice.visible:
 		if Input.is_action_just_pressed("ui_up"):
 			if index > 0:
@@ -48,6 +52,9 @@ func _textbox_appeared():
 func _action(stack):
 	for i in stack:
 		enemies[i].take_damage(1)
+		var dead = enemies[i].is_dead()
+		if dead:
+			enemies_count -= 1
 		await get_tree().create_timer(0.5).timeout
 	action_queue.clear()
 	is_battling = false

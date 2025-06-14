@@ -1,5 +1,6 @@
 extends CharacterBody2D
 
+@onready var player: CharacterBody2D = $"."
 
 const default_speed = 150
 @export var speed := 150
@@ -80,9 +81,7 @@ func heating(temp):
 		speed = 75
 		print("im in coldzone")
 
-
-
-
+	
 
 
 #height = 32
