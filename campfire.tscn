@@ -1,0 +1,80 @@
+[gd_scene load_steps=11 format=3 uid="uid://bcx123eareuvq"]
+
+[ext_resource type="Script" uid="uid://c2wjhrvwbmf23" path="res://campfire.gd" id="1_b5him"]
+[ext_resource type="Texture2D" uid="uid://bpkvk7jqcs52l" path="res://interstellar-apes/overworld_assets/Campfire36.png" id="1_oufq8"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b5him"]
+atlas = ExtResource("1_oufq8")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y2ey3"]
+atlas = ExtResource("1_oufq8")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dk7h0"]
+atlas = ExtResource("1_oufq8")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t2ea5"]
+atlas = ExtResource("1_oufq8")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y1gn1"]
+atlas = ExtResource("1_oufq8")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_edg01"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b5him")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y2ey3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dk7h0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t2ea5")
+}],
+"loop": true,
+"name": &"lit",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y1gn1")
+}],
+"loop": true,
+"name": &"unlit",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_b5him"]
+size = Vector2(384, 384)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_oufq8"]
+size = Vector2(48, 48)
+
+[node name="campfire" type="StaticBody2D" groups=["campfire"]]
+collision_layer = 4
+script = ExtResource("1_b5him")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -8)
+scale = Vector2(2, 2)
+sprite_frames = SubResource("SpriteFrames_edg01")
+animation = &"lit"
+
+[node name="heat" type="Area2D" parent="."]
+collision_layer = 64
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="heat"]
+shape = SubResource("RectangleShape2D_b5him")
+
+[node name="interact" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_oufq8")
+
+[connection signal="body_entered" from="heat" to="." method="_on_heat_body_entered"]
+[connection signal="body_exited" from="heat" to="." method="_on_heat_body_exited"]

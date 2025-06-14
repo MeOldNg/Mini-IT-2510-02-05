@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=4 uid="uid://dcvj4xd7uklrv"]
+[gd_scene load_steps=12 format=4 uid="uid://dytynhmxjd6oy"]
 
 [ext_resource type="Script" uid="uid://b0sa01l48xcmk" path="res://moving_platform.gd" id="1_q06lf"]
 [ext_resource type="Texture2D" uid="uid://cwxffgo65cm6c" path="res://interstellar-apes/overworld_assets/basic_tileset_and_assets_standard/terrain_tiles_v2.png" id="2_f8lbu"]
@@ -1055,24 +1055,71 @@ sources/1 = SubResource("TileSetAtlasSource_0kgt5")
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_f8lbu"]
 size = Vector2(192, 192)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_oaxfr"]
+size = Vector2(208, 8)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_n0cw3"]
+size = Vector2(208, 8)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0kgt5"]
+size = Vector2(8, 208)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1fxty"]
+size = Vector2(8, 208)
+
 [node name="Path2D" type="Path2D"]
 
 [node name="PathFollow2D" type="PathFollow2D" parent="."]
-position = Vector2(-0.00286865, -0.216583)
+loop = false
 script = ExtResource("1_q06lf")
 
-[node name="Timer" type="Timer" parent="PathFollow2D"]
-wait_time = 5.0
-
 [node name="TileMapLayer" type="TileMapLayer" parent="PathFollow2D"]
-tile_map_data = PackedByteArray("AAD/////AQAFAAEAAAD+//7/AQAFAAEAAAAAAP//AQAFAAEAAAAAAAAAAQAFAAEAAAD//wAAAQAFAAEAAAD+////AQAFAAEAAAD9////AQAEAAEAAAD///7/AQAFAAEAAAD///3/AQAFAAAAAAABAP//AQAFAAEAAAACAP//AQAGAAEAAAAAAAEAAQAFAAEAAAAAAAIAAQAFAAIAAAABAAEAAQAFAAEAAAABAAIAAQAFAAIAAAACAAIAAQAGAAIAAAACAAEAAQAGAAEAAAACAAAAAQAGAAEAAAABAAAAAQAFAAEAAAD//wIAAQAFAAIAAAD+/wIAAQAFAAIAAAD9/wIAAQAEAAIAAAD9/wEAAQAEAAEAAAD9/wAAAQAEAAEAAAD9//7/AQAEAAEAAAD9//3/AQAEAAAAAAD+//3/AQAFAAAAAAD+/wAAAQAFAAEAAAD+/wEAAQAFAAEAAAD//wEAAQAFAAEAAAAAAP7/AQAFAAEAAAABAP3/AQAFAAAAAAACAP3/AQAGAAAAAAACAP7/AQAGAAEAAAABAP7/AQAFAAEAAAAAAP3/AQAFAAAAAAA=")
+tile_map_data = PackedByteArray("AAD/////AQAFAAEAAAD//wAAAQAFAAEAAAAAAP//AQAFAAEAAAAAAAAAAQAFAAEAAAD+//7/AQAFAAEAAAD+////AQAFAAEAAAD+/wAAAQAFAAEAAAD+/wEAAQAFAAEAAAD///7/AQAFAAEAAAD//wEAAQAFAAEAAAAAAP7/AQAFAAEAAAAAAAEAAQAFAAEAAAABAP7/AQAFAAEAAAABAP//AQAFAAEAAAABAAAAAQAFAAEAAAABAAEAAQAFAAEAAAD9//3/AQAEAAAAAAD9//7/AQAEAAEAAAD9////AQAEAAEAAAD9/wAAAQAEAAEAAAD9/wEAAQAEAAEAAAD9/wIAAQAEAAIAAAD+//3/AQAFAAAAAAD+/wIAAQAFAAIAAAD///3/AQAFAAAAAAD//wIAAQAFAAIAAAAAAP3/AQAFAAAAAAAAAAIAAQAFAAIAAAABAP3/AQAFAAAAAAABAAIAAQAFAAIAAAACAP3/AQAGAAAAAAACAP7/AQAGAAEAAAACAP//AQAGAAEAAAACAAAAAQAGAAEAAAACAAEAAQAGAAEAAAACAAIAAQAGAAIAAAA=")
 tile_set = SubResource("TileSet_1fxty")
 
 [node name="Area2D" type="Area2D" parent="PathFollow2D"]
+collision_layer = 32
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PathFollow2D/Area2D"]
 position = Vector2(0.00286865, 0.216583)
 shape = SubResource("RectangleShape2D_f8lbu")
 
-[connection signal="timeout" from="PathFollow2D/Timer" to="." method="_on_timer_timeout"]
+[node name="Timer" type="Timer" parent="PathFollow2D"]
+wait_time = 5.0
+one_shot = true
+
+[node name="wallup" type="StaticBody2D" parent="PathFollow2D"]
+position = Vector2(0, -104)
+collision_layer = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PathFollow2D/wallup"]
+position = Vector2(0, 4)
+shape = SubResource("RectangleShape2D_oaxfr")
+
+[node name="walldown" type="StaticBody2D" parent="PathFollow2D"]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PathFollow2D/walldown"]
+position = Vector2(0, 100)
+shape = SubResource("RectangleShape2D_n0cw3")
+
+[node name="wallleft" type="StaticBody2D" parent="PathFollow2D"]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PathFollow2D/wallleft"]
+position = Vector2(-100, 0)
+shape = SubResource("RectangleShape2D_0kgt5")
+
+[node name="wallright" type="StaticBody2D" parent="PathFollow2D"]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PathFollow2D/wallright"]
+position = Vector2(100, 0)
+shape = SubResource("RectangleShape2D_1fxty")
+
 [connection signal="body_entered" from="PathFollow2D/Area2D" to="PathFollow2D" method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="PathFollow2D/Area2D" to="PathFollow2D" method="_on_area_2d_body_exited"]
+[connection signal="timeout" from="PathFollow2D/Timer" to="PathFollow2D" method="_on_timer_timeout"]

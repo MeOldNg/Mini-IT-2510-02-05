@@ -1,9 +1,11 @@
-[gd_scene load_steps=8 format=4 uid="uid://b7lqt6j3slae1"]
+[gd_scene load_steps=9 format=4 uid="uid://b7lqt6j3slae1"]
 
 [ext_resource type="PackedScene" uid="uid://c3bxs6vkf66ig" path="res://interstellar-apes/scenes/player.tscn" id="1_23lrd"]
 [ext_resource type="Texture2D" uid="uid://21bnkennaf2t" path="res://interstellar-apes/overworld_assets/Fantasy Battle Pack 26-10-22/Tiles/FullTileset.png" id="1_jc1gh"]
-[ext_resource type="Script" uid="uid://btfsnifcpj5o8" path="res://interstellar-apes/overworld systems/astar.gd" id="3_scrwo"]
-[ext_resource type="PackedScene" uid="uid://cxbxljkhgnr5c" path="res://interstellar-apes/overworld systems/enemy.tscn" id="5_23lrd"]
+[ext_resource type="Script" path="res://interstellar-apes/overworld systems/astar.gd" id="3_scrwo"]
+[ext_resource type="PackedScene" uid="uid://3teiiuf5aadf" path="res://interstellar-apes/overworld systems/enemy.tscn" id="5_23lrd"]
+[ext_resource type="PackedScene" uid="uid://bkkyu8v4iafsy" path="res://interstellar-apes/overworld systems/chest.tscn" id="5_i57y6"]
+[ext_resource type="PackedScene" uid="uid://c4hogyeqocqm4" path="res://interstellar-apes/overworld systems/level_1_true.tscn" id="6_i57y6"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lrhn5"]
 texture = ExtResource("1_jc1gh")
@@ -451,15 +453,6 @@ custom_data_layer_1/name = "blocked"
 custom_data_layer_1/type = 1
 sources/4 = SubResource("TileSetAtlasSource_lrhn5")
 
-[sub_resource type="NavigationPolygon" id="NavigationPolygon_scrwo"]
-vertices = PackedVector2Array(1001, -185, 1001, 457, 263, 457, 263, 57, 73, 57, 73, 89, -73, 89, -73, -41, 73, -41, 73, -9, 263, -9, 263, -185)
-polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3), PackedInt32Array(4, 5, 6, 7), PackedInt32Array(7, 8, 9), PackedInt32Array(4, 7, 9, 3), PackedInt32Array(3, 9, 10), PackedInt32Array(0, 3, 10), PackedInt32Array(0, 10, 11)])
-outlines = Array[PackedVector2Array]([PackedVector2Array(256, -192, 256, -16, 80, -16, 80, -48, -80, -48, -80, 96, 80, 96, 80, 64, 256, 64, 256, 464, 1008, 464, 1008, -192)])
-source_geometry_mode = 1
-source_geometry_group_name = &"navigation"
-cell_size = 4.0
-agent_radius = 7.0
-
 [node name="Game" type="Node2D"]
 
 [node name="Player" parent="." instance=ExtResource("1_23lrd")]
@@ -474,22 +467,24 @@ tile_map_data = PackedByteArray("AAD7//3/BAAMAAEAAAD7//7/BAAMAAIAAAD7////BAAMAAI
 tile_set = SubResource("TileSet_my7n2")
 script = ExtResource("3_scrwo")
 
-[node name="Enemy" parent="." instance=ExtResource("5_23lrd")]
-position = Vector2(568, -112)
+[node name="enemy" parent="." node_paths=PackedStringArray("target") instance=ExtResource("5_23lrd")]
+position = Vector2(608, -72)
 group_name = "enemy1"
+target = NodePath("../Player")
 
-[node name="Marker2D" type="Marker2D" parent="Enemy" groups=["enemy1"]]
+[node name="Marker2D" type="Marker2D" parent="enemy" groups=["enemy1"]]
 top_level = true
-position = Vector2(568, 56)
+position = Vector2(448, 72)
 
-[node name="Marker2D3" type="Marker2D" parent="Enemy" groups=["enemy1"]]
+[node name="Marker2D2" type="Marker2D" parent="enemy" groups=["enemy1"]]
 top_level = true
-position = Vector2(320, 112)
+position = Vector2(448, 192)
 
-[node name="Marker2D2" type="Marker2D" parent="Enemy" groups=["enemy1"]]
+[node name="Marker2D3" type="Marker2D" parent="enemy" groups=["enemy1"]]
 top_level = true
-position = Vector2(456, 112)
+position = Vector2(768, 64)
 
-[node name="NavigationRegion2D" type="NavigationRegion2D" parent="."]
-visible = false
-navigation_polygon = SubResource("NavigationPolygon_scrwo")
+[node name="StaticBody2D" parent="." instance=ExtResource("5_i57y6")]
+position = Vector2(248, 24)
+result = 1
+next_scene = ExtResource("6_i57y6")

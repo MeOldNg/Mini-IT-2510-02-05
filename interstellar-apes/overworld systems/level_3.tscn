@@ -1,10 +1,10 @@
-[gd_scene load_steps=6 format=4 uid="uid://ce450ydicxlsy"]
+[gd_scene load_steps=6 format=4 uid="uid://eaqlvacoliqh"]
 
-[ext_resource type="Texture2D" uid="uid://cc87rgt0kiffm" path="res://interstellar-apes/overworld_assets/Swamp.png" id="1_ayd5w"]
-[ext_resource type="Texture2D" uid="uid://csxqa3ya01afi" path="res://interstellar-apes/overworld_assets/Trees+.png" id="2_1fhj5"]
+[ext_resource type="Texture2D" uid="uid://cc87rgt0kiffm" path="res://interstellar-apes/overworld_assets/Swamp.png" id="1_k0c3r"]
+[ext_resource type="Texture2D" uid="uid://csxqa3ya01afi" path="res://interstellar-apes/overworld_assets/Trees+.png" id="2_k6xxu"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1fhj5"]
-texture = ExtResource("1_ayd5w")
+texture = ExtResource("1_k0c3r")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -40,7 +40,7 @@ texture = ExtResource("1_ayd5w")
 10:2/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_16pka"]
-texture = ExtResource("2_1fhj5")
+texture = ExtResource("2_k6xxu")
 texture_region_size = Vector2i(80, 80)
 
 [sub_resource type="TileSet" id="TileSet_16pka"]
