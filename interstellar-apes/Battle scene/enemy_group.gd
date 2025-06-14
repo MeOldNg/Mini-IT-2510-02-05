@@ -1,6 +1,6 @@
 extends Node2D
 
-var enemies : Array = []
+var enemies = 4
 var action_queue: Array = []
 var is_battling: bool = false
 var index: int = 0
@@ -104,6 +104,10 @@ func _on_next_turn_pressed() -> void:
 	emit_signal("textbox_closed")
 	turn +=1
 	decision()
+	
+func gamewin() -> void:
+	if enemies <= 0:
+		display_text("You won!")
 	
 	
 func display_text(text):

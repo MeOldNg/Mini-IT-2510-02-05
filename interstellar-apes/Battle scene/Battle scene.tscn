@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://dcyg04a3onean"]
+[gd_scene load_steps=12 format=3 uid="uid://cokxjmtxc2f3j"]
 
 [ext_resource type="Script" uid="uid://cynhgb1uncsj3" path="res://interstellar-apes/Battle scene/battle_scene.gd" id="1_y4smo"]
 [ext_resource type="PackedScene" uid="uid://chjotg0rcmh02" path="res://interstellar-apes/Battle scene/enemy_group.tscn" id="2_wqcpm"]

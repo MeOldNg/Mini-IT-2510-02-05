@@ -1,88 +1,103 @@
-[gd_scene load_steps=5 format=3 uid="uid://c3icjkm4126wy"]
+[gd_scene load_steps=7 format=3 uid="uid://c3icjkm4126wy"]
 
 [ext_resource type="Script" uid="uid://bbyg05nsgvpns" path="res://main-menu/mainmenuscene/script/in-game_paused.gd" id="1_w2xev"]
 [ext_resource type="FontFile" uid="uid://cq850sbmqa2uk" path="res://main-menu/fonts/Jersey_25/Jersey25-Regular.ttf" id="2_v50yl"]
 [ext_resource type="StyleBox" uid="uid://u6y2vjcgfjd2" path="res://main-menu/UI/in-game-paused.tres" id="3_wcd56"]
+[ext_resource type="Script" uid="uid://cd3hdekhtp6g5" path="res://main-menu/mainmenuscene/script/ingamepausedbutton.gd" id="4_v50yl"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1kufw"]
 bg_color = Color(0, 0, 0, 0.501961)
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wcd56"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
 [node name="Control" type="Control"]
 layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = 312.0
-offset_top = 127.0
-offset_right = -261.0
-offset_bottom = -137.0
+anchor_right = 0.806
+anchor_bottom = 0.866
+offset_left = 311.0
+offset_top = 129.0
+offset_right = -371.512
+offset_bottom = -220.168
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_w2xev")
 
 [node name="Panel" type="Panel" parent="."]
 layout_mode = 0
-offset_left = -79.0
-offset_top = -20.0
-offset_right = 613.0
-offset_bottom = 434.0
+offset_left = -257.0
+offset_top = -126.0
+offset_right = -90.0
+offset_bottom = 40.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_1kufw")
 
 [node name="continue_button" type="Button" parent="."]
 layout_mode = 0
-offset_left = 153.0
-offset_top = 43.0
-offset_right = 371.0
-offset_bottom = 101.0
+offset_left = -231.0
+offset_top = -122.0
+offset_right = -117.0
+offset_bottom = -100.0
 theme_override_fonts/font = ExtResource("2_v50yl")
-theme_override_font_sizes/font_size = 45
+theme_override_font_sizes/font_size = 20
 theme_override_styles/normal = ExtResource("3_wcd56")
 text = "CONTINUE"
+script = ExtResource("4_v50yl")
 
 [node name="settings_button" type="Button" parent="."]
 layout_mode = 0
-offset_left = 154.0
-offset_top = 109.0
-offset_right = 369.0
-offset_bottom = 169.0
+offset_left = -231.0
+offset_top = -94.0
+offset_right = -119.0
+offset_bottom = -69.0
 theme_override_fonts/font = ExtResource("2_v50yl")
-theme_override_font_sizes/font_size = 45
+theme_override_font_sizes/font_size = 20
 theme_override_styles/normal = ExtResource("3_wcd56")
 text = "SETTINGS"
 
 [node name="character_button" type="Button" parent="."]
 layout_mode = 0
-offset_left = 153.0
-offset_top = 176.0
-offset_right = 366.0
-offset_bottom = 234.0
+offset_left = -230.0
+offset_top = -64.0
+offset_right = -120.0
+offset_bottom = -39.0
 theme_override_fonts/font = ExtResource("2_v50yl")
-theme_override_font_sizes/font_size = 45
+theme_override_font_sizes/font_size = 20
 theme_override_styles/normal = ExtResource("3_wcd56")
 text = "CHARACTER"
 
 [node name="main_menu_button" type="Button" parent="."]
 layout_mode = 0
-offset_left = 153.0
-offset_top = 241.0
-offset_right = 366.0
-offset_bottom = 299.0
+offset_left = -234.0
+offset_top = -33.0
+offset_right = -111.0
+offset_bottom = -7.0
 theme_override_fonts/font = ExtResource("2_v50yl")
-theme_override_font_sizes/font_size = 45
+theme_override_font_sizes/font_size = 20
 theme_override_styles/normal = ExtResource("3_wcd56")
 text = "MAIN MENU"
 
 [node name="quit_button" type="Button" parent="."]
 layout_mode = 0
-offset_left = 154.0
-offset_top = 307.0
-offset_right = 366.0
-offset_bottom = 367.0
+offset_left = -230.0
+offset_top = 1.00002
+offset_right = -112.0
+offset_bottom = 28.0
 scale = Vector2(0.994024, 1.01717)
 theme_override_fonts/font = ExtResource("2_v50yl")
-theme_override_font_sizes/font_size = 45
+theme_override_font_sizes/font_size = 20
 theme_override_styles/normal = ExtResource("3_wcd56")
 text = "QUIT GAME"
+
+[node name="save_button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 104.0
+offset_top = 139.0
+offset_right = 243.0
+offset_bottom = 205.0
+theme_override_fonts/font = ExtResource("2_v50yl")
+theme_override_font_sizes/font_size = 35
+theme_override_styles/normal = SubResource("StyleBoxFlat_wcd56")
+text = "SAVE"
 
 [connection signal="pressed" from="continue_button" to="." method="_on_continue_button_pressed"]
 [connection signal="pressed" from="settings_button" to="." method="_on_settings_button_pressed"]

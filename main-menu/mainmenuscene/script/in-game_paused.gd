@@ -1,10 +1,30 @@
 extends Control
 
+var is_open = false
+
+func _ready():
+	close()
+	
+func _process(delta):
+	if Input.is_action_just_pressed("esc"):
+		if is_open:
+			close()
+		else:
+			open()
+	
+func open():
+	self.visible = true
+	is_open = true
+	
+func close():
+	visible = false
+	is_open = false
+
 func _on_continue_button_pressed() -> void:
-	get_tree().change_scene_to_file("res://interstellar-apes/scenes/game.tscn")
+	close()
 
 func _on_settings_button_pressed() -> void:
-	get_tree().change_scene_to_file("res://main-menu/settingsscene/audio_settings.tscn")
+	get_tree().change_scene_to_file("res://main-menu/settingsscene/in-game_audio.tscn")
 
 func _on_character_button_pressed() -> void:
 	pass # Replace with function body.
