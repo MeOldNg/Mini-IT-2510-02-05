@@ -3,7 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://c3bxs6vkf66ig" path="res://interstellar-apes/scenes/player.tscn" id="1_23lrd"]
 [ext_resource type="Texture2D" uid="uid://21bnkennaf2t" path="res://interstellar-apes/overworld_assets/Fantasy Battle Pack 26-10-22/Tiles/FullTileset.png" id="1_jc1gh"]
 [ext_resource type="Script" path="res://interstellar-apes/overworld systems/astar.gd" id="3_scrwo"]
-[ext_resource type="PackedScene" uid="uid://3teiiuf5aadf" path="res://interstellar-apes/overworld systems/enemy.tscn" id="5_23lrd"]
+[ext_resource type="PackedScene" uid="uid://cxbxljkhgnr5c" path="res://interstellar-apes/overworld systems/enemy.tscn" id="5_23lrd"]
 [ext_resource type="PackedScene" uid="uid://bkkyu8v4iafsy" path="res://interstellar-apes/overworld systems/chest.tscn" id="5_i57y6"]
 [ext_resource type="PackedScene" uid="uid://c4hogyeqocqm4" path="res://interstellar-apes/overworld systems/level_1_true.tscn" id="6_i57y6"]
 
@@ -456,7 +456,6 @@ sources/4 = SubResource("TileSetAtlasSource_lrhn5")
 [node name="Game" type="Node2D"]
 
 [node name="Player" parent="." instance=ExtResource("1_23lrd")]
-z_index = 10
 position = Vector2(408, -64)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]

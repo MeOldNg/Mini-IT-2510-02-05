@@ -1,6 +1,6 @@
 [gd_scene load_steps=20 format=3 uid="uid://bkkyu8v4iafsy"]
 
-[ext_resource type="Script" uid="uid://brlgrapsvegjs" path="res://interstellar-apes/overworld systems/chest.gd" id="1_ckpp6"]
+[ext_resource type="Script" path="res://interstellar-apes/overworld systems/chest.gd" id="1_ckpp6"]
 [ext_resource type="Texture2D" uid="uid://clhmh0i2es3mw" path="res://interstellar-apes/overworld_assets/RPG Chests.png" id="1_u3ads"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_u3ads"]
@@ -143,7 +143,7 @@ animations = [{
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_u3ads"]
 
-[node name="StaticBody2D" type="StaticBody2D"]
+[node name="chest" type="StaticBody2D"]
 collision_layer = 4
 script = ExtResource("1_ckpp6")
 

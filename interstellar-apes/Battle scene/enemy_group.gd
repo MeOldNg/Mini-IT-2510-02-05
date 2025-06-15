@@ -1,14 +1,16 @@
 extends Node2D
 
-var enemies : Array = []
+var enemies_count = 8
 var action_queue: Array = []
 var is_battling: bool = false
 var index: int = 0
 var turn: int = 1
 
+
 signal textbox_closed
 signal next_player
 @onready var choice = $"../CanvasLayer/choice"
+var enemies
 
 func _ready():
 	enemies = get_children()
@@ -20,6 +22,13 @@ func _ready():
 		
 
 func _process(_delta) :
+	var enemies_count = 0
+	for enemy in enemies:
+		if enemy.has_method("is_dead"):
+			if(not enemy.is_dead()):
+				enemies_count += 1
+	if enemies_count == 0:
+		get_tree().change_scene_to_file("res://main-menu/mainmenuscene/youwon.tscn")
 	if not choice.visible:
 		if Input.is_action_just_pressed("ui_up"):
 			if index > 0:
@@ -63,7 +72,6 @@ func decision():
 		show_choice()
 		$"../CanvasLayer/choice/Next Turn".disabled = true
 		$"../CanvasLayer/choice/Attack".disabled = false
-		$"../CanvasLayer/choice/Defend".disabled = false
 		$"../CanvasLayer/choice/Abort".disabled = false
 	else:
 		dont_show_choice()
@@ -82,7 +90,6 @@ func _start_choosing():
 func show_choice():
 	choice.show()
 	choice.find_child("Attack").grab_focus()
-	choice.find_child("Defend").grab_focus()
 	choice.find_child("Abort").grab_focus()
 
 
@@ -90,7 +97,6 @@ func dont_show_choice():
 	choice.show()
 	choice.find_child("Next Turn").grab_focus()
 	$"../CanvasLayer/choice/Attack".disabled = true
-	$"../CanvasLayer/choice/Defend".disabled = true
 	$"../CanvasLayer/choice/Abort".disabled = true
 	$"../CanvasLayer/choice/Next Turn".disabled = false
 
@@ -107,6 +113,7 @@ func _on_next_turn_pressed() -> void:
 	emit_signal("textbox_closed")
 	turn +=1
 	decision()
+	
 	
 	
 func display_text(text):

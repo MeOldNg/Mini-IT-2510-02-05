@@ -1,5 +1,7 @@
 extends CharacterBody2D
 
+signal died
+var dead: bool = false
 @onready var _focus = $focus_arrow
 @onready var progress_bar = $ProgressBar
 @onready var animation_damages = $AnimationPlayer
@@ -27,5 +29,9 @@ func unfocus():
 	
 func take_damage(value):
 	health -= value
+	if health <= 0:
+		dead = true
+		emit_signal("died")
 	
-	
+func is_dead():
+	return dead	

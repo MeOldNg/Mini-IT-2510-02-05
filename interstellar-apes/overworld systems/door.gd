@@ -13,4 +13,3 @@ func on_interact():
 		set_collision_layer_value(2, true)
 		sprite.modulate = Color("red")
 	print("interacted")
-	
