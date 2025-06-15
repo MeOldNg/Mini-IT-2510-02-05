@@ -1,6 +1,6 @@
-[gd_scene load_steps=11 format=3 uid="uid://bcx123eareuvq"]
+[gd_scene load_steps=11 format=3 uid="uid://dmtcl4ufg464y"]
 
-[ext_resource type="Script" uid="uid://c2wjhrvwbmf23" path="res://campfire.gd" id="1_b5him"]
+[ext_resource type="Script" uid="uid://c2wjhrvwbmf23" path="res://interstellar-apes/overworld systems/campfire.gd" id="1_b5him"]
 [ext_resource type="Texture2D" uid="uid://bpkvk7jqcs52l" path="res://interstellar-apes/overworld_assets/Campfire36.png" id="1_oufq8"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_b5him"]
