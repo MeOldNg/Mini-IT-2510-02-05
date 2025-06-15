@@ -54,7 +54,6 @@ func get_next_position():
 		get_positions()
 	current_position = temp_posititions.pop_front()
 	change_target(current_position)
-	print (current_position.global_position)
 
 
 func _on_sights_body_entered(body: Node2D) -> void:

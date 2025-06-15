@@ -76,10 +76,8 @@ func _physics_process(_delta: float) -> void:
 func heating(temp):
 	if temp == "hot":
 		speed = 150
-		print("im in heatzone")
 	if temp == "cold":
 		speed = 75
-		print("im in coldzone")
 
 	
 

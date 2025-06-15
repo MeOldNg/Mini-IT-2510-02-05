@@ -36,12 +36,9 @@ func _physics_process(_delta):
 		
 	_direction = _direction.normalized()
 	velocity = _direction * move_speed
-	print(_direction)
 	move_and_slide()
 	if states.patrol:
 		target = current_position
-	elif states.alert:
-		print("animation goes here")
 	elif states.chase:
 		target = get_tree().get_first_node_in_group("player")
 

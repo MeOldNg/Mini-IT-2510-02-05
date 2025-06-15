@@ -32,7 +32,6 @@ func _physics_process(delta: float) -> void:
 			chase()
 
 func patrol():
-	print("patrolling")
 	if global_position.distance_to(current_position.position) <10:
 		_get_next_position()
 	else:
@@ -53,7 +52,6 @@ func patrol():
 		move_and_slide()
 
 func alert():
-	print("alert")
 	exclamation.visible = true
 	exclamation.play("alerted")
 	if exclamation.animation_finished:
@@ -61,7 +59,6 @@ func alert():
 		change_state(states.chase)
 
 func chase():
-	print("chasing")
 	var distance = target.global_position - global_position
 	if abs(distance.x) > abs(distance.y) + direction_tolerance:
 		if distance.x > 0:

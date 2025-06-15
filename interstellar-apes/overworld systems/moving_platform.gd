@@ -18,15 +18,12 @@ func _physics_process(delta: float) -> void:
 func _on_area_2d_body_entered(body: Node2D) -> void:
 	if body.is_in_group("player") and body.get_parent() != self:
 		body.call_deferred("reparent", self, true)
-		print("reparented")
 
 func _on_area_2d_body_exited(body: Node2D) -> void:
 	if body.is_in_group("player") and body.get_parent() != get_tree().root:
 		body.call_deferred("reparent", get_tree().root, true)
-		print("unparented")
 
 func _on_timer_timeout() -> void:
-	print("direction changed")
 	$wallup/CollisionShape2D.disabled = false
 	$walldown/CollisionShape2D.disabled = false
 	$wallleft/CollisionShape2D.disabled = false
