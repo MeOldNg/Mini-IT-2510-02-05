@@ -1,10 +1,12 @@
-[gd_scene load_steps=8 format=4 uid="uid://c4hogyeqocqm4"]
+[gd_scene load_steps=10 format=4 uid="uid://c4hogyeqocqm4"]
 
 [ext_resource type="Texture2D" uid="uid://deoe4mm87osef" path="res://interstellar-apes/overworld_assets/Snowy Asset Pack/spritesheet.png" id="1_31t6m"]
 [ext_resource type="Script" uid="uid://cx1f4p7o4xdrx" path="res://interstellar-apes/overworld systems/level_effect.gd" id="1_sn2yb"]
 [ext_resource type="PackedScene" uid="uid://c3bxs6vkf66ig" path="res://interstellar-apes/scenes/player.tscn" id="2_6l5dk"]
-[ext_resource type="PackedScene" uid="uid://bcx123eareuvq" path="res://interstellar-apes/overworld systems/campfire.tscn" id="4_tejhx"]
-[ext_resource type="PackedScene" uid="uid://3teiiuf5aadf" path="res://interstellar-apes/overworld systems/enemy.tscn" id="5_vtsrn"]
+[ext_resource type="PackedScene" uid="uid://dmtcl4ufg464y" path="res://interstellar-apes/overworld systems/campfire.tscn" id="4_tejhx"]
+[ext_resource type="PackedScene" uid="uid://cxbxljkhgnr5c" path="res://interstellar-apes/overworld systems/enemy.tscn" id="5_vtsrn"]
+[ext_resource type="PackedScene" uid="uid://bkkyu8v4iafsy" path="res://interstellar-apes/overworld systems/chest.tscn" id="6_jlw1p"]
+[ext_resource type="PackedScene" uid="uid://ctf2ftroxfx1m" path="res://main-menu/mainmenuscene/ending.tscn" id="7_0k0x5"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8abum"]
 texture = ExtResource("1_31t6m")
@@ -509,3 +511,8 @@ position = Vector2(1776, 456)
 [node name="Marker2D4" type="Marker2D" parent="enemies/enemy3" groups=["enemy3"]]
 top_level = true
 position = Vector2(1248, 448)
+
+[node name="chest" parent="." instance=ExtResource("6_jlw1p")]
+position = Vector2(1672, -56)
+scale = Vector2(3, 3)
+next_scene = ExtResource("7_0k0x5")
