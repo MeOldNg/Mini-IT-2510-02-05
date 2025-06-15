@@ -3,9 +3,10 @@
 [ext_resource type="Texture2D" uid="uid://deoe4mm87osef" path="res://interstellar-apes/overworld_assets/Snowy Asset Pack/spritesheet.png" id="1_31t6m"]
 [ext_resource type="Script" path="res://interstellar-apes/overworld systems/level_effect.gd" id="1_sn2yb"]
 [ext_resource type="PackedScene" uid="uid://c3bxs6vkf66ig" path="res://interstellar-apes/scenes/player.tscn" id="2_6l5dk"]
-[ext_resource type="PackedScene" uid="uid://bcx123eareuvq" path="res://interstellar-apes/overworld systems/campfire.tscn" id="4_tejhx"]
+
+[ext_resource type="PackedScene" uid="uid://dmtcl4ufg464y" path="res://interstellar-apes/overworld systems/campfire.tscn" id="4_tejhx"]
 [ext_resource type="PackedScene" uid="uid://cxbxljkhgnr5c" path="res://interstellar-apes/overworld systems/enemy.tscn" id="5_vtsrn"]
-[ext_resource type="PackedScene" uid="uid://bkkyu8v4iafsy" path="res://interstellar-apes/overworld systems/chest.tscn" id="6_gaknw"]
+
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8abum"]
 texture = ExtResource("1_31t6m")
