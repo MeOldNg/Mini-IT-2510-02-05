@@ -18,6 +18,7 @@ func reparented():
 func _physics_process(_delta: float) -> void:
 	if $interactable.is_colliding(): # these are interactable codes
 		var collider = $interactable.get_collider()
+
 		if collider.interact_type == "click":
 			if Input.is_action_just_pressed("ui_accept"):
 				collider.on_interact()

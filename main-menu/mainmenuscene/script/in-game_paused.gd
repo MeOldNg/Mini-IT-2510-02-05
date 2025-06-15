@@ -6,17 +6,11 @@ var is_open = false
 func _ready():
 	close()
 	
-func _process(delta):
+func _process(_delta):
 	if Input.is_action_just_pressed("esc"):
 		if is_open:
-			var file = FileAccess.open("res://savegame.dat",FileAccess.WRITE)
-			file.store_var(player.global_position)
-			file.close()
 			close()
 		else:
-			var file = FileAccess.open("res://savegame.dat",FileAccess.READ)
-			player.global_position = file.get_var()
-			file.close()
 			open()
 	
 func open():
